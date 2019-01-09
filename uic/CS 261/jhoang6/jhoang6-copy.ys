@@ -1,0 +1,63 @@
+#Jon-Michael Hoang | jhoang6
+
+INITIALIZE:
+    irmovq STACK, %rsp
+    irmovq STACK, %rbp
+    call MAIN
+    halt
+
+    .align 4
+    
+SOURCE:
+    .quad 0x00a
+    .quad 0x0b0
+    .quad 0xc00
+
+DESTINATION:
+    .quad 0x111
+    .quad 0x222
+    .quad 0x333
+
+MAIN:
+    pushq %rbp
+    rrmovq %rsp, %rbp
+    irmovq $3, %rdi
+    pushq %rdi
+    irmovq DESTINATION, %rdi
+    pushq %rdi
+    irmovq SOURCE, %rdi
+    pushq %rdi
+    call COPY
+    rrmovq %rbp, %rsp
+    popq %rbp
+    ret
+
+COPY:
+    pushq %rbp
+    rrmovq %rsp, %rbp
+    irmovq $0, %rax
+    mrmovq 8(%rbp), %rdi
+    mrmovq 12(%rbp), %rsi
+    mrmovq 16(%rbp), %rbx
+    subq %rax, %rbx
+    jle RETURN
+    
+LOOP:
+    mrmovq (%rdi), %rdx
+    irmovq $4, %rcx
+    addq %rcx, %rdi
+    rmmovq %rdx, (%rsi)
+    addq %rcx, %rsi
+    xorq %rdx, %rax
+    irmovq $1, %rcx
+    subq %rcx, %rbx
+    andq %rbx, %rbx
+    jne LOOP
+    
+RETURN:
+    rrmovq %rbp, %rsp
+    popq %rbp
+
+    .pos 0x500
+    
+STACK:  

@@ -1,0 +1,58 @@
+#Jon-Michael Hoang | jhoang6
+
+INITIALIZE:
+    irmovq STACK, %rsp
+    irmovq STACK, %rbp
+    call MAIN
+    halt
+
+    .align 4
+    
+LIST:
+
+ELEMENT_1:
+    .quad 0x00a
+    .quad ELEMENT_2
+    
+ELEMENT_2:
+    .quad 0x0b0
+    .quad ELEMENT_3
+    
+ELEMENT_3:
+    .quad 0xc00
+    .quad 0
+
+MAIN:
+    pushq %rbp
+    rrmovq %rsp, %rbp
+    irmovq ELEMENT_1, %rax
+    pushq %rax
+    call SUM_LIST
+    rrmovq %rbp, %rsp
+    popq %rbp
+    ret
+
+SUM_LIST:
+    pushq %rbp
+    rrmovq %rsp, %rbp
+    irmovq $0, %rax
+    mrmovq 8(%rbp), %rcx
+    subq %rax, %rcx
+    je RETURN
+    
+LOOP:
+    mrmovq (%rcx), %rdx
+    addq %rdx, %rax
+    mrmovq 4(%rcx), %rcx
+    irmovq $0, %rsi
+    subq %rsi, %rcx
+    jne LOOP
+    
+RETURN:
+    rrmovq %rbp, %rsp
+    popq %rbp
+    ret
+
+    .pos 0x500
+    
+STACK:

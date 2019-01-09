@@ -1,0 +1,10 @@
+There exists 7 projects for this class.
+
+However, the latter ones utilize ADO/ASP .net, etc. and they contain VERY PRIVATE information that
+the professor told us to either not put it on github or to put it under private lock and key.
+
+Provided that you are interested in viewing them, please contact me at either:
+
+jhoang6@uic.edu		OR	michaeljhoang@gmail.com
+
+for more information.

@@ -1,0 +1,244 @@
+Dept,Number,Title,A,B,C,D,F,I,NR,S,U,W,Instructor
+BIOE,101,Intro to Bioengineering,15,5,7,3,3,0,0,0,0,6,Eddington
+BIOE,102,Bioengineering Freshman Smnr,0,0,0,0,0,0,45,0,0,3,Shokuhfar
+BIOE,205,Biothermodynamics,14,12,3,2,0,0,0,0,0,5,Ganjeh
+BIOE,240,Modeling Data and Systems,9,11,9,5,0,0,0,0,0,5,Esmailbeigi
+BIOE,250,Problems in Bioengineering,34,6,0,0,0,0,0,0,0,1,Felder
+BIOE,310,Biosystems Analysis,18,7,12,2,1,0,0,0,0,0,Royston
+BIOE,325,Biotransport,10,2,10,1,0,0,0,0,0,1,Lee
+BIOE,339,Biostatistics I,11,14,10,0,1,1,0,0,0,2,Dai
+BIOE,397,Senior Design II,12,3,0,0,0,0,0,0,0,0,Felder
+BIOE,397,Senior Design II,15,28,5,0,0,0,0,0,0,0,Layton
+BIOE,399,Prof Develop for Bioengineers,0,0,0,0,0,0,0,57,0,0,Esmailbeigi
+BIOE,410,Medical Device Requirements,37,8,1,0,0,0,0,0,0,0,Bogdanowicz
+BIOE,430,Bioinstrumentation I,23,19,0,0,0,0,0,0,0,1,Magin
+BIOE,431,Bioinstrumentation I Lab,13,17,3,0,1,0,0,0,0,0,Esmailbeigi
+BIOE,455,Intro to Cell & Tissue Engr,14,9,4,2,1,0,0,0,0,0,Felder
+BIOE,456,Cell & Tissue Laboratory,21,6,4,2,1,0,0,0,0,0,Khetani
+BIOE,460,Biomaterials,9,16,5,1,0,0,0,0,0,1,Rahaman
+BIOE,475,Neural Engineering I,7,8,3,0,1,0,0,0,0,0,Hetling
+BIOE,476,Neural Engineering Lab,20,0,0,0,0,0,0,0,0,1,Hetling
+BIOE,485,Nanobiosensors,10,0,0,0,0,0,0,0,0,0,Stroscio
+BIOE,494,Wearables Technology Lab,8,0,0,0,0,0,0,0,0,2,Esmailbeigi
+BIOE,540,Biological Signal Analysis,10,1,0,0,0,0,0,0,0,0,Liao
+BIOE,548,Nanoscale Bioengineering,12,1,0,0,0,0,0,0,0,0,Papautsky
+BIOE,580,Bioinformatics II,4,1,4,0,0,0,0,0,0,1,Liang
+BIOE,595,Seminar on Bioengineering,0,0,0,0,0,0,0,10,0,1,Takoudis
+CHE,201,Intro to Thermodynamics,3,10,6,1,2,0,0,0,0,2,Zdunek
+CHE,205,Computational Methods in ChE,15,6,8,3,5,1,0,0,0,5,Nitsche
+CHE,210,Material & Energy Balances,17,10,11,1,2,0,0,0,0,2,Wedgewood
+CHE,301,Chem Engr Thermodynamics,14,5,8,0,0,0,0,0,0,2,Caracotsios
+CHE,311,Transport Phenomena I,5,5,10,4,1,1,0,0,0,2,Liu
+CHE,312,Transport Phenomena II,20,32,5,3,0,0,0,0,0,1,Sharma
+CHE,313,Transport Phenomena III,8,15,19,5,0,0,0,0,0,0,Kim
+CHE,321,Chemical Reaction Engr,15,28,14,3,3,1,0,0,0,1,Berry
+CHE,341,Chemical Process Control,63,0,0,0,1,0,0,0,0,0,Caracotsios
+CHE,382,Chem Engr Lab II,32,0,0,0,1,0,0,0,0,0,Ferdous
+CHE,382,Chem Engr Lab II,19,13,0,0,0,0,0,0,0,0,Zdunek
+CHE,397,Senior Design II,43,15,5,0,1,0,0,0,0,0,Bilgin
+CHE,431,Numerical Methods In Chem Engr,22,2,1,0,0,0,0,0,0,1,Mehraeen
+CHE,494,Solar Fuel Engineering,7,5,0,0,0,0,0,0,0,0,Singh
+CHE,511,Adv Mass Transfer,9,12,0,0,0,0,0,0,0,0,Takoudis
+CHE,527,Adv Chemical Reaction Engr,16,9,0,1,0,0,0,0,0,0,Liu
+CHE,595,Advances In Chem Engr Research,13,0,0,0,0,0,0,0,0,0,Sharma
+CME,201,Statics,10,9,16,23,33,0,0,0,0,5,Ataei
+CME,203,Strength Of Materials,54,50,30,11,3,0,0,0,0,4,Mahamid
+CME,205,Structural Analysis I,6,5,11,4,0,0,0,0,0,1,Foster
+CME,211,Fluid Mechanics and Hydraulics,15,17,8,1,2,0,0,0,0,2,Schulenberg
+CME,260,Properties Of Materials,29,33,45,4,4,0,0,0,0,4,McNallan
+CME,261,Materials For Manufacturing,17,21,21,8,2,0,0,0,0,0,Wang
+CME,300,Concrete Properties&Compositn,12,18,5,1,1,0,0,0,0,0,Issa
+CME,301,Behav & Dsgn Metal Struct,13,15,9,4,0,1,0,0,0,0,Mahamid
+CME,302,Transportation Engr,10,17,9,0,0,0,0,0,0,1,Zou
+CME,310,Reinforc Concrete Struc Design,10,18,12,2,1,1,0,0,0,0,Issa
+CME,311,Water Resources Engineering,27,4,3,6,0,0,0,0,0,0,Schulenberg
+CME,315,Soil Mechanics & Lab,17,14,8,0,0,1,0,0,0,0,Reddy
+CME,322,Environmental Engineering,7,12,13,5,0,0,0,0,0,0,Khodadoust
+CME,402,Highway Design,16,18,7,2,0,0,0,0,0,1,McDonald
+CME,403,Hydraulic Design,4,8,3,0,0,0,0,0,0,0,Burke
+CME,405,Foundation Dsgn& Analysis,19,13,1,0,0,0,0,0,0,0,Schulenberg
+CME,408,Traffic Engineer & Design,18,27,2,0,0,0,0,0,0,0,Mohammadian
+CME,410,Prestress Concret Struct Desgn,15,12,13,3,0,0,0,0,0,0,Issa
+CME,413,Design of Wood Structures,18,20,4,1,0,0,0,0,0,0,Mahamid
+CME,421,Water Treatment Design,9,7,5,0,0,0,0,0,0,0,Khodadoust
+CME,434,Finite Element Analysis I,34,38,3,0,0,0,0,0,0,1,Karpov
+CME,493,Seminar,13,0,0,0,0,0,0,0,0,0,Zou
+CME,494,Construction Equip & Design,11,11,9,2,0,1,0,0,0,1,Ataei
+CME,494,Senior Design II,8,5,0,0,0,0,0,0,0,0,Burke
+CME,494,Undergrad Thesis II,13,0,0,0,0,0,0,0,0,0,Burke
+CME,497,Capstone Design,60,20,1,0,0,0,0,0,0,0,Burke
+CME,507,Sustainable Transportation,13,6,1,0,0,0,0,0,0,0,Lin
+CME,536,Nondestructv Testing/Concrete,4,12,2,0,0,0,0,0,0,0,Ansari
+CME,583,Corrosion Engineering,11,0,0,0,0,0,0,0,0,0,McNallan
+CME,594,Construction Regulations & Org,22,2,0,0,0,0,0,0,0,1,Ataei
+CME,594,Intro to Data Science,23,1,0,0,0,0,8,0,0,1,Derrible
+CME,594,Transportation System Analysis,12,7,1,0,0,0,0,0,0,1,Zou
+CME,594,Value Engineering,30,0,0,0,0,0,0,0,0,0,Cowens
+CS,100,Discovering Computer Science,28,22,6,8,11,0,0,0,0,6,Reed
+CS,107,Intro Comp & Programming,38,48,22,13,9,0,0,0,0,14,Theys
+CS,109,C/C++ Programming,82,66,31,21,22,2,0,0,0,16,Hummel
+CS,110,MATLAB for Engineers,5,5,9,5,1,1,0,0,0,2,Hummel
+CS,111,Program Design I,12,6,6,1,5,0,0,0,0,3,Sloan
+CS,111,Program Design I,44,35,17,6,9,0,0,0,0,9,Troy
+CS,141,Program Design II,82,67,73,32,17,4,1,0,0,24,Reed
+CS,151,Foundations of Computing,133,95,49,19,21,0,0,0,0,10,Bello Lander
+CS,201,Discrete Structures I,4,4,7,4,1,0,1,0,0,4,Lillis
+CS,211,Programming Practicum,72,48,18,10,11,0,0,0,0,13,Troy
+CS,251,Data Structures,29,57,54,33,0,0,21,0,0,23,Lillis
+CS,261,Machine Organization,36,46,38,10,11,0,0,0,0,22,Theys
+CS,301,Languages and Automata,28,37,14,4,2,0,0,0,0,3,Bello Lander
+CS,301,Languages and Automata,19,20,7,4,6,0,0,0,0,4,Checkoway
+CS,341,Programming Language Concepts,67,34,13,4,1,1,0,0,0,3,Hummel
+CS,342,Software Design,48,61,25,6,5,1,0,0,0,7,Bell
+CS,361,Systems Programming,38,65,39,20,5,1,0,0,0,5,Taylor
+CS,362,Computer Design,45,60,26,5,7,0,0,0,0,8,Theys
+CS,377,Communication and Ethics,99,15,4,0,1,0,0,0,0,1,Burton
+CS,411,Artificial Intelligence I,31,25,9,2,2,2,0,0,0,1,Ziebart
+CS,412,Intro to Machine Learning,25,20,16,2,0,0,0,0,0,5,Zheleva
+CS,418,Introduction to Data Science,22,9,8,0,1,0,0,0,0,2,Cruz
+CS,421,Language Processing,31,12,9,4,0,0,0,0,0,0,Di Eugenio
+CS,422,User Interface Design,25,28,11,2,2,0,0,0,0,0,Chattopadhyay
+CS,424,Visual Analytics,13,15,8,0,0,0,0,0,0,2,Johnson
+CS,426,Video Game Design,26,9,0,0,0,0,0,0,0,1,Marai
+CS,440,Software Engr I,18,40,7,0,0,0,0,0,0,0,Bell
+CS,442,Software Engineering II,16,17,2,0,0,0,0,0,0,0,Bell
+CS,450,Intro to Networking,9,12,17,7,3,0,0,0,0,2,Kanich
+CS,466,Adv Computer Architecture,3,7,6,0,0,0,0,0,0,0,Zhu
+CS,473,Compiler Design,22,10,2,1,1,4,0,0,0,5,Venkatesan Natarajan
+CS,474,Obj-Oriented Langs & Envs,22,15,15,13,4,1,1,0,0,13,Buy
+CS,478,Development of Mobile Apps,33,26,19,10,4,1,0,0,0,2,Buy
+CS,480,Database Systems,23,19,16,6,1,0,0,0,0,1,Sistla
+CS,489,Human Augmentics,10,7,4,2,1,0,0,0,0,0,Kenyon
+CS,491,Network Security,6,15,0,0,1,0,0,0,0,4,Venkatesan Natarajan
+CS,491,Seminar,0,50,0,0,0,0,0,0,0,0,Kenyon
+CS,491,Special Topics,13,0,0,0,1,0,0,0,0,2,Esmailbeigi
+CS,499,Prof. Development Seminar,0,0,0,0,0,3,0,89,0,0,Hummel
+CS,506,Intro to Quantum Computing,21,0,0,0,0,0,0,0,0,2,DasGupta
+CS,511,Artificial Intelligence II,18,0,0,0,0,0,0,0,0,0,Gmytrasiewicz
+CS,514,App Artificial Intelligence,31,6,0,0,0,0,1,0,0,0,Gmytrasiewicz
+CS,540,Adv Topics in Softwr Engr,9,7,0,0,0,1,0,0,0,0,Grechanik
+CS,545,Formal Meth/Concur&Dist Systms,0,0,0,0,0,0,18,0,0,0,Thomas
+CS,553,Distributed Systems,9,8,3,0,0,0,0,0,0,0,Kshemkalyani
+CS,569,High-Performance Process&Systm,0,0,0,0,0,0,18,0,0,0,Thomas
+CS,581,Database Management Systms,21,8,0,0,0,0,0,0,0,0,Wolfson
+CS,583,Data Mining & Text Mining,49,43,6,1,0,0,0,0,0,1,Liu
+CS,583,Data Mining & Text Mining,0,0,0,0,0,0,18,0,0,0,Thomas
+CS,590,Research Methods in CS,0,0,0,0,0,0,0,23,0,0,Di Eugenio
+CS,594,Advanced Machine Learning,23,9,0,0,0,0,0,0,0,0,Zhang
+CS,594,AI: Methods and Applications,26,0,0,0,0,0,0,0,0,0,Petrov
+CS,594,Geometric Algorithms,14,0,0,0,0,0,0,0,0,1,Sidiropoulos
+CS,598,MS Thesis Research,0,0,0,0,0,1,0,0,0,0,Kenyon
+CS,599,PhD Thesis Research,0,0,0,0,0,0,0,19,0,0,Yu
+ECE,115,Intro to Elec & Cmptr Eng,65,21,16,9,10,0,0,0,0,8,Caliskan
+ECE,210,Electric Circuit Analysis,69,42,9,4,3,0,0,0,0,3,Fitzgerald
+ECE,225,Circuit Analysis,48,20,12,4,10,0,0,0,0,0,Caliskan
+ECE,265,Intro to Logic Design,55,23,4,2,4,0,0,0,0,2,Fitzgerald
+ECE,266,Intro to Embedded Systems,28,40,22,4,0,0,0,0,0,6,Zhang
+ECE,310,Discrete &Cont Signal&Systms,15,18,25,13,3,0,0,0,0,5,Goncharoff
+ECE,311,Communication Engineering,30,7,2,1,0,0,0,0,0,0,Smida
+ECE,317,DSP I,17,24,15,2,1,0,0,0,0,0,Cetin
+ECE,322,Intro to Electromag and Appl,12,13,5,5,1,0,0,0,0,0,Revelo Alonso
+ECE,340,Electronics I,26,15,28,6,0,0,0,0,0,1,Metlushko
+ECE,341,Probabil &Rand Proc for Engr,66,24,6,4,0,0,0,0,0,0,Jin
+ECE,342,Electronics II,24,13,23,0,0,0,0,0,0,0,Metlushko
+ECE,346,Solid State Device Theory,19,13,15,1,0,0,0,0,0,6,Feinerman
+ECE,350,Principles of Auto Control,7,23,14,1,0,0,0,0,0,1,Jin
+ECE,366,Computer Organization,8,10,4,3,0,0,0,0,0,1,Zhang
+ECE,396,Senior Design I,35,3,0,0,0,0,0,0,0,0,Revelo Alonso
+ECE,397,Senior Design II,12,0,0,0,0,0,0,0,0,0,Abu Salah
+ECE,397,Senior Design II,11,0,0,0,1,0,0,0,0,0,Cetin
+ECE,397,Senior Design II,13,0,0,0,0,0,0,0,0,0,Metlushko
+ECE,397,Senior Design II,10,4,0,0,0,0,0,0,0,0,Rao
+ECE,407,Pattern Recognition I,50,15,11,5,1,0,0,0,0,0,Cetin
+ECE,412,Intro to Filter Synthesis,14,41,7,0,1,0,0,0,0,1,Vaccaro
+ECE,418,Statist Digit Signa Proc,27,21,8,1,0,0,0,0,0,0,Jin
+ECE,436,Computer Comm Networks II,20,11,3,0,0,1,0,0,0,2,Seferoglu
+ECE,437,Wireless Communications,11,15,8,0,0,0,0,0,0,3,Tuninetti
+ECE,442,Power Devices & ICs,9,1,1,0,0,0,0,0,0,0,Yang
+ECE,448,Transistors,6,6,11,1,0,0,0,0,0,1,Shi
+ECE,449,Micromachining & Sensors,4,4,1,0,0,0,0,0,0,1,Paprotny
+ECE,452,Robotics: Algorithm/Control,21,27,9,1,0,0,0,0,0,1,Zefran
+ECE,465,Digital Systems Design,4,3,5,8,0,0,0,0,0,5,Dutt
+ECE,466,Adv Computer Architecture,18,17,6,0,0,0,0,0,0,0,Zhu
+ECE,469,Hardware and Datapath Design,19,13,4,0,0,0,0,0,0,0,Rao
+ECE,491,Fundamentals of Power Systems,2,6,6,0,1,0,0,0,0,3,He
+ECE,491,Intro to Electromag & Appl,13,8,11,10,0,0,0,0,0,2,Revelo Alonso
+ECE,491,Mechatronic Systems Design,9,8,0,0,0,0,0,0,0,0,Paprotny
+ECE,493,Special Problems,16,0,0,0,0,0,0,0,0,0,Abu Salah
+ECE,497,Undergrad Sen Design Thesis II,50,1,0,0,0,0,0,0,0,0,Goncharoff
+ECE,499,Prof. Development Seminar,0,0,0,0,0,0,0,78,0,0,Devroye
+ECE,515,Imag Analysis & Com Vis II,27,8,0,0,0,0,0,0,0,0,Valbonesi
+ECE,517,Digital Image Processing,33,14,1,1,1,0,0,0,0,0,Schonfeld
+ECE,530,Random Signal Analysis,9,1,1,0,0,0,0,0,0,0,Schonfeld
+ECE,531,Detectn & Estimatn Theory,6,5,2,0,0,0,0,0,0,0,Soltanalian
+ECE,541,Microelectron Fabricatn Tech,3,4,3,0,0,0,0,0,0,0,Feinerman
+ECE,550,Linear Systems,12,13,9,0,0,0,0,0,0,0,Han
+ECE,567,Advanced VLSI Design,13,10,0,0,0,0,0,0,0,0,Trivedi
+ECE,569,High-Performance Process&Systm,18,9,1,0,0,0,0,0,0,0,Zhu
+ECE,594,Cyber-Physical Sys.: Safety,17,0,0,0,0,0,0,0,0,0,Zefran
+ECE,595,Departmental Seminar,0,0,0,0,0,0,0,39,1,0,Rao
+ENER,420,CHP Design & Management,0,0,0,0,0,0,16,0,0,0,Haefke
+ENER,422,Building HVAC,22,2,0,0,0,0,0,0,0,0,Ryan
+ENER,451,Electric Power Generation,21,6,0,0,0,0,0,0,0,1,Ryan
+ENER,552,Design of Efficient Buildings,16,4,0,0,0,0,0,0,0,0,Ryan
+ENER,594,Current Topics in Energy Engr,7,5,0,0,0,1,0,0,0,0,Ryan
+ENGR,100,Engineering Orientation,0,0,0,0,0,0,0,372,0,4,Narubin
+ENGR,111,Pract Additive Manufacturing,0,0,0,0,0,0,0,54,0,0,#VALUE!
+ENGR,289,Cooperative Engr Practice,0,0,0,0,0,0,0,41,0,0,Kaplan
+ENGR,494,Entrepreneurship in Engr II,3,5,2,0,0,0,0,0,0,2,Gaitonde
+IE,201,Financial Engineering,47,63,13,8,9,0,0,0,0,4,Darabi
+IE,342,Probability & Stat for Engr,64,41,30,7,5,0,0,0,0,5,Williams
+IE,345,Regr Analysis & Forecast,4,5,8,8,0,1,0,0,0,2,He
+IE,380,Manufacturing Process Princ,3,6,7,4,0,2,0,0,0,1,Abiade
+IE,397,Senior Design Il,15,0,0,0,0,0,0,0,0,0,Brown
+IE,442,Design &Analysis of Experiment,13,6,10,0,0,0,0,0,0,0,Li
+IE,445,IPD Product Development 2,4,6,0,0,0,0,0,0,0,0,Scott
+IE,446,Quality Control & Reliability,43,25,11,11,1,0,0,0,0,0,Li
+IE,463,Plant Layout & Mater Handling,23,11,3,0,1,0,0,0,0,0,Williams
+IE,466,Product Plan &Inventory Contrl,27,10,2,0,0,0,0,0,0,0,Williams
+IE,472,Operations Research II,29,44,12,2,1,0,0,0,0,0,Banerjee
+IE,499,Prof Development Seminar,0,0,0,0,0,0,0,26,0,0,Darabi
+IE,594,ADV 3D Printing/Additive Manua,4,5,1,0,0,0,0,0,0,0,Pan
+IE,594,Data Science II,37,0,0,0,0,0,0,0,0,0,Sharabiani
+IE,594,Distributed Decision Making,19,20,8,1,0,0,0,0,0,2,Hu
+IE,595,Industrial Engineering Seminar,0,0,0,0,0,0,0,135,5,1,Scott
+IT,202,Web & Multimedia Technology,9,9,4,0,3,0,0,0,0,4,Hayes
+ME,205,Intro to Thermodynamics,46,39,48,8,13,0,0,0,0,3,Minkowycz
+ME,210,Engineering Dynamics,13,20,20,9,5,2,0,0,0,9,Berniker
+ME,211,Fluid Mechanics l,15,18,18,4,3,1,0,0,0,1,Megaridis
+ME,211,Fluid Mechanics l,7,24,6,2,0,2,0,0,0,8,Yarin
+ME,250,Intro to Engineering Design,67,5,5,0,0,0,0,0,0,0,Siow
+ME,250,Intro to Engineering Design,60,13,3,1,2,0,0,0,0,1,Szwalek
+ME,261,Materials for Manufacturing,10,8,11,4,0,0,0,0,0,0,Wang
+ME,308,Mechanical Vibrations,33,29,3,1,0,0,0,0,0,0,Lilley
+ME,308,Mechanical Vibrations,34,19,4,1,0,1,0,0,0,0,Siow
+ME,312,Dynamic Syst & Control,12,18,24,14,7,0,1,0,0,3,Berniker
+ME,320,Mechanisms&Dynamics/Machinery,22,25,15,4,1,0,0,0,0,3,Brown
+ME,321,Heat Transfer,25,40,24,6,7,0,0,0,0,1,Manafzadeh
+ME,325,Intermediate Thermodynamics,5,7,7,1,4,0,0,0,0,3,Lynch
+ME,325,Intermediate Thermodynamics,18,12,17,2,0,0,0,0,0,0,Manafzadeh
+ME,341,Exp Methods in Mech Engr,14,15,6,2,0,0,0,0,0,1,Szwalek
+ME,341,Exp Methods in Mech Engr,16,13,13,3,0,0,0,0,0,0,Xu
+ME,347,Computer-Aided Design,42,39,15,7,0,0,0,0,0,2,Hatami Marbini
+ME,370,Mechanical Engineering Design,21,28,14,4,1,1,0,0,0,1,Subramanian
+ME,380,Manufacturing Process Princ,9,42,22,9,0,0,0,0,0,1,Abiade
+ME,397,Senior Design Il,63,5,0,0,0,0,0,0,0,0,Brown
+ME,397,Senior Design Il,56,16,1,0,0,0,0,0,0,0,Komperda
+ME,408,Intermed Vibration Theory,12,10,1,1,0,0,0,0,0,5,Shabana
+ME,415,Propulsion Theory,9,5,2,0,0,0,0,0,0,0,Brezinsky
+ME,422,Heating Vent&Air Conditioning,43,29,6,0,0,2,0,0,0,0,Ryan
+ME,428,Numerical Methods in ME,18,22,29,1,1,0,0,0,0,2,Aggarwal
+ME,450,Air Pollution Engineering,34,7,4,1,0,0,0,0,0,0,Manafzadeh
+ME,497,Undergrad Sen Design Thesis II,17,0,0,0,0,0,0,0,0,0,Komperda
+ME,499,Prof Development Seminar,0,0,0,0,0,0,0,94,0,3,Darabi
+ME,502,Applied Stress Analysis II,5,1,2,0,0,0,0,0,0,2,Hatami Marbini
+ME,504,Computer Analysis/Mult Syst I,6,8,0,0,0,0,0,0,0,2,Shabana
+ME,511,Mechatronics II,15,13,0,0,0,0,0,0,0,1,Cetin
+ME,512,Automatic Control of Mech Syst,11,7,0,0,0,1,1,0,0,1,Cetin
+ME,547,Adv Concepts/Comptr-Aided Engr,21,6,0,0,1,0,0,0,0,0,Naghshineh
+ME,594,3D Space Print/Addivt/Manuf,24,12,0,1,0,0,0,0,0,0,Pan
+ME,594,Energy Storage,6,9,0,0,0,0,0,0,0,0,Shahbazian-Yassar
+ME,594,Intro to Micro Fluids,20,6,2,0,0,0,0,0,0,0,Xu
+ME,595,Mechanical Engineering Seminar,0,0,0,0,0,0,0,194,6,1,Scott
+ME,599,PhD Thesis Research,0,0,0,0,0,0,0,10,0,0,Shahbazian-Yassar
+MENG,401,Engineering Management,11,0,0,0,0,0,0,0,0,0,Wolfman
