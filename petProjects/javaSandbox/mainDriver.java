@@ -54,6 +54,9 @@ public abstract class mainDriver
                     {
                         System.out.println("\nOpening file...");
                         
+                        // parse the save file
+                        new fileParser (System.getProperty("user.dir") + "/savefile.txt");
+                        
                         scan.close();
                         
                         return;
@@ -88,6 +91,8 @@ public abstract class mainDriver
                 
                 file = new File(userInput);
             }
+            
+            new File(System.getProperty("user.dir") + "/" + userInput);
         }
         // one command line argument
         else if (args.length == 1)
