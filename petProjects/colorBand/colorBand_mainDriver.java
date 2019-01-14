@@ -3,7 +3,7 @@ import java.io.*;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 
-public class pixelateImage
+public class colorBand_mainDriver
 {
     public static void main (String [] args) throws FileNotFoundException, IOException
     {
