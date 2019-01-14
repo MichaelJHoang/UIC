@@ -126,6 +126,28 @@ public abstract class mainDriver
             //
             // TODO: IFF there already exists one, ask the user if the want to overwrite it?
             //
+            if (new File (System.getProperty("user.dir") + "/savefile.txt").isFile())
+            {
+                while (true)
+                {
+                    System.out.print("Default save file found - overwrite?\n[ YES ] or [ NO ]: ");
+                    userInput = scan.nextLine();
+                    
+                    if (userInput.equalsIgnoreCase("YES"))
+                    {
+                        break;
+                    }
+                    else if (userInput.equalsIgnoreCase("NO"))
+                    {
+                        System.out.print("\nExiting Program...");
+                        return;
+                    }
+                    else
+                    {
+                        System.out.print("\nInvalid input - please try again.\n");
+                    }
+                }
+            }
             System.out.println ("\nCreating new save file...");
             
             // CREATE A FILE HERE
