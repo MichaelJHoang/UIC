@@ -18,10 +18,10 @@ public class colorBand_mainDriver
         // read in the image
         try
         {
-            file = new File ("");
+            file = new File (System.getProperty("user.dir") + "/test.png");
             img = ImageIO.read(file);
         }
-        catch (IOException e)
+        catch (Exception e)
         {
             System.out.println(e + "\n");
             e.printStackTrace();
@@ -33,6 +33,7 @@ public class colorBand_mainDriver
         
         // get the pixel value. getRGB(x,y) takes in the coordinate of a pixel and returns
         // and integer value which can be negative or positive.
+        // NOTE: pixelValue is an int that holds the value of the pixel
         int pixelValue = img.getRGB (0,0);
         
         // NOTE: 0xff = hexadecimal 255
@@ -47,6 +48,27 @@ public class colorBand_mainDriver
         
         // get blue - which occupies 0-7
         int b = pixelValue & 0xff;
+        
+        alpha = 255;
+        r = 100;
+        g = 150;
+        b = 200;
+        
+        // construct a pixel and set it on the img
+        pixelValue = (alpha << 24) | (r << 16) | (g << 8) | b;
+        img.setRGB(0, 0, pixelValue);
+        
+        // draw/write the image
+        try
+        {
+            file = new File (System.getProperty("user.dir") + "/testOutput.png");
+            ImageIO.write(img, "png", file);
+        }
+        catch (Exception e)
+        {
+            System.out.println(e + "\n");
+            e.printStackTrace();
+        }
         
         return;
     }
