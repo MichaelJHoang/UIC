@@ -1,0 +1,51 @@
+#Jon-Michael Hoang | jhoang6
+
+    .pos 0
+    irmovq STACK, %rsp
+    call MAIN
+    halt
+    
+    .align 4
+
+LIST:
+    ELEMENT_1:
+		.quad 0x00d 
+		.quad ELEMENT_2
+    ELEMENT_2:
+		.quad 0x0e0 
+		.quad ELEMENT_3
+    ELEMENT_3:
+		.quad 0xf00 
+		.quad 0
+        
+MAIN: 
+    irmovq ELEMENT_1, %rdi
+    irmovq $0, %r8       
+    irmovq $8, %r9        
+    irmovq $16, %r10      
+    call RECURSIVE_SUM       
+    ret
+    
+RECURSIVE_SUM:
+    mrmovq (%rdi), %rcx
+    addq %r9, %rdi
+    addq %rcx, %r8
+    mrmovq (%rdi), %rdx
+    subq %r9, %rdi
+   
+    andq %rdx, %rdx
+    je JUST_GO
+    jmp ADVANCE
+    
+JUST_GO:
+    rrmovq %rbp, %rsp
+    rrmovq %r8, %rax
+    popq %rbp
+    ret
+    
+ADVANCE:
+    addq %r10, %rdi
+    call RECURSIVE_SUM
+    .pos 0x200
+	
+STACK:
