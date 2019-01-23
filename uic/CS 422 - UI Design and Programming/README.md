@@ -1,0 +1,3 @@
+This is a README for CS 422...
+there's nothing much to say at the moment
+but there will be in the future
