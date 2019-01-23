@@ -1,0 +1,3 @@
+This is a README file for CS 362...
+there's nothing much to say at the moment but
+there would be in the future.
