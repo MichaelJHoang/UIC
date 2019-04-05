@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CS478 Project 4</string>
+    <string name="player_vs_computer">Player VS Computer</string>
+    <string name="computer_vs_computer">Computer VS Computer</string>
+    <string name="title_name_for_the_gopher_hunter_game">Title name for the Gopher Hunter game.</string>
+</resources>

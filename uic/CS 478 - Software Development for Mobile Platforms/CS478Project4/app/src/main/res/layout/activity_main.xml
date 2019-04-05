@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gopher_sighted">
+
+    <Button
+        android:id="@+id/startManualModeButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/player_vs_computer"
+        android:layout_above="@+id/startAutoModeButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.500" />
+
+    <Button
+        android:id="@+id/startAutoModeButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="650dp"
+        android:text="@string/computer_vs_computer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.500"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="500dp" />
+
+    <ImageView
+        android:id="@+id/gopherHunterEXTREMETitle"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/extreme_title"
+        android:contentDescription="@string/title_name_for_the_gopher_hunter_game" />
+
+</RelativeLayout>
