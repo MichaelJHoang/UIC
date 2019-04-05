@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CS 478 Project 1</string>
+    <string name="welcome_to_cs_478_s_1st_project_this_app_is_made_by_jon_michael_hoang">Welcome to CS 478\'s 1st project! This app is made by Jon-Michael Hoang!</string>
+    <string name="please_enter_a_location">Please enter a location</string>
+    <string name="tap_here_to_begin_input">Tap here to begin input</string>
+    <string name="address">Address</string>
+    <string name="map">Map</string>
+</resources>
