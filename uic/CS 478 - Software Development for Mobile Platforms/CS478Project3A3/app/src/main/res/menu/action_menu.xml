@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/launchOtherApps"
+        android:title="Launch applications A1 and A2"/>
+
+    <item
+        android:id="@+id/exit"
+        android:title="Exit A3 (This application)"/>
+
+
+</menu>
