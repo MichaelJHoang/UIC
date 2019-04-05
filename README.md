@@ -12,12 +12,15 @@ something weird happens.
 
 ---
 
-As of 2019, I am now using my Raspberry Pi to push updates on this
+~~As of 2019, I am now using my Raspberry Pi to push updates on this
 repository instead of click and drag methods that I have used in
 the past. The reason why I'm using my RPI for this is because
 I can't SSH into the schools computers and use git from there and 
 that for some reason, Windows (on my laptop, that is) won't allow 
-such things to happen.
+such things to happen.~~
+
+Git Bash for Windows is my savior. I am now able to upload files through
+my laptop without having to go through extra steps.
 
 ---
 
