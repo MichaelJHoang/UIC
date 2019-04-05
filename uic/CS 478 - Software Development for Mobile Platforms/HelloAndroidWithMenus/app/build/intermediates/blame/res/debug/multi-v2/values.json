@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\userDownloadDirectory\\CS Related\\CS 478\\HelloAndroidWithMenus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\userDownloadDirectory\\CS Related\\CS 478\\HelloAndroidWithMenus\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "3,6,8,7,9,4,5",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "56,197,302,247,361,115,153",
+                        "endColumns": "58,49,58,54,56,37,43",
+                        "endOffsets": "110,242,356,297,413,148,192"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,164,223,278,335,373",
+                        "endColumns": "58,49,58,54,56,37,43",
+                        "endOffsets": "109,159,218,273,330,368,412"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\userDownloadDirectory\\CS Related\\CS 478\\UIListView\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\userDownloadDirectory\\CS Related\\CS 478\\UIListView\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "5,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "105,56",
+                        "endLines": "26,3",
+                        "endColumns": "19,47",
+                        "endOffsets": "693,99"
+                    },
+                    "to": {
+                        "startLines": "2,24",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,648",
+                        "endLines": "23,24",
+                        "endColumns": "19,47",
+                        "endOffsets": "643,691"
+                    }
+                }
+            ]
+        }
+    ]
+}

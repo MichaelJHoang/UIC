@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Thu Feb 14 09:37:07 CST 2019
+0.baseType=DIRECTORY
+0.base=/Users/ugobuy/AndroidStudioProjectsJava/UIGridLayout/app/build/intermediates/transforms/dexMerger/debug/18
+0.path=classes.dex
+0.set=DEX
+count=1

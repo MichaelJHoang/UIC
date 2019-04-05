@@ -1,0 +1,7 @@
+#Mon Oct 23 17:47:19 CDT 2017
+base.0=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3WithResult/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ddf582e1279fcc381b8f32efeea961981852652a
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3WithResult/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_38f3713acd0b74e3f06ec1bb6ed57f74f1aac92a/classes.dex
+base.1=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3WithResult/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_38f3713acd0b74e3f06ec1bb6ed57f74f1aac92a
+file.0=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3WithResult/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ddf582e1279fcc381b8f32efeea961981852652a/classes.dex

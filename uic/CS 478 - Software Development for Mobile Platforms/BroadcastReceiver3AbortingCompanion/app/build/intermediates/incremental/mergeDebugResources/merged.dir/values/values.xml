@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aborting Companion Receiver</string>
+    <string name="docString">This is the companion app to BroadcastReceiver3 that sends a broadcast intent.  \
+        The matching receiver will then display a toast message on the screen and abort the broadcast.</string>
+</resources>

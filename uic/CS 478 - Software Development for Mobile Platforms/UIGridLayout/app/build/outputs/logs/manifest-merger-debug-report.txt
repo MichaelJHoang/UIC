@@ -1,0 +1,81 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:2:1-36:12
+	package
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:3:5-44
+		INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml
+		INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml
+		INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml
+		INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml
+application
+ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:7:5-34:19
+	android:label
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:10:9-41
+	android:icon
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:9:9-45
+	android:allowBackup
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:8:9-36
+activity#course.examples.UI.GridLayout.GridLayoutActivity
+ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:11:9-19:20
+	android:label
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:13:13-45
+	android:name
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:12:13-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:14:13-18:29
+action#android.intent.action.MAIN
+ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:15:17-69
+	android:name
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:15:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:17:17-77
+	android:name
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:17:27-74
+activity#course.examples.UI.GridLayout.ImageViewActivity
+ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:20:9-33:20
+	android:name
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:20:19-52
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:mimeType:image/*+data:scheme:android.resource
+ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:21:13-32:29
+action#android.intent.action.VIEW
+ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:22:17-23:26
+	android:name
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:22:25-66
+data
+ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:25:17-28:24
+	android:scheme
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:27:21-54
+	android:mimeType
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:26:21-47
+category#android.intent.category.DEFAULT
+ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:30:17-31:28
+	android:name
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml:30:27-73
+uses-sdk
+INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml
+INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml
+INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml
+INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml
+		INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml
+		ADDED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml
+		INJECTED from C:\userDownloadDirectory\CS Related\CS 478\UIGridLayout\app\src\main\AndroidManifest.xml

@@ -1,0 +1,4 @@
+#Thu Mar 21 23:27:02 CDT 2019
+base.0=C\:\\userDownloadDirectory\\CS Related\\CS 478\\FragmentStaticLayout\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
+path.0=classes.dex
+renamed.0=classes.dex

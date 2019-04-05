@@ -1,0 +1,4 @@
+#Sat Mar 16 17:17:22 CDT 2019
+base.0=C\:\\userDownloadDirectory\\CS Related\\CS 478\\BroadcastReceiver3WithPermissionsPostOreo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+path.0=classes.dex
+renamed.0=classes.dex

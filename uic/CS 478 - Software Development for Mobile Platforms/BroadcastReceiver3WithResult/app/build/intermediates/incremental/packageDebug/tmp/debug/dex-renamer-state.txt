@@ -1,0 +1,4 @@
+#Thu Mar 14 09:52:22 CDT 2019
+base.0=/Users/ugobuy/AndroidStudioProjectsJava/BroadcastReceiver3WithResult/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
+path.0=classes.dex
+renamed.0=classes.dex

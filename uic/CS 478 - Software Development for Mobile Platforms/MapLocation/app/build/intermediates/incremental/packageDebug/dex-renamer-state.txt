@@ -1,0 +1,7 @@
+#Sun Sep 10 15:34:49 CDT 2017
+base.0=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a55bd62a40d4ac131c1ab4cdc1e4816be3b6f67c
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4ef2acd29da302fe7d97a65e8f21b29cb59b6cde/classes.dex
+base.1=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4ef2acd29da302fe7d97a65e8f21b29cb59b6cde
+file.0=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a55bd62a40d4ac131c1ab4cdc1e4816be3b6f67c/classes.dex

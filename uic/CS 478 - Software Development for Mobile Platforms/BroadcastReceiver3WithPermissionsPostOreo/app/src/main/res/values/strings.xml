@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Broadcast 3 Oreo w/ permissions</string>
+    <string name="docString">When you click on the button below, you will send an ordered broadcast.  \
+        The matching receivers will then display toast messages.</string>
+    <string name="startIntent">Start Broadcast Intent! </string>
+    <string name="TyrantWrath">Allows application not to incur tyrants wrath.</string>
+</resources>

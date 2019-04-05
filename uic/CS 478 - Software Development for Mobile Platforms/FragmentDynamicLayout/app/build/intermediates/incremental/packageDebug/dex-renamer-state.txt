@@ -1,0 +1,7 @@
+#Wed Oct 04 10:41:59 CDT 2017
+base.0=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_2acf463abab2b6a073849d4395d1427529453e8f
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c217c20ba98344e45c1061a837316d3d2471b72f/classes.dex
+base.1=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c217c20ba98344e45c1061a837316d3d2471b72f
+file.0=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_2acf463abab2b6a073849d4395d1427529453e8f/classes.dex

@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\userDownloadDirectory\\CS Related\\CS 478\\FragmentStaticLayout\\app\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\userDownloadDirectory\\CS Related\\CS 478\\FragmentStaticLayout\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "10,3,2",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "375,113,55",
+                        "endLines": "16,9,2",
+                        "endColumns": "19,19,57",
+                        "endOffsets": "957,370,108"
+                    },
+                    "to": {
+                        "startLines": "2,9,16",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,642,904",
+                        "endLines": "8,15,16",
+                        "endColumns": "19,19,57",
+                        "endOffsets": "637,899,957"
+                    }
+                }
+            ]
+        }
+    ]
+}

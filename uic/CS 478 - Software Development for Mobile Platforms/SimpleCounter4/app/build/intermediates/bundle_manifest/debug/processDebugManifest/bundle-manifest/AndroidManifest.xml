@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ugobuy.simplecounter4"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="22"
+        android:targetSdkVersion="27" />
+
+    <uses-permission android:name="android.permission.internet" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:testOnly="true" >
+        <activity
+            android:name="com.ugobuy.simplecounter4.SimpleCounterActivity4"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ugobuy.simplecounter4.StateListActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

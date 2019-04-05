@@ -1,0 +1,4 @@
+#Mon Sep 10 17:05:30 CDT 2018
+base.0=/Users/ugobuy/AndroidStudioProjectsJava/MapLocation/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

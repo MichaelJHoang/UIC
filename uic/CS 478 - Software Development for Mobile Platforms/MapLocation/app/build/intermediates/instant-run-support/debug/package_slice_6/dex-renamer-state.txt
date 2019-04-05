@@ -1,0 +1,4 @@
+#Sun Sep 10 15:22:32 CDT 2017
+base.0=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6
+renamed.0=classes.dex
+file.0=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\userDownloadDirectory\\CS Related\\CS 478\\BroadcastReceiver3PostOreo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\userDownloadDirectory\\CS Related\\CS 478\\BroadcastReceiver3PostOreo\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2,3,5",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,104,276",
+                        "endLines": "2,4,5",
+                        "endColumns": "48,68,64",
+                        "endOffsets": "99,271,336"
+                    }
+                }
+            ]
+        }
+    ]
+}

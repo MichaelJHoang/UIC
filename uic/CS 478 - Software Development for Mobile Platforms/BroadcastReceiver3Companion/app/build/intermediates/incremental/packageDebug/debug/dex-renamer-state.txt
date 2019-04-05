@@ -1,0 +1,4 @@
+#Thu Oct 25 10:08:24 CDT 2018
+base.0=/Users/ugobuy/AndroidStudioProjectsJava/BroadcastReceiver3Companion/app/build/intermediates/transforms/dexMerger/debug/18
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Broadcast 3</string>
+    <string name="docString">When you click on the button below, you will send an ordered broadcast. \
+        The matching receivers will display toast messages.</string>
+    <string name="startIntent">Start Broadcast Intent! </string>
+</resources>

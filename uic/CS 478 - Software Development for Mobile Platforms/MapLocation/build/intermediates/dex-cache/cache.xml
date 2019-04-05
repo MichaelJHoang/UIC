@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/ugobuy/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_2deae94f29a921a97b0c300c0607d64314ad990b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ugobuy/.android/build-cache/64b6a5ab83065095040dac298f9b340e8706c08f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f8c5c98b19c0867a953607a7d5123f6c946201f8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ugobuy/.android/build-cache/678444bf51ff48e528fc41eadb4f83ea55d14fac/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ad235f4cd7b1b10679c7956fc1e0f10d23e7ec40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a55bd62a40d4ac131c1ab4cdc1e4816be3b6f67c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ugobuy/.android/build-cache/37d87e399f3d7f67bf305bc5711e99ee7d7d3dc1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_674ae2fa1d5c576861b201e3254172bb6df15e54/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ugobuy/.android/build-cache/babcab1d2e92f277421a2b74794612109a0119d8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c10c2b18950873d6112ca3b4bec65fc1ab188d54/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ugobuy/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_2deae94f29a921a97b0c300c0607d64314ad990b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ugobuy/.android/build-cache/277b1579bf9c16f2cdeb75632c9833020a095f9d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2795ae6fc2a4dd3e0dcaed5dcc050242ee398af3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ugobuy/.android/build-cache/47c546bc1ea831d94dee33eeb0013aa84f6d64cf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_483f1b6775cd485a04a0b9e1091e01d4f619d3fb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ugobuy/.android/build-cache/277b1579bf9c16f2cdeb75632c9833020a095f9d/output/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_ddf900229f9092112bd3f30bc48794ef7cea73e4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="80a12cd9fe0c62ae8c7bddd62a42b578d99a2ec3">
+        <dex dex="/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4ef2acd29da302fe7d97a65e8f21b29cb59b6cde/classes.dex" />
+    </item>
+
+</items>

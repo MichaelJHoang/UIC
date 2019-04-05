@@ -1,0 +1,7 @@
+#Wed Sep 20 12:33:00 CDT 2017
+base.0=/Users/ugobuy/AndroidStudioProjects/SimpleCounter4/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ef7995b535691c0b69c3721435a8aaa38de12adf
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/ugobuy/AndroidStudioProjects/SimpleCounter4/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_377aef4a9d814c7ae04a88a9821b0a469712ebb4/classes.dex
+base.1=/Users/ugobuy/AndroidStudioProjects/SimpleCounter4/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_377aef4a9d814c7ae04a88a9821b0a469712ebb4
+file.0=/Users/ugobuy/AndroidStudioProjects/SimpleCounter4/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ef7995b535691c0b69c3721435a8aaa38de12adf/classes.dex

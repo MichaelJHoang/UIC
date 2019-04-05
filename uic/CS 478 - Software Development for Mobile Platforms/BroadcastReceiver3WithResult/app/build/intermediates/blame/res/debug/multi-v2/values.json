@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/ugobuy/AndroidStudioProjectsJava/BroadcastReceiver3WithResult/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/ugobuy/AndroidStudioProjectsJava/BroadcastReceiver3WithResult/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "2,3,6",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,116,365",
+                        "endLines": "2,5,6",
+                        "endColumns": "60,63,64",
+                        "endOffsets": "111,360,425"
+                    }
+                }
+            ]
+        }
+    ]
+}

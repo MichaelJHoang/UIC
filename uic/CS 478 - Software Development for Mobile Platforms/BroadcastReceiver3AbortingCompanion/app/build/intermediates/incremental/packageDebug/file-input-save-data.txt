@@ -1,0 +1,21 @@
+#Internal package file, do not edit.
+#Tue Mar 13 09:14:58 CDT 2018
+2.base=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3AbortingCompanion/app/build/intermediates/res/resources-debug.ap_
+5.file=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3AbortingCompanion/app/build/intermediates/res/resources-debug.ap_/resources.arsc
+5.set=ANDROID_RESOURCE
+3.base=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3AbortingCompanion/app/build/intermediates/res/resources-debug.ap_
+2.set=ANDROID_RESOURCE
+4.base=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3AbortingCompanion/app/build/intermediates/res/resources-debug.ap_
+count=6
+0.file=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3AbortingCompanion/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_7fffd77ace710b3e673022aa3ce635fc39f2d33c/classes.dex
+5.base=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3AbortingCompanion/app/build/intermediates/res/resources-debug.ap_
+4.set=ANDROID_RESOURCE
+1.file=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3AbortingCompanion/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_0c893fc6bdb74236d478f410c950618f4aa6c527/classes.dex
+1.set=DEX
+2.file=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3AbortingCompanion/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+0.base=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3AbortingCompanion/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_7fffd77ace710b3e673022aa3ce635fc39f2d33c
+3.file=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3AbortingCompanion/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/ic_launcher.png
+3.set=ANDROID_RESOURCE
+1.base=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3AbortingCompanion/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_0c893fc6bdb74236d478f410c950618f4aa6c527
+4.file=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3AbortingCompanion/app/build/intermediates/res/resources-debug.ap_/res/layout/main.xml
+0.set=DEX

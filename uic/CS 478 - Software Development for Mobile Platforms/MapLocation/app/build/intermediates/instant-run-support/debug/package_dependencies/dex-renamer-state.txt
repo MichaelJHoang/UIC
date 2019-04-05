@@ -1,0 +1,25 @@
+#Sun Sep 10 15:22:32 CDT 2017
+renamed.7=classes.dex
+renamed.6=classes5.dex
+renamed.5=classes3.dex
+renamed.4=classes6.dex
+renamed.3=classes4.dex
+renamed.2=classes2.dex
+renamed.1=classes7.dex
+renamed.0=classes8.dex
+base.7=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2795ae6fc2a4dd3e0dcaed5dcc050242ee398af3
+base.6=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c10c2b18950873d6112ca3b4bec65fc1ab188d54
+base.5=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_674ae2fa1d5c576861b201e3254172bb6df15e54
+base.4=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f8c5c98b19c0867a953607a7d5123f6c946201f8
+base.3=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ad235f4cd7b1b10679c7956fc1e0f10d23e7ec40
+base.2=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_483f1b6775cd485a04a0b9e1091e01d4f619d3fb
+base.1=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_ddf900229f9092112bd3f30bc48794ef7cea73e4
+base.0=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_2deae94f29a921a97b0c300c0607d64314ad990b
+file.7=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2795ae6fc2a4dd3e0dcaed5dcc050242ee398af3/classes.dex
+file.6=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c10c2b18950873d6112ca3b4bec65fc1ab188d54/classes.dex
+file.5=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_674ae2fa1d5c576861b201e3254172bb6df15e54/classes.dex
+file.4=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f8c5c98b19c0867a953607a7d5123f6c946201f8/classes.dex
+file.3=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ad235f4cd7b1b10679c7956fc1e0f10d23e7ec40/classes.dex
+file.2=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_483f1b6775cd485a04a0b9e1091e01d4f619d3fb/classes.dex
+file.1=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_ddf900229f9092112bd3f30bc48794ef7cea73e4/classes.dex
+file.0=/Users/ugobuy/AndroidStudioProjects/MapLocation/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_2deae94f29a921a97b0c300c0607d64314ad990b/classes.dex

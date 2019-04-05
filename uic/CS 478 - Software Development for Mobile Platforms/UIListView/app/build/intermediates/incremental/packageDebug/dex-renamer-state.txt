@@ -1,0 +1,7 @@
+#Thu Feb 08 13:36:51 CST 2018
+base.0=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_2fb97385d97623391c547877ec06e43414ea9ef5
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_e254916f30678ef971d28c10b287268e5f364e23/classes.dex
+base.1=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_e254916f30678ef971d28c10b287268e5f364e23
+file.0=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_2fb97385d97623391c547877ec06e43414ea9ef5/classes.dex

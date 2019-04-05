@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Broadcast 3 With Result</string>
+    <string name="docString">When you click on the button below, you will send a broadcast intent.  The matching receivers \
+         will then display a toast message on the screen. \
+         Finally, the result intent will be displayed.</string>
+    <string name="startIntent">Start Broadcast Intent! </string>
+</resources>

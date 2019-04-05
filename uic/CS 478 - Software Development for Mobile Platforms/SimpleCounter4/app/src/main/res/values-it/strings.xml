@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Ciao a tutti, SimpleCounterActivity!</string>
+    <string name="app_name">SimpleCounter2</string>
+    <string name="upString">Su</string>
+    <string name="downString">Giu\'</string>
+    <string name="zeroString">0</string>
+    <string name="hundredString">100</string>
+    <string name="newEnglandStates">Stati del New England</string>
+    <string name="tipCalc">Mancia</string>
+
+
+    <string name="fifteenPercent">15%</string>
+    <string name="twentyPercent">20%</string>
+    <string name="tenPercent">10%</string>
+    <string name="defaultBillString">$0.0</string>
+    <string name="tipString">Mancia:</string>
+    <string name="totalString">Totale:</string>
+    <string name="customString">Scelta: </string>
+    <string name="eighteenPercentString">18%</string>
+    <string name="zeroFloatString">0.0</string>
+        
+</resources>

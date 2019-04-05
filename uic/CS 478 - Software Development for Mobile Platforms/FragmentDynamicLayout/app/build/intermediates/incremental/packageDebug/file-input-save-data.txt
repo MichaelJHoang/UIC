@@ -1,0 +1,27 @@
+#Internal package file, do not edit.
+#Wed Oct 04 10:41:59 CDT 2017
+2.base=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_2acf463abab2b6a073849d4395d1427529453e8f
+5.file=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+5.set=ANDROID_RESOURCE
+3.base=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c217c20ba98344e45c1061a837316d3d2471b72f
+6.file=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/res/resources-debug.ap_/res/layout/title_item.xml
+2.set=DEX
+4.base=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/res/resources-debug.ap_
+7.file=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/res/resources-debug.ap_/res/layout/main.xml
+7.set=ANDROID_RESOURCE
+count=8
+0.file=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/res/resources-debug.ap_/res/layout/quote_fragment.xml
+5.base=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/res/resources-debug.ap_
+4.set=ANDROID_RESOURCE
+6.base=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/res/resources-debug.ap_
+1.file=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/ic_launcher.png
+1.set=ANDROID_RESOURCE
+7.base=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/res/resources-debug.ap_
+2.file=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_2acf463abab2b6a073849d4395d1427529453e8f/classes.dex
+6.set=ANDROID_RESOURCE
+0.base=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/res/resources-debug.ap_
+3.file=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c217c20ba98344e45c1061a837316d3d2471b72f/classes.dex
+3.set=DEX
+1.base=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/res/resources-debug.ap_
+4.file=/Users/ugobuy/AndroidStudioProjects/FragmentDynamicLayout/app/build/intermediates/res/resources-debug.ap_/resources.arsc
+0.set=ANDROID_RESOURCE

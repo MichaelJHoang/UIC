@@ -1,0 +1,50 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/ugobuy/AndroidStudioProjectsJava/SimpleCounter4/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/ugobuy/AndroidStudioProjectsJava/SimpleCounter4/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "7,17,18,2,4,6,16,3,5",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "278,648,710,55,147,232,584,107,191",
+                        "endLines": "15,17,18,2,4,6,16,3,5",
+                        "endColumns": "19,61,75,51,43,45,63,39,40",
+                        "endOffsets": "579,705,781,102,186,273,643,142,227"
+                    },
+                    "to": {
+                        "startLines": "2,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,354,416,492,544,588,634,698,738",
+                        "endLines": "10,11,12,13,14,15,16,17,18",
+                        "endColumns": "19,61,75,51,43,45,63,39,40",
+                        "endOffsets": "349,411,487,539,583,629,693,733,774"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/ugobuy/AndroidStudioProjectsJava/SimpleCounter4/app/build/intermediates/res/merged/debug/values-it_values-it.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/ugobuy/AndroidStudioProjectsJava/SimpleCounter4/app/src/main/res/values-it/strings.xml",
+                    "from": {
+                        "startLines": "4,19,16,6,20,13,3,8,9,15,10,17,18,14,5,21,7",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "127,744,599,219,794,463,56,305,351,556,418,650,696,510,179,848,264",
+                        "endColumns": "51,49,50,44,53,46,70,45,66,42,42,45,47,45,39,47,40",
+                        "endOffsets": "174,789,645,259,843,505,122,346,413,594,456,691,739,551,214,891,300"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,107,157,208,253,307,354,425,471,538,581,624,670,718,764,804,852",
+                        "endColumns": "51,49,50,44,53,46,70,45,66,42,42,45,47,45,39,47,40",
+                        "endOffsets": "102,152,203,248,302,349,420,466,533,576,619,665,713,759,799,847,888"
+                    }
+                }
+            ]
+        }
+    ]
+}

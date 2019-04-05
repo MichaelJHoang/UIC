@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/ugobuy/AndroidStudioProjects/ActivityLifecycle/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/ugobuy/AndroidStudioProjects/ActivityLifecycle/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7f917877857beec3a0a235b61488ddeac82b3df2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ugobuy/AndroidStudioProjects/ActivityLifecycle/app/libs/android-support-v13.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ecda966839090a41b29a9239d44bafc06fdadb87">
+        <dex dex="/Users/ugobuy/AndroidStudioProjects/ActivityLifecycle/app/build/intermediates/transforms/dex/debug/folders/1000/2/android-support-v13_2cbbde6919f613e52e15efb9485a7b0a6f7e70fb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ugobuy/AndroidStudioProjects/ActivityLifecycle/app/libs/android-support-v13.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ecda966839090a41b29a9239d44bafc06fdadb87">
+        <dex dex="/Users/ugobuy/AndroidStudioProjects/ActivityLifecycle/app/build/intermediates/transforms/dex/debug/folders/1000/2/android-support-v13_2cbbde6919f613e52e15efb9485a7b0a6f7e70fb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ugobuy/AndroidStudioProjects/ActivityLifecycle/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8891b9950b850422d72f3d68cae2f00942a22bc6">
+        <dex dex="/Users/ugobuy/AndroidStudioProjects/ActivityLifecycle/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_80f25bc8ba8538189b87e402bb95688c191775d0/classes.dex" />
+    </item>
+
+</items>

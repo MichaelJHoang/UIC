@@ -1,0 +1,7 @@
+#Wed Sep 27 21:56:05 CDT 2017
+base.0=/Users/ugobuy/AndroidStudioProjects/HelloAndroidWithMenus/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a6c51643a544611c00f11d91d9fcd6b89ade7666
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/ugobuy/AndroidStudioProjects/HelloAndroidWithMenus/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_cffd001c007e827c6fb404aaf1a42a204ea4db2a/classes.dex
+base.1=/Users/ugobuy/AndroidStudioProjects/HelloAndroidWithMenus/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_cffd001c007e827c6fb404aaf1a42a204ea4db2a
+file.0=/Users/ugobuy/AndroidStudioProjects/HelloAndroidWithMenus/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a6c51643a544611c00f11d91d9fcd6b89ade7666/classes.dex

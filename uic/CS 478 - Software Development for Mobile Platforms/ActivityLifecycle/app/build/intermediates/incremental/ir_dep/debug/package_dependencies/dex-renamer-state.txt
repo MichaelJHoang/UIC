@@ -1,0 +1,4 @@
+#Fri Feb 01 11:27:22 CST 2019
+base.0=C\:\\userDownloadDirectory\\CS Related\\CS 478\\ActivityLifecycle\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex

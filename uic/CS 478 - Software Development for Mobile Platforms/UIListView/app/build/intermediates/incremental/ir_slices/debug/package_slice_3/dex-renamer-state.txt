@@ -1,0 +1,4 @@
+#Fri Mar 01 18:49:18 CST 2019
+base.0=C\:\\userDownloadDirectory\\CS Related\\CS 478\\UIListView\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\3
+path.0=classes.dex
+renamed.0=classes.dex

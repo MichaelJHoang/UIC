@@ -1,0 +1,4 @@
+#Thu Oct 04 09:34:15 CDT 2018
+base.0=/Users/ugobuy/AndroidStudioProjectsJava/FragmentStaticLayout/app/build/intermediates/transforms/dexMerger/debug/18
+path.0=classes.dex
+renamed.0=classes.dex

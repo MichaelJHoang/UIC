@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/ugobuy/AndroidStudioProjectsJava/SimpleCounter4/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/ugobuy/AndroidStudioProjectsJava/SimpleCounter4/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "7,17,18,2,4,6,16,3,5",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "278,648,710,55,147,232,584,107,191",
+                        "endLines": "15,17,18,2,4,6,16,3,5",
+                        "endColumns": "19,61,75,51,43,45,63,39,40",
+                        "endOffsets": "579,705,781,102,186,273,643,142,227"
+                    },
+                    "to": {
+                        "startLines": "2,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,354,416,492,544,588,634,698,738",
+                        "endLines": "10,11,12,13,14,15,16,17,18",
+                        "endColumns": "19,61,75,51,43,45,63,39,40",
+                        "endOffsets": "349,411,487,539,583,629,693,733,774"
+                    }
+                }
+            ]
+        }
+    ]
+}

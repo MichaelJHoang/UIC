@@ -1,0 +1,7 @@
+#Mon Sep 25 10:35:18 CDT 2017
+base.0=/Users/ugobuy/AndroidStudioProjects/UIGridLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8e9c96df0e65c074cf4374c67e7e78ef1ded22d8
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/ugobuy/AndroidStudioProjects/UIGridLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c97b48ebb3b24b84cfb6b3c23a43223d9a5050e7/classes.dex
+base.1=/Users/ugobuy/AndroidStudioProjects/UIGridLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c97b48ebb3b24b84cfb6b3c23a43223d9a5050e7
+file.0=/Users/ugobuy/AndroidStudioProjects/UIGridLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8e9c96df0e65c074cf4374c67e7e78ef1ded22d8/classes.dex

@@ -1,0 +1,15 @@
+#Internal package file, do not edit.
+#Thu Feb 08 13:36:46 CST 2018
+1.base=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/res/resources-debug.ap_
+1.file=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/res/resources-debug.ap_/resources.arsc
+2.base=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/res/resources-debug.ap_
+3.set=ANDROID_RESOURCE
+2.set=ANDROID_RESOURCE
+2.file=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+count=4
+1.set=ANDROID_RESOURCE
+3.base=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/res/resources-debug.ap_
+0.set=ANDROID_RESOURCE
+0.base=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/res/resources-debug.ap_
+3.file=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_launcher.png
+0.file=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/res/resources-debug.ap_/res/layout/list_item.xml

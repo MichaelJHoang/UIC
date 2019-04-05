@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UILinearPercent</string>
+    <string name="thirtyfive_66_percent">Thirty-five Percent\n then 66 Percent</string>
+    <string name="thirtyfive_33_percent">Thirty-five Percent\n then 33 Percent</string>
+    <string name="twentyfive_percent">Twenty-five Percent</string>
+    <string name="forty_percent">Forty Percent</string>
+</resources>

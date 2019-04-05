@@ -1,0 +1,49 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/ugobuy/AndroidStudioProjectsJava/BroadcastReceiver3WithPermissionsPostOreo/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v13/values-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/ugobuy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/d3a9d8d6d3aaf1c36ee576387fe6cde0/res/values-v13/values-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "58",
+                        "endOffsets": "109"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/ugobuy/AndroidStudioProjectsJava/BroadcastReceiver3WithPermissions/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v13/values-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/ugobuy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/d3a9d8d6d3aaf1c36ee576387fe6cde0/res/values-v13/values-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "58",
+                        "endOffsets": "109"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3WithPermissions/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v13/values-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/ugobuy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/dbfa00f502ea9c83f2a8380580a995c2/res/values-v13/values-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "58",
+                        "endOffsets": "109"
+                    }
+                }
+            ]
+        }
+    ]
+}

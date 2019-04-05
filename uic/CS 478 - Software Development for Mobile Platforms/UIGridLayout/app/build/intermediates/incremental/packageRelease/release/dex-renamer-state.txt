@@ -1,0 +1,4 @@
+#Thu Feb 14 09:37:16 CST 2019
+base.0=/Users/ugobuy/AndroidStudioProjectsJava/UIGridLayout/app/build/intermediates/transforms/dex/release/0
+path.0=classes.dex
+renamed.0=classes.dex

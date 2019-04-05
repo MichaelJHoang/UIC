@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Companion Broadcast Receiver</string>
+    <string name="docString">This is the companion app to BroadcastReceiver3 that sends a broadcast intent.  The matching receiver will then display a toast message on the screen.</string>
+    <string name="TyrantWrath">Allows application not to incur tyrants wrath</string>
+
+</resources>

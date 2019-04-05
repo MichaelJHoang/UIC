@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:paddingTop="20dp"
+    android:paddingRight="2dp"
+    android:paddingLeft="2dp"
+    android:paddingBottom="20dp">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editText1"
+        	android:layout_span="2"
+        	android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:width="30dp"
+            android:maxWidth="40dp"
+            android:enabled="false"
+            android:inputType="none"
+            android:textSize="22sp"
+            android:textColor="@android:color/holo_blue_dark">
+            
+        </EditText>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/upButton"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/upString"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/downButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="decrementCount"
+            android:text="@string/downString"
+            android:layout_marginRight="20dp"
+            android:textSize="22dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/zeroString"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <SeekBar
+            android:id="@+id/theSlider"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:paddingLeft="8dp"
+            android:paddingRight="12dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hundredString"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/tipButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/newEnglandStates" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+</TableLayout>

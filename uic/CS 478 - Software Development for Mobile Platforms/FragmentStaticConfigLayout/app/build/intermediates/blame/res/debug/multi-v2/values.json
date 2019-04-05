@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\userDownloadDirectory\\CS Related\\CS 478\\FragmentStaticConfigLayout\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\userDownloadDirectory\\CS Related\\CS 478\\FragmentStaticConfigLayout\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "10,3,2",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "381,119,55",
+                        "endLines": "16,9,2",
+                        "endColumns": "19,19,63",
+                        "endOffsets": "963,376,114"
+                    },
+                    "to": {
+                        "startLines": "2,9,16",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,642,904",
+                        "endLines": "8,15,16",
+                        "endColumns": "19,19,63",
+                        "endOffsets": "637,899,963"
+                    }
+                }
+            ]
+        }
+    ]
+}

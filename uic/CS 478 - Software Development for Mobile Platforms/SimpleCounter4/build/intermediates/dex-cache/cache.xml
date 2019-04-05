@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/ugobuy/AndroidStudioProjects/SimpleCounter4/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/ugobuy/AndroidStudioProjects/SimpleCounter4/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ef7995b535691c0b69c3721435a8aaa38de12adf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ugobuy/AndroidStudioProjects/SimpleCounter4/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c865bd71520ee1699e0e481baf48a6f4e6c96277">
+        <dex dex="/Users/ugobuy/AndroidStudioProjects/SimpleCounter4/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_377aef4a9d814c7ae04a88a9821b0a469712ebb4/classes.dex" />
+    </item>
+
+</items>

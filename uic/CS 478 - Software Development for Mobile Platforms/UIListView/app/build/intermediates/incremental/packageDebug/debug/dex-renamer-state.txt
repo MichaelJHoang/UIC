@@ -1,0 +1,4 @@
+#Mon Sep 24 12:39:40 CDT 2018
+base.0=/Users/ugobuy/AndroidStudioProjectsJava/UIListView/app/build/intermediates/transforms/dexMerger/debug/18
+path.0=classes.dex
+renamed.0=classes.dex

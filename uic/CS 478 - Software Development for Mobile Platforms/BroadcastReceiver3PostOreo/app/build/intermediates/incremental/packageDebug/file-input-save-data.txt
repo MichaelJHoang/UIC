@@ -1,0 +1,21 @@
+#Internal package file, do not edit.
+#Mon Oct 23 16:37:19 CDT 2017
+2.base=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3/app/build/intermediates/res/resources-debug.ap_
+5.file=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_5653ad715f571b0d7254a14bb751642a6b4a46e8/classes.dex
+5.set=DEX
+3.base=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3/app/build/intermediates/res/resources-debug.ap_
+2.set=ANDROID_RESOURCE
+4.base=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3/app/build/intermediates/res/resources-debug.ap_
+count=6
+0.file=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_4df527b09a6649a27ffb33dabd02b8c8530c4aa5/classes.dex
+5.base=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_5653ad715f571b0d7254a14bb751642a6b4a46e8
+4.set=ANDROID_RESOURCE
+1.file=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3/app/build/intermediates/res/resources-debug.ap_/res/layout/main.xml
+1.set=ANDROID_RESOURCE
+2.file=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+0.base=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_4df527b09a6649a27ffb33dabd02b8c8530c4aa5
+3.file=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3/app/build/intermediates/res/resources-debug.ap_/resources.arsc
+3.set=ANDROID_RESOURCE
+1.base=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3/app/build/intermediates/res/resources-debug.ap_
+4.file=/Users/ugobuy/AndroidStudioProjects/BroadcastReceiver3/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/ic_launcher.png
+0.set=DEX

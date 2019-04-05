@@ -1,0 +1,21 @@
+#Internal package file, do not edit.
+#Thu Feb 08 13:36:51 CST 2018
+2.base=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/res/resources-debug.ap_
+5.file=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_e254916f30678ef971d28c10b287268e5f364e23/classes.dex
+5.set=DEX
+3.base=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_2fb97385d97623391c547877ec06e43414ea9ef5
+2.set=ANDROID_RESOURCE
+4.base=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/res/resources-debug.ap_
+count=6
+0.file=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/res/resources-debug.ap_/resources.arsc
+5.base=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_e254916f30678ef971d28c10b287268e5f364e23
+4.set=ANDROID_RESOURCE
+1.file=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+1.set=ANDROID_RESOURCE
+2.file=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/res/resources-debug.ap_/res/layout/list_item.xml
+0.base=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/res/resources-debug.ap_
+3.file=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_2fb97385d97623391c547877ec06e43414ea9ef5/classes.dex
+3.set=DEX
+1.base=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/res/resources-debug.ap_
+4.file=/Users/ugobuy/AndroidStudioProjects/UIListView/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_launcher.png
+0.set=ANDROID_RESOURCE

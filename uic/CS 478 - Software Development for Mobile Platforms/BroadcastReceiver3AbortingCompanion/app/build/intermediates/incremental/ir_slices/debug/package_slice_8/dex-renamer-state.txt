@@ -1,0 +1,4 @@
+#Sat Mar 16 18:07:27 CDT 2019
+base.0=C\:\\userDownloadDirectory\\CS Related\\CS 478\\BroadcastReceiver3AbortingCompanion\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
+path.0=classes.dex
+renamed.0=classes.dex

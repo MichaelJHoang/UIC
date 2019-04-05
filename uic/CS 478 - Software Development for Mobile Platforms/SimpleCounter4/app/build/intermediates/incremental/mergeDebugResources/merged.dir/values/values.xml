@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="stateList">
+        <item>Massachusetts</item>
+        <item>Connecticut</item>
+        <item>Rhode Island</item>
+        <item>Vermont</item>
+        <item>New Hampshire</item>
+        <item>Maine</item>
+        <item>Amazing New England Patriots</item>
+    </string-array>
+    <string name="Connecticut_URI">http://www.ct.gov</string>
+    <string name="Main_URI">http://www.maine.gov/portal/index.html</string>
+    <string name="app_name">SimpleCounter4</string>
+    <string name="downString">Down</string>
+    <string name="hundredString">100</string>
+    <string name="newEnglandStates">New England States</string>
+    <string name="upString">Up</string>
+    <string name="zeroString">0</string>
+</resources>
