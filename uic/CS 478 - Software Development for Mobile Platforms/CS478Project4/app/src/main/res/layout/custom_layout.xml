@@ -8,6 +8,7 @@
         android:id="@+id/customLayoutImage"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:src="@drawable/dirt_hole" />
+        android:src="@drawable/dirt_hole"
+        android:layout_centerInParent="true" />
 
 </RelativeLayout>
