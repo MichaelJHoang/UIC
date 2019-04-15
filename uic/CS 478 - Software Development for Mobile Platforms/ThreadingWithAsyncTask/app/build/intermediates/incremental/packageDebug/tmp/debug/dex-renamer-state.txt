@@ -1,0 +1,4 @@
+#Thu Mar 21 10:27:27 CDT 2019
+base.0=/Users/ugobuy/AndroidStudioProjectsJava/ThreadingWithAsyncTask/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
+path.0=classes.dex
+renamed.0=classes.dex

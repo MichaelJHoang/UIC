@@ -8,11 +8,29 @@
     android:paddingTop="5dp"
     android:paddingBottom="5dp">
 
+    <Switch
+        android:id="@+id/autoSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="150dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="Auto Mode" />
+
     <GridView
         android:id="@+id/game_gridView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="410dp"
+        android:layout_height="480dp"
+        android:layout_above="@+id/autoSwitch"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
         android:numColumns="10"
         android:verticalSpacing="10dp" />
+
+
 
 </RelativeLayout>

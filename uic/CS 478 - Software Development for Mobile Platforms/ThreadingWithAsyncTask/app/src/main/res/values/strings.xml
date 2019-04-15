@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Threads With Async Task</string>
+    <string name="download_image">Download</string>
+    <string name="toast">Toast</string>
+</resources>
