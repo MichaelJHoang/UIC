@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity
             {
                 Intent intent = new Intent(MainActivity.this, GameActivity.class);
 
+                intent.putExtra("playMode", "manual");
+
                 // tell the user through the toast the selection they've made
                 Toast.makeText(MainActivity.this, "Start mode: [ Player vs. Computer ]", Toast.LENGTH_LONG).show();
 
@@ -48,6 +50,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v)
             {
                 Intent intent = new Intent(MainActivity.this, GameActivity.class);
+
+                intent.putExtra("playMode", "auto");
 
                 // tell the user through the toast the selection they've made
                 Toast.makeText(MainActivity.this, "Start mode: [ Computer vs. Computer ]", Toast.LENGTH_LONG).show();
