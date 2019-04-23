@@ -13,6 +13,7 @@
 
 #include <SPI.h>
 #include <SD.h>
+#include "TMRpcm.h"
 
 // ToF sensor
 #include "Adafruit_VL53L0X.h"
@@ -28,6 +29,8 @@ char readCharArray[128]; //buffer for reading from file
 
 unsigned long fileSize; //size of opened file
 unsigned long filePos = 0;
+
+
 //---------------------------------------------------------------//
 void setup() 
 {
@@ -38,44 +41,43 @@ void setup()
     delay(1); //wait for the serial port to connect.
   }
 
-  Serial.println("Testing sensors and SD card...");
-
   // testing ToF sensor
   if (!lox.begin()) 
   {
-    Serial.println(F("Failed to boot VL53L0X"));
+    Serial.println("Failed to boot VL53L0X");
     while(1);
   }
-  // power 
-  Serial.println(F("VL53L0X API Simple Ranging example\n\n")); 
 }
 //---------------------------------------------------------------//
 void loop() 
 {
   if (Serial.available() > 0) 
   {
-    // ToF stuff
+    /*
+     * 
+     * ToF Stuff
+     * 
+     */
     VL53L0X_RangingMeasurementData_t measure;
 
-    Serial.print("Reading a measurement... ");
     lox.rangingTest(&measure, false); // pass in 'true' to get debug data printout!
   
     if (measure.RangeStatus != 4) 
-    {  // phase failures have incorrect data
-      Serial.print("Distance (mm): "); Serial.println(measure.RangeMilliMeter);
+    {
+      Serial.println(measure.RangeMilliMeter);
     } 
     else 
     {
-      Serial.println(" out of range ");
+      Serial.println("OUT_OF_BOUNDS");
     }
       
     delay(100);
 
-
-
-
-
-    // SD CARD STUFF
+    /*
+     * 
+     * SD Card Stuff
+     * 
+     */
     inByte = Serial.read();
     if (inByte == 'i' || inByte == 'I')
     {
@@ -84,38 +86,33 @@ void loop()
         Serial.println("Already initialized.\n");
       }
       else if (!sdInitSuccess) 
-      { //if not already initialized
-        Serial.println("Initializing SD Card..");
-        if (!SD.begin(10)) 
-        { //using pin 10 (SS)
-          Serial.println("Initialization failed!\n");
+      { 
+        //if not already initialized, initialize it
+        // using pin 10
+        if (!SD.begin(10))
+        { 
           sdInitSuccess = false; //failure
           return;
         }
         else 
         {
-          Serial.println("Intitialization success.");
-          Serial.println();
           sdInitSuccess = true;
         }
       }
     }
     else if (inByte == 'n' || inByte == 'N') 
     {
+      //proceed only if card is initialized
       if (sdInitSuccess) 
-      { //proceed only if card is initialized
+      { 
         myFile = SD.open("TEST.txt", FILE_WRITE);
         if (myFile) 
         {
-          Serial.println("File opened successfully.");
-          Serial.println("Writing to TEST.text");
+          //this writes to the card
           myFile.println("Line 1");
-          myFile.close(); //this writes to the card
+          myFile.close(); 
           Serial.println("Done");
           Serial.println();
-        }
-        else { //else show error
-          Serial.println("Error opeing file.\n");
         }
       }
       else 
@@ -123,7 +120,7 @@ void loop()
         Serial.println("SD Card not initialized.");
         Serial.println("Type \"i\" to initialize.\n");
       }
-    }
+    } // here
     else if (inByte == 'r' || inByte == 'R') 
     {
       if (sdInitSuccess) { //proceed only if card is initialized
