@@ -1,180 +1,128 @@
 /*
- * Author: Jon-Michael Hoang
- * 
- * CS 362 Semester Project: GAS GAS GAS
- * 
- * Desc: This code is used for the time-of-flight (ToF) sensors, the speakers, and the LEDs.
- *       The thing will also communicate with Ronny Recinos' arduino to make the car be able to 
- *       have brake lights, an anti-collision system, and be able to play music.
+ *  Authors: Jon-Michael Hoang | jhaong6 | 657540122
+ *           Ronny Recinos     | rrecin2 |
+ *  
  * 
  * 
  */
+//SD card library
+//#include <SD.h>
+//#include <SPI.h>
 
-
-#include <SPI.h>
-#include <SD.h>
-#include "TMRpcm.h"
-
-// ToF sensor
+// ToF library
 #include "Adafruit_VL53L0X.h"
-
-// might want to include the library to use this
+// ToF object
 Adafruit_VL53L0X lox = Adafruit_VL53L0X();
+// instantiate measurement object for the ToF sensor
+VL53L0X_RangingMeasurementData_t measure;
 
-byte inByte; //byte read from terminal
-bool sdInitSuccess = false; //card init status
-File myFile;
-String readText; //text read from file
-char readCharArray[128]; //buffer for reading from file
+// buffer to be used for readBytes
+char stringBuffer[15];
 
-unsigned long fileSize; //size of opened file
-unsigned long filePos = 0;
+// notes in GAS GAS GAS by Initial D
+int melody[] = 
+{ 
+  740, 554, 740, 1109, 988, 880, 740, 740, 
+  554, 740, 1109, 988, 880, 740, 880, 831, 
+  659, 880, 831, 659, 880, 831, 659, 988, 
+  831, 659, 740, 554, 740, 1109, 988, 880, 
+  740, 740, 554, 740, 1109, 988, 880, 740, 
+  880, 880, 880, 831, 831, 880, 1109, 880, 
+  1109, 880, 1109, 831, 1047, 831, 1047, 740, 
+  554, 740, 1109, 988, 880, 740, 740, 554, 
+  740, 1109, 988, 880, 740, 880, 831, 659, 
+  880, 831, 659, 880, 831, 659, 988, 831, 
+  659, 740, 554, 740, 1109, 988, 880, 740, 
+  740, 554, 740, 1109, 988, 880, 740, 1109, 
+  1047, 988, 932, 880, 932, 988, 1047, /*0*/
+};
 
+// note durations for the corresponding notes above
+int noteDurations[] = 
+{ 
+  108, 108, 108, 108, 108, 108, 216, 108, 
+  108, 108, 108, 108, 108, 216, 108, 108, 
+  108, 216, 108, 216, 108, 108, 108, 216, 
+  108, 216, 108, 108, 108, 108, 108, 108, 
+  216, 108, 108, 108, 108, 108, 108, 216, 
+  108, 216, 108, 216, 216, 108, 108, 216, 
+  216, 108, 108, 216, 216, 216, 216, 108, 
+  108, 108, 108, 108, 108, 216, 108, 108, 
+  108, 108, 108, 108, 216, 108, 108, 108, 
+  216, 108, 216, 108, 108, 108, 216, 108, 
+  216, 108, 108, 108, 108, 108, 108, 216, 
+  108, 108, 108, 108, 108, 108, 216, 216, 
+  216, 216, 216, 216, 216, 216, 216, /*1728*/
+};
 
-//---------------------------------------------------------------//
+// flag that can be toggled on and off by the ps4 controller
+bool repeatFlag = true;
+
+// basically plays the song
+void playSong ()
+{
+  Serial.readBytes(stringBuffer, 8);
+
+  if (strcmp(stringBuffer, "option01") == 0)
+  {
+    repeatFlag = true;
+    for (int thisNote = 0; (thisNote < sizeof(melody) / sizeof(int)) && repeatFlag == true; thisNote++)
+    { 
+      // take in a measurement
+      lox.rangingTest(&measure, false);
+      
+      if (measure.RangeStatus != 4) 
+      {
+        // in range
+        Serial.println(measure.RangeMilliMeter);
+      } 
+      else 
+      {
+        // out of range
+        Serial.println("9001");
+      }
+      
+      tone(6, melody[thisNote], noteDurations[thisNote] * .7);    
+      delay(noteDurations[thisNote] + 10);    
+      noTone(6);
+    }
+  }
+  else if (strcmp(stringBuffer, "option2") == 0)
+  {
+    repeatFlag = false;
+  }
+}
+
 void setup() 
 {
-  // might want to change this, ronny
-  Serial.begin(9600);
-  while (!Serial) 
-  {
-    delay(1); //wait for the serial port to connect.
-  }
+  Serial.begin (9600);
 
-  // testing ToF sensor
-  if (!lox.begin()) 
-  {
-    Serial.println("Failed to boot VL53L0X");
+  // wait until the serial port opens up
+  while (!Serial)
+    delay(1);
+
+  if (!lox.begin())
     while(1);
-  }
 }
-//---------------------------------------------------------------//
+
 void loop() 
 {
-  if (Serial.available() > 0) 
-  {
-    /*
-     * 
-     * ToF Stuff
-     * 
-     */
-    VL53L0X_RangingMeasurementData_t measure;
+  // no need to repeat the melody.
+  playSong();
 
-    lox.rangingTest(&measure, false); // pass in 'true' to get debug data printout!
-  
-    if (measure.RangeStatus != 4) 
-    {
-      Serial.println(measure.RangeMilliMeter);
-    } 
-    else 
-    {
-      Serial.println("OUT_OF_BOUNDS");
-    }
-      
-    delay(100);
+  // take in a measurement
+  lox.rangingTest(&measure, false);
 
-    /*
-     * 
-     * SD Card Stuff
-     * 
-     */
-    inByte = Serial.read();
-    if (inByte == 'i' || inByte == 'I')
-    {
-      if (sdInitSuccess) 
-      { //check if card is initialized already
-        Serial.println("Already initialized.\n");
-      }
-      else if (!sdInitSuccess) 
-      { 
-        //if not already initialized, initialize it
-        // using pin 10
-        if (!SD.begin(10))
-        { 
-          sdInitSuccess = false; //failure
-          return;
-        }
-        else 
-        {
-          sdInitSuccess = true;
-        }
-      }
-    }
-    else if (inByte == 'n' || inByte == 'N') 
-    {
-      //proceed only if card is initialized
-      if (sdInitSuccess) 
-      { 
-        myFile = SD.open("TEST.txt", FILE_WRITE);
-        if (myFile) 
-        {
-          //this writes to the card
-          myFile.println("Line 1");
-          myFile.close(); 
-          Serial.println("Done");
-          Serial.println();
-        }
-      }
-      else 
-      {
-        Serial.println("SD Card not initialized.");
-        Serial.println("Type \"i\" to initialize.\n");
-      }
-    } // here
-    else if (inByte == 'r' || inByte == 'R') 
-    {
-      if (sdInitSuccess) { //proceed only if card is initialized
-        myFile = SD.open("TEST.txt");
-        if (myFile) 
-        {
-          Serial.println("File opened successfully.");
-          Serial.println("Reading from TEST.text");
-          readText = (String) readUntil(myFile, 10); //read until newline
-          Serial.print(readText);
-          Serial.print(", ");
-          Serial.println(filePos); //print current file position
-          Serial.println();
-          myFile.close();
-        }
-        else 
-        {
-          Serial.println("Error opening file.\n");
-        }
-      }
-      else 
-      {
-        Serial.println("SD Card not initialized.");
-        Serial.println("Type \"i\" to initialize.\n");
-      }
-    }
-    else 
-    {
-      Serial.println("Not recognized.\n"); //unknown cmd
-    }
-  }
-}
-//--------------------------------------------------------------//
-String readUntil(File &myFile, char n) 
-{ //read until n
-  int i = 0;
-  myFile.seek(filePos); //read from current filepos
-  
-  do 
+  if (measure.RangeStatus != 4) 
   {
-    if (myFile.peek() != -1) 
-    { //check if file is empty
-      readCharArray[i++] = myFile.read(); //read otherwise
-      filePos++; //advance the filepos
-    }
-  } while ((myFile.peek() != -1) && (readCharArray[i - 1] != n)); //if not eof | \n
-  
-  if (myFile.peek() == -1) 
-  { //if eof reached
-    filePos = 0; //if eof, reset to start pos
+    // in range
+    Serial.println(measure.RangeMilliMeter);
+  } 
+  else 
+  {
+    // out of range
+    Serial.println("9001");
   }
-  
-  readCharArray[i - 1] = '\0'; //remove the extra \n
-  
-  return readCharArray;
+    
+  delay(1);
 }
-//-------------------------------------------------------------//
