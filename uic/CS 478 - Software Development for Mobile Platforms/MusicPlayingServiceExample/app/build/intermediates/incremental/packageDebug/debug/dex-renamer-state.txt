@@ -1,0 +1,4 @@
+#Tue Nov 13 10:07:18 CST 2018
+base.0=/Users/ugobuy/AndroidStudioProjectsJava/MusicPlayingServiceExample/app/build/intermediates/transforms/dexMerger/debug/18
+path.0=classes.dex
+renamed.0=classes.dex

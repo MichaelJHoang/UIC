@@ -1,0 +1,7 @@
+#Wed Nov 08 22:31:54 CST 2017
+base.0=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_694ec3ff2fdea64ef5ea55241914d7619209aa07
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_27e13afced363cc65eefc2cf3d4fb88d9b2b2e11/classes.dex
+base.1=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_27e13afced363cc65eefc2cf3d4fb88d9b2b2e11
+file.0=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_694ec3ff2fdea64ef5ea55241914d7619209aa07/classes.dex

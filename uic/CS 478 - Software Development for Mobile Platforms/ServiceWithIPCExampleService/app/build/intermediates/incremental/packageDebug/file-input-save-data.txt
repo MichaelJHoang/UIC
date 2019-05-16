@@ -1,0 +1,18 @@
+#Internal package file, do not edit.
+#Mon Nov 20 22:15:59 CST 2017
+1.base=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleService/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_547c1885f6f0c9efbc1a8d9b6494bd51b325684f
+4.file=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleService/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_launcher.png
+1.file=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleService/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_547c1885f6f0c9efbc1a8d9b6494bd51b325684f/classes.dex
+4.set=ANDROID_RESOURCE
+2.base=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleService/app/build/intermediates/res/resources-debug.ap_
+3.set=DEX
+2.set=ANDROID_RESOURCE
+2.file=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleService/app/build/intermediates/res/resources-debug.ap_/resources.arsc
+count=5
+1.set=DEX
+3.base=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleService/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_80ab6d638e1bdb47543574fd32bc7a3f289a3bf3
+0.set=ANDROID_RESOURCE
+0.base=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleService/app/build/intermediates/res/resources-debug.ap_
+3.file=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleService/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_80ab6d638e1bdb47543574fd32bc7a3f289a3bf3/classes.dex
+0.file=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleService/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+4.base=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleService/app/build/intermediates/res/resources-debug.ap_

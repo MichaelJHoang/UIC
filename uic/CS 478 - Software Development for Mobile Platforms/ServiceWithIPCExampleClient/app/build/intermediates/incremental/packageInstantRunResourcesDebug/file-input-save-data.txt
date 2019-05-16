@@ -1,0 +1,27 @@
+#Internal package file, do not edit.
+#Mon Nov 20 23:35:09 CST 2017
+2.base=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/res/resources-debug.ap_
+5.file=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+5.set=ANDROID_RESOURCE
+3.base=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/res/resources-debug.ap_
+6.file=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/res/resources-debug.ap_/res/layout/main.xml
+2.set=ANDROID_RESOURCE
+4.base=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/res/resources-debug.ap_
+7.file=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_launcher.png
+7.set=ANDROID_RESOURCE
+count=8
+0.file=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/common_ic_googleplayservices.png
+5.base=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/res/resources-debug.ap_
+4.set=ANDROID_RESOURCE
+6.base=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/res/resources-debug.ap_
+1.file=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/res/resources-debug.ap_/res/color/common_signin_btn_text_dark.xml
+1.set=ANDROID_RESOURCE
+7.base=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/res/resources-debug.ap_
+2.file=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/common_full_open_on_phone.png
+6.set=ANDROID_RESOURCE
+0.base=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/res/resources-debug.ap_
+3.file=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/res/resources-debug.ap_/resources.arsc
+3.set=ANDROID_RESOURCE
+1.base=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/res/resources-debug.ap_
+4.file=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/res/resources-debug.ap_/res/color/common_signin_btn_text_light.xml
+0.set=ANDROID_RESOURCE

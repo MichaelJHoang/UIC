@@ -1,0 +1,77 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:2:1-31:12
+	package
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:3:5-53
+		INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml
+uses-permission#course.examples.Services.LoggingServiceWithMessenger.PERMISSION
+ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:7:5-103
+	android:name
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:7:22-100
+application
+ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:9:5-29:19
+	android:label
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:12:9-41
+	android:icon
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:11:9-45
+	android:allowBackup
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:10:9-36
+activity#edu.uic.cs478.ServiceWithPendingIntent.LoggingServiceClient
+ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:13:9-20:20
+	android:label
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:15:13-45
+	android:name
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:14:13-87
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:16:13-19:29
+action#android.intent.action.MAIN
+ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:18:27-74
+service#edu.uic.cs478.ServiceWithPendingIntent.LoggingService
+ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:22:9-89
+	android:name
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:22:18-86
+receiver#edu.uic.cs478.ServiceWithPendingIntent.LoggingReceiver
+ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:24:9-28:20
+	android:enabled
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:26:13-35
+	android:exported
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml:24:19-50
+uses-sdk
+INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/src/main/AndroidManifest.xml

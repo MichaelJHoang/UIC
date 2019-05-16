@@ -1,0 +1,4 @@
+#Sat Dec 01 11:58:51 CST 2018
+base.0=/Users/ugobuy/AndroidStudioProjectsJava/ServiceWithIPCExampleClient/app/build/intermediates/transforms/dexMerger/debug/18
+path.0=classes.dex
+renamed.0=classes.dex

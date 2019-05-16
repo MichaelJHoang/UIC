@@ -1,0 +1,4 @@
+#Wed May 01 03:39:00 CDT 2019
+base.0=C\:\\Users\\Coord\\Downloads\\userDownloadDirectory\\CS Related\\CS 478\\ServiceWithIPCExampleService\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+path.0=classes.dex
+renamed.0=classes.dex

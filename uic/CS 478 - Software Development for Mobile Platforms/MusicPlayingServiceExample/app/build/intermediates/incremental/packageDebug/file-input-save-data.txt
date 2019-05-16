@@ -1,0 +1,24 @@
+#Internal package file, do not edit.
+#Wed Nov 08 22:31:54 CST 2017
+2.base=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/res/resources-debug.ap_
+5.file=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/res/resources-debug.ap_/res/layout/main.xml
+5.set=ANDROID_RESOURCE
+3.base=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/res/resources-debug.ap_
+6.file=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_694ec3ff2fdea64ef5ea55241914d7619209aa07/classes.dex
+2.set=ANDROID_RESOURCE
+4.base=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/res/resources-debug.ap_
+count=7
+0.file=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_27e13afced363cc65eefc2cf3d4fb88d9b2b2e11/classes.dex
+5.base=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/res/resources-debug.ap_
+4.set=ANDROID_RESOURCE
+6.base=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_694ec3ff2fdea64ef5ea55241914d7619209aa07
+1.file=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/res/resources-debug.ap_/resources.arsc
+1.set=ANDROID_RESOURCE
+2.file=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+6.set=DEX
+0.base=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_27e13afced363cc65eefc2cf3d4fb88d9b2b2e11
+3.file=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_launcher.png
+3.set=ANDROID_RESOURCE
+1.base=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/res/resources-debug.ap_
+4.file=/Users/ugobuy/AndroidStudioProjects/MusicPlayingServiceExample/app/build/intermediates/res/resources-debug.ap_/res/raw/badnews.m4a
+0.set=DEX

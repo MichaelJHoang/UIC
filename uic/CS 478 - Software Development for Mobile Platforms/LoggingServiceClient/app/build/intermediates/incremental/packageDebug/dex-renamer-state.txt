@@ -1,0 +1,7 @@
+#Mon Nov 13 23:25:37 CST 2017
+base.0=/Users/ugobuy/AndroidStudioProjects/LoggingServiceClient/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c5baa2cf4a90ec79511a1d75f15c69a296fafe0c
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/ugobuy/AndroidStudioProjects/LoggingServiceClient/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e05d220f80d3df56c899a9d68617909bb6a4779d/classes.dex
+base.1=/Users/ugobuy/AndroidStudioProjects/LoggingServiceClient/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e05d220f80d3df56c899a9d68617909bb6a4779d
+file.0=/Users/ugobuy/AndroidStudioProjects/LoggingServiceClient/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c5baa2cf4a90ec79511a1d75f15c69a296fafe0c/classes.dex

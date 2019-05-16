@@ -1,0 +1,4 @@
+#Wed Nov 14 18:44:06 CST 2018
+base.0=/Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceWithPendingIntent/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

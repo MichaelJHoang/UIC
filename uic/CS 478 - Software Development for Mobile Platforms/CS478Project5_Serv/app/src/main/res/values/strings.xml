@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CS 478 Project 5 Serv</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="songs">
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+        <item>five</item>
+        <item>six</item>
+        <item>seven</item>
+    </string-array>
+</resources>

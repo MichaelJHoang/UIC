@@ -1,0 +1,86 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:2:1-28:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e7d4e5c834d5d5c6585e0cb2cc476639\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\64801ef8fa42d9265e8e14b33bee1c26\AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\8752b653226417fa7b6d4ada342a9026\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:2:1-28:12
+	package
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:3:5-52
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:7:5-76
+	android:name
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:7:22-74
+application
+ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:9:5-26:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e7d4e5c834d5d5c6585e0cb2cc476639\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e7d4e5c834d5d5c6585e0cb2cc476639\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\64801ef8fa42d9265e8e14b33bee1c26\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\64801ef8fa42d9265e8e14b33bee1c26\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e7d4e5c834d5d5c6585e0cb2cc476639\AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:12:9-41
+	android:icon
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:11:9-45
+	android:allowBackup
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:10:9-36
+activity#course.examples.Services.MusicService.MusicServiceClient
+ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:13:9-22:20
+	android:label
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:15:13-45
+	android:launchMode
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:16:13-43
+	android:name
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:14:13-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:20:27-74
+service#course.examples.Services.MusicService.MusicService
+ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:24:9-49
+	android:name
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml:24:18-46
+uses-sdk
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e7d4e5c834d5d5c6585e0cb2cc476639\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e7d4e5c834d5d5c6585e0cb2cc476639\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\64801ef8fa42d9265e8e14b33bee1c26\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\64801ef8fa42d9265e8e14b33bee1c26\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\8752b653226417fa7b6d4ada342a9026\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\8752b653226417fa7b6d4ada342a9026\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\MusicPlayingServiceExample\app\src\main\AndroidManifest.xml

@@ -1,0 +1,121 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:2:1-28:12
+MERGED from [com.google.android.gms:play-services-appindexing:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-appindexing-9.8.0.aar\b2803fc6cf44e8f356667e6975ecaa91\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\d3bb9fa877d69b3c4d35367428fa2ecd\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\e5f4cfd6b6d36d95f53bc6062ef584af\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.8.0.aar\1ecab777e2221fbe6de45d4942a2d6fb\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\dfa9d318cdfc05ee07cf03edb1a49603\AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:support-v4:24.0.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\support-v4-24.0.0.aar\fe2ebe4443aeb090f10474f3782c678a\AndroidManifest.xml:17:1-27:12
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:2:1-28:12
+	package
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:3:5-49
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml
+uses-permission#course.examples.Services.KeyService.GEN_ID
+ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:7:5-82
+	android:name
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:7:22-79
+application
+ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:9:5-26:19
+MERGED from [com.google.android.gms:play-services-appindexing:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-appindexing-9.8.0.aar\b2803fc6cf44e8f356667e6975ecaa91\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-appindexing:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-appindexing-9.8.0.aar\b2803fc6cf44e8f356667e6975ecaa91\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\d3bb9fa877d69b3c4d35367428fa2ecd\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\d3bb9fa877d69b3c4d35367428fa2ecd\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\e5f4cfd6b6d36d95f53bc6062ef584af\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\e5f4cfd6b6d36d95f53bc6062ef584af\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.8.0.aar\1ecab777e2221fbe6de45d4942a2d6fb\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.8.0.aar\1ecab777e2221fbe6de45d4942a2d6fb\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\dfa9d318cdfc05ee07cf03edb1a49603\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\dfa9d318cdfc05ee07cf03edb1a49603\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:24.0.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\support-v4-24.0.0.aar\fe2ebe4443aeb090f10474f3782c678a\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.0.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\support-v4-24.0.0.aar\fe2ebe4443aeb090f10474f3782c678a\AndroidManifest.xml:25:5-20
+	android:icon
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:11:9-45
+	android:allowBackup
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:10:9-36
+activity#course.examples.Services.KeyClient.KeyServiceUser
+ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:12:9-20:20
+	android:label
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:14:13-45
+	android:name
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:13:13-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:18:27-74
+meta-data#com.google.android.gms.version
+ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\dfa9d318cdfc05ee07cf03edb1a49603\AndroidManifest.xml:20:9-121
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\dfa9d318cdfc05ee07cf03edb1a49603\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml:24:13-58
+uses-sdk
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.gms:play-services-appindexing:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-appindexing-9.8.0.aar\b2803fc6cf44e8f356667e6975ecaa91\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-appindexing-9.8.0.aar\b2803fc6cf44e8f356667e6975ecaa91\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\d3bb9fa877d69b3c4d35367428fa2ecd\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\d3bb9fa877d69b3c4d35367428fa2ecd\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\e5f4cfd6b6d36d95f53bc6062ef584af\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\e5f4cfd6b6d36d95f53bc6062ef584af\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.8.0.aar\1ecab777e2221fbe6de45d4942a2d6fb\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.8.0.aar\1ecab777e2221fbe6de45d4942a2d6fb\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\dfa9d318cdfc05ee07cf03edb1a49603\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\dfa9d318cdfc05ee07cf03edb1a49603\AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:support-v4:24.0.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\support-v4-24.0.0.aar\fe2ebe4443aeb090f10474f3782c678a\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:24.0.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\support-v4-24.0.0.aar\fe2ebe4443aeb090f10474f3782c678a\AndroidManifest.xml:21:5-23:54
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:24.0.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\support-v4-24.0.0.aar\fe2ebe4443aeb090f10474f3782c678a\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Coord\Downloads\userDownloadDirectory\CS Related\CS 478\ServiceWithIPCExampleClient\app\src\main\AndroidManifest.xml
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\d3bb9fa877d69b3c4d35367428fa2ecd\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\d3bb9fa877d69b3c4d35367428fa2ecd\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\d3bb9fa877d69b3c4d35367428fa2ecd\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\d3bb9fa877d69b3c4d35367428fa2ecd\AndroidManifest.xml:19:19-85
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\e5f4cfd6b6d36d95f53bc6062ef584af\AndroidManifest.xml:6:9-175
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\e5f4cfd6b6d36d95f53bc6062ef584af\AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\e5f4cfd6b6d36d95f53bc6062ef584af\AndroidManifest.xml:6:125-149
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\e5f4cfd6b6d36d95f53bc6062ef584af\AndroidManifest.xml:6:150-173
+	android:name
+		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Coord\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\e5f4cfd6b6d36d95f53bc6062ef584af\AndroidManifest.xml:6:79-124

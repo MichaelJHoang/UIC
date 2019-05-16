@@ -1,0 +1,7 @@
+#Mon Nov 20 23:35:26 CST 2017
+base.0=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_e174ccc38d3ad861c4c373b6c9e1204f52d2956e
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f20ef886d0007f750eb62bb1955d8b537d92158f/classes.dex
+base.1=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f20ef886d0007f750eb62bb1955d8b537d92158f
+file.0=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleClient/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_e174ccc38d3ad861c4c373b6c9e1204f52d2956e/classes.dex

@@ -1,0 +1,4 @@
+#Tue Apr 10 10:50:58 CDT 2018
+base.0=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleService/app/build/intermediates/transforms/dexMerger/debug/4
+path.0=classes.dex
+renamed.0=classes.dex

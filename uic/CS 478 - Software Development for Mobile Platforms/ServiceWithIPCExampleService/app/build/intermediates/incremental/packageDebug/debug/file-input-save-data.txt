@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Wed Nov 14 22:02:52 CST 2018
+0.baseType=DIRECTORY
+0.base=/Users/ugobuy/AndroidStudioProjectsJava/ServiceWithIPCExampleService/app/build/intermediates/transforms/dexMerger/debug/18
+0.path=classes.dex
+0.set=DEX
+count=1

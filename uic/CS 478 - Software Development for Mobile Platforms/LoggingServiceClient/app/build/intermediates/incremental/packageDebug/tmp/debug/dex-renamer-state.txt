@@ -1,0 +1,4 @@
+#Tue Apr 09 10:25:20 CDT 2019
+base.0=/Users/ugobuy/AndroidStudioProjectsJava/LoggingServiceClient/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,12 @@
+#Internal package file, do not edit.
+#Mon Nov 20 22:15:58 CST 2017
+1.base=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleService/app/build/intermediates/res/resources-debug.ap_
+1.file=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleService/app/build/intermediates/res/resources-debug.ap_/resources.arsc
+2.base=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleService/app/build/intermediates/res/resources-debug.ap_
+2.set=ANDROID_RESOURCE
+2.file=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleService/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_launcher.png
+count=3
+1.set=ANDROID_RESOURCE
+0.set=ANDROID_RESOURCE
+0.base=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleService/app/build/intermediates/res/resources-debug.ap_
+0.file=/Users/ugobuy/AndroidStudioProjects/ServiceWithIPCExampleService/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
