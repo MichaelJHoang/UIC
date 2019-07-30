@@ -1,3 +1,6 @@
 ﻿  RayTracer_driver.cpp
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(69,17): warning C4305:  'initializing': truncation from 'double' to 'float'
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(32,10): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(47,10): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(49,14): warning C4244:  'argument': conversion from 'double' to 'const float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(49,77): warning C4305:  'argument': truncation from 'double' to 'float'
   RayTracer.vcxproj -> C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\Debug\RayTracer.exe

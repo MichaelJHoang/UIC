@@ -1,53 +1,60 @@
+/*
+ *
+ *	Author: Jon-Michael Hoang
+ *	
+ *	What this is: This is a ray tracer program that I developed based off of a textbook.
+ *				  What ray tracing is is that it's an algorithm in computer graphics that enables
+ *				  one to render life-like light and shadows.
+ *
+ *	How to use this: Simply compile and go to the directory of this program to find a
+ *					 "raytrace_output.ppm" file, toss it into a NetPBM viewer and see the results
+ *					 The reason as to why I'm doing this is because it allows for faster computation.
+ *
+ */
+
+// standard libraries used for this project
 #include <stdio.h>
 #include <iostream>
 #include <fstream>
 #include <string>
 
+// 
+#include "ray.h"
+
+// using this namespace to save myself from having to type and read alot.
 using namespace std;
 
-namespace vec3
+bool hitSphere(const vec3::vec3& center, float radius, const ray::ray& r)
 {
-	class vec3
-	{
-		private:
-			float e[3] = { 0, 0, 0 };
+	vec3::vec3 oc = r.origin() - center;
 
-		public:
-			vec3(float e0, float e1, float e2)
-			{
-				e[0] = e0;
-				e[1] = e1;
-				e[2] = e2;
-			}
+	float a = dot(r.direction(), r.direction());
+	float b = 2.0 * dot(oc, r.direction());
+	float c = dot(oc, oc) - radius * radius;
 
-			inline float x() const { return e[0]; }
-			inline float y() const { return e[1]; }
-			inline float z() const { return e[2]; }
-			inline float r() const { return e[0]; }
-			inline float g() const { return e[1]; }
-			inline float b() const { return e[2]; }
+	float discriminant = b * b - 4 * a * c;
+	
+	return (discriminant > 0);
+}
 
-			inline const vec3& operator+() const { return *this; }
+vec3::vec3 color(const ray::ray& r)
+{
+	if (hitSphere(vec3::vec3(0, 0, -1), 0.5, r))
+		return vec3::vec3(1, 0, 0);
 
-			inline vec3 operator-() const
-			{
-				return vec3(-e[0], -e[1], -e[2]);
-			}
+	vec3::vec3 unitDirection = unit_vector(r.direction());;
 
-			inline float operator[] (int x) const
-			{
-				return e[x];
-			}
+	float t = .5 * (unitDirection.y() + 1.0);
 
-			inline float& operator[] (int x)
-			{
-				return e[x];
-			}
-	};
+	return (1.0 - t) * vec3::vec3(1.0, 1.0, 1.0) + t * vec3::vec3(0.5, 0.7, 1.0);
 }
 
 
+/*
 
+	Main
+
+*/
 int main()
 {
 	int nx = 200;
@@ -57,22 +64,28 @@ int main()
 
 	outfile.open("raytrace_output.ppm");
 
-	// cout << "P3\n" << nx << " " << ny << "\n255\n";
 	outfile << "P3\n" << nx << " " << ny << "\n255\n";
+
+	vec3::vec3 lowerLeftCorner(-2.0, -1.0, -1.0);
+	vec3::vec3 horizontal(4.0, 0.0, 0.0);
+	vec3::vec3 vertical(0.0, 2.0, 0.0);
+	vec3::vec3 origin(0.0, 0.0, 0.0);
 
 	for (int x = ny - 1; x >= 0; x--)
 	{
 		for (int y = 0; y < nx; y++)
 		{
-			float r = float(y) / float(nx);
-			float g = float(x) / float(ny);
-			float b = 0.2;
+			float u = float(y) / float(nx);
+			float v = float(x) / float(ny);
+			
+			ray::ray r(origin, lowerLeftCorner + u * horizontal + v * vertical);
 
-			int ir = int(255.99 * r);
-			int ig = int(255.99 * g);
-			int ib = int(255.99 * b);
+			vec3::vec3 col = color(r);
 
-			// cout << ir << " " << ig << " " << ib << "\n";
+			int ir = int(255.99 * col[0]);
+			int ig = int(255.99 * col[1]);
+			int ib = int(255.99 * col[2]);
+
 			outfile << ir << " " << ig << " " << ib << "\n";
 		}
 	}
@@ -83,3 +96,8 @@ int main()
 
 	return 0;
 }
+/*
+
+	END: Main
+
+*/
