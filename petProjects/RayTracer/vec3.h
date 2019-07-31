@@ -62,12 +62,59 @@ namespace vec3
 				return e[x];
 			}
 
-			inline vec3& operator+= (const vec3& v2);
-			inline vec3& operator-= (const vec3& v2);
-			inline vec3& operator*= (const vec3& v2);
-			inline vec3& operator/= (const vec3& v2);
-			inline vec3& operator*= (const float t);
-			inline vec3& operator/= (const float t);
+			inline vec3& operator+= (const vec3& v)
+			{
+				e[0] += v.e[0];
+				e[1] += v.e[1];
+				e[2] += v.e[2];
+
+				return *this;
+			}
+
+			inline vec3& operator-= (const vec3& v)
+			{
+				e[0] -= v.e[0];
+				e[1] -= v.e[1];
+				e[2] -= v.e[2];
+
+				return *this;
+			}
+
+			inline vec3& operator*= (const vec3& v)
+			{
+				e[0] *= v.e[0];
+				e[1] *= v.e[1];
+				e[2] *= v.e[2];
+
+				return *this;
+			}
+
+			inline vec3& operator/= (const vec3& v)
+			{
+				e[0] /= v.e[0];
+				e[1] /= v.e[1];
+				e[2] /= v.e[2];
+
+				return *this;
+			}
+
+			inline vec3& operator*= (const float t)
+			{
+				e[0] *= t;
+				e[1] *= t;
+				e[2] *= t;
+
+				return *this;
+			}
+
+			inline vec3& operator/= (const float t)
+			{
+				e[0] /= (1.0 / t);
+				e[1] /= (1.0 / t);
+				e[2] /= (1.0 / t);
+
+				return *this;
+			}
 
 
 
@@ -121,11 +168,18 @@ inline vec3::vec3 operator* (const float n, const vec3::vec3& v)
 }
 
 // and division
-inline vec3::vec3 operator/ (const vec3::vec3& v1, const float n)
+inline vec3::vec3 operator/ (const vec3::vec3& v, const float n)
 {
-	return vec3::vec3(v1.e[0] / n,
-					  v1.e[1] / n,
-					  v1.e[2] / n);
+	return vec3::vec3(v.e[0] / n,
+					  v.e[1] / n,
+					  v.e[2] / n);
+}
+
+inline vec3::vec3 operator/ (const float n, const vec3::vec3& v)
+{
+	return vec3::vec3(v.e[0] / n,
+					  v.e[1] / n,
+					  v.e[2] / n);
 }
 
 // given a vector, return its unit vector

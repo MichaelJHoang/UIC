@@ -24,7 +24,7 @@
 // using this namespace to save myself from having to type and read alot.
 using namespace std;
 
-bool hitSphere(const vec3::vec3& center, float radius, const ray::ray& r)
+float hitSphere(const vec3::vec3& center, float radius, const ray::ray& r)
 {
 	vec3::vec3 oc = r.origin() - center;
 
@@ -34,17 +34,23 @@ bool hitSphere(const vec3::vec3& center, float radius, const ray::ray& r)
 
 	float discriminant = b * b - 4 * a * c;
 	
-	return (discriminant > 0);
+	return (discriminant < 0) ? -1.0 : (-b - sqrt(discriminant)) / (2.0 * a);
 }
 
 vec3::vec3 color(const ray::ray& r)
 {
-	if (hitSphere(vec3::vec3(0, 0, -1), 0.5, r))
-		return vec3::vec3(1, 0, 0);
+	float t = hitSphere(vec3::vec3(0, 0, -1), 0.5, r);
 
-	vec3::vec3 unitDirection = unit_vector(r.direction());;
+	if (t > 0.0)
+	{
+		vec3::vec3 N = unit_vector(r.point_at_parameter(t) - vec3::vec3(0, 0, -1));
 
-	float t = .5 * (unitDirection.y() + 1.0);
+		return 0.5 * vec3::vec3(N.x() + 1, N.y() + 1, N.z() + 1);
+	}
+
+	vec3::vec3 unitDirection = unit_vector(r.direction());
+
+	t = 0.5 * (unitDirection.y() + 1.0);
 
 	return (1.0 - t) * vec3::vec3(1.0, 1.0, 1.0) + t * vec3::vec3(0.5, 0.7, 1.0);
 }
