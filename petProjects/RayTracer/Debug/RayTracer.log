@@ -2,9 +2,8 @@
 C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\vec3.h(112,1): warning C4244:  '/=': conversion from 'double' to 'float', possible loss of data
 C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\vec3.h(113,1): warning C4244:  '/=': conversion from 'double' to 'float', possible loss of data
 C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\vec3.h(114,1): warning C4244:  '/=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(32,10): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(37,23): warning C4244:  'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(53,10): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(55,14): warning C4244:  'argument': conversion from 'double' to 'const float', possible loss of data
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(55,77): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\hitablelist.h(37,29): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(43,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(45,15): warning C4244:  'argument': conversion from 'double' to 'const float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(45,78): warning C4305:  'argument': truncation from 'double' to 'float'
   RayTracer.vcxproj -> C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\Debug\RayTracer.exe

@@ -19,40 +19,32 @@
 #include <string>
 
 // 
-#include "ray.h"
+#include "sphere.h"
+#include "hitablelist.h"
+#include "float.h"
+#include "camera.h"
 
 // using this namespace to save myself from having to type and read alot.
 using namespace std;
 
-float hitSphere(const vec3::vec3& center, float radius, const ray::ray& r)
+vec3::vec3 color(const ray::ray& r, hitable::hitable *world)
 {
-	vec3::vec3 oc = r.origin() - center;
+	hitRecord rec;
 
-	float a = dot(r.direction(), r.direction());
-	float b = 2.0 * dot(oc, r.direction());
-	float c = dot(oc, oc) - radius * radius;
-
-	float discriminant = b * b - 4 * a * c;
-	
-	return (discriminant < 0) ? -1.0 : (-b - sqrt(discriminant)) / (2.0 * a);
-}
-
-vec3::vec3 color(const ray::ray& r)
-{
-	float t = hitSphere(vec3::vec3(0, 0, -1), 0.5, r);
-
-	if (t > 0.0)
+	if (world -> hit(r, 0.0, FLT_MAX, rec))
 	{
-		vec3::vec3 N = unit_vector(r.point_at_parameter(t) - vec3::vec3(0, 0, -1));
-
-		return 0.5 * vec3::vec3(N.x() + 1, N.y() + 1, N.z() + 1);
+		return 0.5 * vec3::vec3(rec.normal.x() + 1, 
+								rec.normal.y() + 1, 
+								rec.normal.z() + 1);
 	}
+	else
+	{
+		vec3::vec3 unitDirection = unit_vector(r.direction());
 
-	vec3::vec3 unitDirection = unit_vector(r.direction());
+		float t = 0.5 * (unitDirection.y() + 1.0);
 
-	t = 0.5 * (unitDirection.y() + 1.0);
-
-	return (1.0 - t) * vec3::vec3(1.0, 1.0, 1.0) + t * vec3::vec3(0.5, 0.7, 1.0);
+		return (1.0 - t) * vec3::vec3(1.0, 1.0, 1.0) + t * vec3::vec3(0.5, 0.7, 1.0);
+	}
 }
 
 
@@ -60,11 +52,13 @@ vec3::vec3 color(const ray::ray& r)
 
 	Main
 
+	TODO: implement threads.
+
 */
 int main()
 {
-	int nx = 200;
-	int ny = 100;
+	int nx = 800;
+	int ny = 400;
 
 	ofstream outfile;
 
@@ -77,6 +71,13 @@ int main()
 	vec3::vec3 vertical(0.0, 2.0, 0.0);
 	vec3::vec3 origin(0.0, 0.0, 0.0);
 
+	hitable::hitable* list[2];
+
+	list[0] = new sphere::sphere(vec3::vec3(0, 0, -1.0), 0.5);
+	list[1] = new sphere::sphere(vec3::vec3(0, -100.5, -1.0), 100);
+
+	hitable::hitable* world = new hitableList::hitableList(list, 2);
+
 	for (int x = ny - 1; x >= 0; x--)
 	{
 		for (int y = 0; y < nx; y++)
@@ -86,7 +87,8 @@ int main()
 			
 			ray::ray r(origin, lowerLeftCorner + u * horizontal + v * vertical);
 
-			vec3::vec3 col = color(r);
+			vec3::vec3 p = r.point_at_parameter(2.0);
+			vec3::vec3 col = color(r, world);
 
 			int ir = int(255.99 * col[0]);
 			int ig = int(255.99 * col[1]);

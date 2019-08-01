@@ -5,44 +5,59 @@
 
 /*
 
-	Ray class and related functions
+	Ray class and related functions, is a necessity because without it, there'd
+	be no "ray" in RAYtracing.
 
 */
 namespace ray
 {
 	class ray
 	{
-	private:
+		private:
 
-	public:
+		public:
 
-		vec3::vec3 A, B;
+			vec3::vec3 A, B;
 
-		ray()
-		{
+			/*
+		
+				constructors
 
-		}
+			*/
+			ray()
+			{
 
-		ray(const vec3::vec3& a, const vec3::vec3& b)
-		{
-			A = a;
-			B = b;
-		}
+			}
 
-		vec3::vec3 origin() const
-		{
-			return A;
-		}
+			ray(const vec3::vec3& a, const vec3::vec3& b)
+			{
+				A = a;
+				B = b;
+			}
 
-		vec3::vec3 direction() const
-		{
-			return B;
-		}
+			vec3::vec3 origin() const
+			{
+				return A;
+			}
 
-		vec3::vec3 point_at_parameter(float t) const
-		{
-			return A + t * B;
-		}
+			vec3::vec3 direction() const
+			{
+				return B;
+			}
+
+
+			/*
+		
+				Forumla for a ray (also called a half-line) = A + tB
+				A = origin
+				B = direction
+				t = distance between A and B
+
+			*/
+			vec3::vec3 point_at_parameter(float t) const
+			{
+				return A + t * B;
+			}
 	};
 }
 
