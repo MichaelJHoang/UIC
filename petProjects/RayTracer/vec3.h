@@ -109,9 +109,9 @@ namespace vec3
 
 			inline vec3& operator/= (const float t)
 			{
-				e[0] /= (1.0 / t);
-				e[1] /= (1.0 / t);
-				e[2] /= (1.0 / t);
+				e[0] *= (1.0 / t);
+				e[1] *= (1.0 / t);
+				e[2] *= (1.0 / t);
 
 				return *this;
 			}

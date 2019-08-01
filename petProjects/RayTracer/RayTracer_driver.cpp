@@ -14,6 +14,7 @@
 
 // standard libraries used for this project
 #include <stdio.h>
+#include <stdlib.h>
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -59,6 +60,7 @@ int main()
 {
 	int nx = 800;
 	int ny = 400;
+	int nz = 400;
 
 	ofstream outfile;
 
@@ -66,10 +68,13 @@ int main()
 
 	outfile << "P3\n" << nx << " " << ny << "\n255\n";
 
+	/*
 	vec3::vec3 lowerLeftCorner(-2.0, -1.0, -1.0);
 	vec3::vec3 horizontal(4.0, 0.0, 0.0);
 	vec3::vec3 vertical(0.0, 2.0, 0.0);
 	vec3::vec3 origin(0.0, 0.0, 0.0);
+	*/
+	
 
 	hitable::hitable* list[2];
 
@@ -78,17 +83,32 @@ int main()
 
 	hitable::hitable* world = new hitableList::hitableList(list, 2);
 
+	camera::camera cam;
+
 	for (int x = ny - 1; x >= 0; x--)
 	{
 		for (int y = 0; y < nx; y++)
 		{
-			float u = float(y) / float(nx);
-			float v = float(x) / float(ny);
-			
-			ray::ray r(origin, lowerLeftCorner + u * horizontal + v * vertical);
+			vec3::vec3 col(0, 0, 0);
 
-			vec3::vec3 p = r.point_at_parameter(2.0);
-			vec3::vec3 col = color(r, world);
+			for (int z = 0; z < nz; z++)
+			{
+				float u = float(y + (rand() / (RAND_MAX + 1.0))) / float(nx);
+				float v = float(x + (rand() / (RAND_MAX + 1.0))) / float(ny);
+
+				ray::ray r = cam.getRay(u, v);
+
+				vec3::vec3 p = r.point_at_parameter(2.0);
+
+				col += color(r, world);
+			}
+			
+			//ray::ray r(origin, lowerLeftCorner + u * horizontal + v * vertical);
+
+			//vec3::vec3 p = r.point_at_parameter(2.0);
+			//vec3::vec3 col = color(r, world);
+
+			col /= float(nz);
 
 			int ir = int(255.99 * col[0]);
 			int ig = int(255.99 * col[1]);
