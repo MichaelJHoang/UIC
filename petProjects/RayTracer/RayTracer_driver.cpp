@@ -30,15 +30,34 @@
 // using this namespace to save myself from having to type and read alot.
 using namespace std;
 
+/*
+	TODO: Comment
+*/
+vec3::vec3 randomInUnitSphere()
+{
+	vec3::vec3 p;
+
+	do
+	{
+		p = 2.0 * vec3::vec3((rand() / (RAND_MAX + 1.0)), 
+							 (rand() / (RAND_MAX + 1.0)), 
+							 (rand() / (RAND_MAX + 1.0))) 
+							 - vec3::vec3(1, 1, 1);
+	} while (dot(p, p) >= 1.0);
+
+	return p;
+}
+
 vec3::vec3 color(const ray::ray& r, hitable::hitable *world)
 {
 	hitRecord rec;
 
 	if (world -> hit(r, 0.0, FLT_MAX, rec))
 	{
-		return 0.5 * vec3::vec3(rec.normal.x() + 1, 
-								rec.normal.y() + 1, 
-								rec.normal.z() + 1);
+		// TODO: comment
+		vec3::vec3 target = rec.p + rec.normal + randomInUnitSphere();
+
+		return 0.5 * color(ray::ray(rec.p, target - rec.p), world);
 	}
 	else
 	{
@@ -46,6 +65,7 @@ vec3::vec3 color(const ray::ray& r, hitable::hitable *world)
 
 		float t = 0.5 * (unitDirection.y() + 1.0);
 
+		// linear interpolation = blendValue = (1-t)*startValue + t*endValue
 		return (1.0 - t) * vec3::vec3(1.0, 1.0, 1.0) + t * vec3::vec3(0.5, 0.7, 1.0);
 	}
 }
@@ -111,6 +131,8 @@ void startRayTracingProgram()
 			// write the pixel value to the ppm file
 			col /= float(nz);
 
+			col = vec3::vec3(sqrt(col[0]), sqrt(col[1]), sqrt(col[2]));
+
 			int ir = int(255.99 * col[0]);
 			int ig = int(255.99 * col[1]);
 			int ib = int(255.99 * col[2]);
@@ -153,7 +175,7 @@ int main()
 
 	duration = (clock() - initialTime) / (double)CLOCKS_PER_SEC;
 
-	std::cout << "Duration: " << duration << " seconds." << endl;
+	std::cout << "Duration: " << int(duration / 60) << " minutes and " << fmod(duration, 60) << " seconds." << endl;
 
 	return 0;
 }
