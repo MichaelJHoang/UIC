@@ -130,9 +130,6 @@ namespace vec3
 			{
 				return this->length() * this->length();
 			}
-
-			// retrieve a normed vector space, which is basically a vector of length 1
-			inline void make_unit_vector();
 	};
 }
 

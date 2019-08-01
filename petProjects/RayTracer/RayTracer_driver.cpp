@@ -18,8 +18,10 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <thread>
+#include <ctime>
 
-// 
+// programmer-defined includes
 #include "sphere.h"
 #include "hitablelist.h"
 #include "float.h"
@@ -49,50 +51,53 @@ vec3::vec3 color(const ray::ray& r, hitable::hitable *world)
 }
 
 
-/*
-
-	Main
-
-	TODO: implement threads.
-
-*/
-int main()
+void startRayTracingProgram()
 {
+	// scene dimensions
 	int nx = 800;
 	int ny = 400;
 	int nz = 400;
 
+	// as of current, the program writes to a ppm file.
+	// maybe create an application window to display result?
 	ofstream outfile;
 
+	// look for this file to push into a NetPBM viewer
 	outfile.open("raytrace_output.ppm");
 
 	outfile << "P3\n" << nx << " " << ny << "\n255\n";
 
-	/*
-	vec3::vec3 lowerLeftCorner(-2.0, -1.0, -1.0);
-	vec3::vec3 horizontal(4.0, 0.0, 0.0);
-	vec3::vec3 vertical(0.0, 2.0, 0.0);
-	vec3::vec3 origin(0.0, 0.0, 0.0);
-	*/
-	
-
+	// creates a list of hitable objects
 	hitable::hitable* list[2];
 
+	// in this case, spheres.
 	list[0] = new sphere::sphere(vec3::vec3(0, 0, -1.0), 0.5);
 	list[1] = new sphere::sphere(vec3::vec3(0, -100.5, -1.0), 100);
 
 	hitable::hitable* world = new hitableList::hitableList(list, 2);
 
+	// set where the user is looking at into the scene
 	camera::camera cam;
 
+	/*
+		TODO: this section here runs too slow - need to multithread to prevent long compile times
+	*/
 	for (int x = ny - 1; x >= 0; x--)
 	{
 		for (int y = 0; y < nx; y++)
 		{
 			vec3::vec3 col(0, 0, 0);
 
+			/*
+				TODO: elaborate more?
+
+				What this does is that it shoots rays into the scene and sees if there was anything hit.
+				If so, return the color of the supposed hit object and anti-alias it to remove jaggies.
+			*/
 			for (int z = 0; z < nz; z++)
 			{
+				// anti-aliasing magic in these two lines
+				// major runtime overhead, though - need to fix with multithreading or CUDA?
 				float u = float(y + (rand() / (RAND_MAX + 1.0))) / float(nx);
 				float v = float(x + (rand() / (RAND_MAX + 1.0))) / float(ny);
 
@@ -102,12 +107,8 @@ int main()
 
 				col += color(r, world);
 			}
-			
-			//ray::ray r(origin, lowerLeftCorner + u * horizontal + v * vertical);
 
-			//vec3::vec3 p = r.point_at_parameter(2.0);
-			//vec3::vec3 col = color(r, world);
-
+			// write the pixel value to the ppm file
 			col /= float(nz);
 
 			int ir = int(255.99 * col[0]);
@@ -120,7 +121,39 @@ int main()
 
 	outfile.close();
 
-	cout << "Done." << endl;
+	std::cout << "Ray-Tracing complete." << endl;
+}
+
+
+/*
+
+	Main
+
+	TODO: implement threads.
+
+*/
+int main()
+{
+	std::cout << "Starting the Ray-Tracing program..." << endl;
+
+	// time how long it takes for the thing to finish
+	clock_t initialTime = clock();
+	double duration = 0.0;
+
+	/*
+		TODO: implement multithreading. As of 7/31/2019, it takes roughly 5 minutes + several seconds to
+		finish
+	*/
+	thread t(startRayTracingProgram);
+
+	if (t.joinable())
+	{
+		t.join();
+	}
+
+	duration = (clock() - initialTime) / (double)CLOCKS_PER_SEC;
+
+	std::cout << "Duration: " << duration << " seconds." << endl;
 
 	return 0;
 }
