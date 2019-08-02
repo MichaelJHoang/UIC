@@ -13,6 +13,7 @@
  */
 
 // standard libraries used for this project
+#pragma once
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
@@ -22,10 +23,14 @@
 #include <ctime>
 
 // programmer-defined includes
-#include "sphere.h"
-#include "hitablelist.h"
 #include "float.h"
 #include "camera.h"
+#include "material.h"
+#include "hitable.h"
+#include "hitablelist.h"
+#include "ray.h"
+#include "sphere.h"
+#include "vec3.h"
 
 // using this namespace to save myself from having to type and read alot.
 using namespace std;
@@ -33,35 +38,33 @@ using namespace std;
 /*
 	TODO: Comment
 */
-vec3::vec3 randomInUnitSphere()
-{
-	vec3::vec3 p;
-
-	do
-	{
-		p = 2.0 * vec3::vec3((rand() / (RAND_MAX + 1.0)), 
-							 (rand() / (RAND_MAX + 1.0)), 
-							 (rand() / (RAND_MAX + 1.0))) 
-							 - vec3::vec3(1, 1, 1);
-	} while (dot(p, p) >= 1.0);
-
-	return p;
-}
-
-vec3::vec3 color(const ray::ray& r, hitable::hitable *world)
+vec3 color(const ray& r, hitable *world, int depth)
 {
 	hitRecord rec;
 
-	if (world -> hit(r, 0.0, FLT_MAX, rec))
+	if (world -> hit(r, 0.001, FLT_MAX, rec))
 	{
 		// TODO: comment
-		vec3::vec3 target = rec.p + rec.normal + randomInUnitSphere();
+		ray scattered;
 
-		return 0.5 * color(ray::ray(rec.p, target - rec.p), world);
+		vec3 attenuation;
+
+		//vec3::vec3 target = rec.p + rec.normal + randomInUnitSphere();
+
+		if (depth < 50 && rec.mat_ptr->scatter(r, rec, attenuation, scattered))
+		{
+			return attenuation * color(scattered, world, depth + 1);
+		}
+		else
+		{
+			return vec3::vec3(0, 0, 0);
+		}
+
+		//return 0.5 * color(ray::ray(rec.p, target - rec.p), world);
 	}
 	else
 	{
-		vec3::vec3 unitDirection = unit_vector(r.direction());
+		vec3 unitDirection = unit_vector(r.direction());
 
 		float t = 0.5 * (unitDirection.y() + 1.0);
 
@@ -88,16 +91,26 @@ void startRayTracingProgram()
 	outfile << "P3\n" << nx << " " << ny << "\n255\n";
 
 	// creates a list of hitable objects
-	hitable::hitable* list[2];
+	hitable* list[4];
 
 	// in this case, spheres.
-	list[0] = new sphere::sphere(vec3::vec3(0, 0, -1.0), 0.5);
-	list[1] = new sphere::sphere(vec3::vec3(0, -100.5, -1.0), 100);
+	list[0] = new sphere(vec3(0, 0, -1), 
+						 0.5, 
+						 new lambertian(vec3(0.8, 0.3, 0.3)));
+	list[1] = new sphere(vec3(0, -100.5, -1.0), 
+						 100, 
+						 new lambertian(vec3(0.8, 0.8, 0.0)));
+	list[2] = new sphere(vec3(1, 0, -1), 
+						 0.5, 
+						 new metal(vec3(0.8, 0.6, 0.2)));
+	list[3] = new sphere(vec3(-1, 0, -1),
+						 0.5,
+						 new metal(vec3(0.8, 0.8, 0.8)));
 
-	hitable::hitable* world = new hitableList::hitableList(list, 2);
+	hitable* world = new hitableList(list, 4);
 
 	// set where the user is looking at into the scene
-	camera::camera cam;
+	camera cam;
 
 	/*
 		TODO: this section here runs too slow - need to multithread to prevent long compile times
@@ -106,7 +119,7 @@ void startRayTracingProgram()
 	{
 		for (int y = 0; y < nx; y++)
 		{
-			vec3::vec3 col(0, 0, 0);
+			vec3 col(0, 0, 0);
 
 			/*
 				TODO: elaborate more?
@@ -121,17 +134,17 @@ void startRayTracingProgram()
 				float u = float(y + (rand() / (RAND_MAX + 1.0))) / float(nx);
 				float v = float(x + (rand() / (RAND_MAX + 1.0))) / float(ny);
 
-				ray::ray r = cam.getRay(u, v);
+				ray r = cam.getRay(u, v);
 
-				vec3::vec3 p = r.point_at_parameter(2.0);
+				vec3 p = r.point_at_parameter(2.0);
 
-				col += color(r, world);
+				col += color(r, world, 0);
 			}
 
 			// write the pixel value to the ppm file
 			col /= float(nz);
 
-			col = vec3::vec3(sqrt(col[0]), sqrt(col[1]), sqrt(col[2]));
+			col = vec3(sqrt(col[0]), sqrt(col[1]), sqrt(col[2]));
 
 			int ir = int(255.99 * col[0]);
 			int ig = int(255.99 * col[1]);

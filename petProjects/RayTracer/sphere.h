@@ -1,18 +1,18 @@
+#pragma once
 #ifndef SPHEREH
 #define SPHEREH
 
 #include "hitable.h"
 
-namespace sphere
-{
 	// a sphere is an object that is hitable
-	class sphere : public hitable::hitable
-	{
+class sphere : public hitable
+{
 	public:
 
 		// basic sphere properties
-		vec3::vec3 center;
+		vec3 center;
 		float radius;
+		material* mat;
 
 		/*
 			constructors
@@ -22,19 +22,18 @@ namespace sphere
 
 		}
 
-		sphere(vec3::vec3 center, float r) : center(center), radius(r) {};
+		sphere(vec3 center, float r, material* mat) : center(center), radius(r), mat(mat) {};
 
 		// inheritable/overloadable function
-		virtual bool hit(const ray::ray& r, float tmin, float tmax, hitRecord& rec) const;
-	};
-}
+		virtual bool hit(const ray& r, float tmin, float tmax, hitRecord& rec) const;
+};
 
 /*
 	Given a ray that is shot into the scene, determine if said ray actually hits the sphere
 
 	tmin and tmax to allow "hit" intervals and rec to record hits
 */
-bool sphere::sphere::hit(const ray::ray& r, float tmin, float tmax, hitRecord& rec) const
+bool sphere::hit(const ray& r, float tmin, float tmax, hitRecord& rec) const
 {
 	/*
 		figure if the ray p(t) = A + tB ever hits the sphere
@@ -44,7 +43,7 @@ bool sphere::sphere::hit(const ray::ray& r, float tmin, float tmax, hitRecord& r
 	*/
 	
 	// vector from ray's origin to center of the sphere
-	vec3::vec3 oc = r.origin() - center;
+	vec3 oc = r.origin() - center;
 
 	/*
 		full form of ray p(t): dot((A + tB - C), (A + tb - C)) == R*R
@@ -76,6 +75,7 @@ bool sphere::sphere::hit(const ray::ray& r, float tmin, float tmax, hitRecord& r
 			rec.t = temp;
 			rec.p = r.point_at_parameter(rec.t);
 			rec.normal = (rec.p - center) / radius;
+			rec.mat_ptr = mat;
 
 			return true;
 		}
@@ -87,6 +87,7 @@ bool sphere::sphere::hit(const ray::ray& r, float tmin, float tmax, hitRecord& r
 			rec.t = temp;
 			rec.p = r.point_at_parameter(rec.t);
 			rec.normal = (rec.p - center) / radius;
+			rec.mat_ptr = mat;
 
 			return true;
 		}
@@ -95,6 +96,5 @@ bool sphere::sphere::hit(const ray::ray& r, float tmin, float tmax, hitRecord& r
 	// ray didn't hit the object
 	return false;
 }
-
 
 #endif

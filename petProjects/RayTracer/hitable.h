@@ -1,13 +1,17 @@
+#pragma once
 #ifndef HITABLEH
 #define HITABLEH
 
 #include "ray.h"
 
+class material;
+
 typedef struct hit_record
 {
 	float t;
-	vec3::vec3 p;
-	vec3::vec3 normal;
+	vec3 p;
+	vec3 normal;
+	material* mat_ptr;
 }hitRecord;
 
 /*
@@ -15,19 +19,16 @@ typedef struct hit_record
 	abstract class hitable
 
 */
-namespace hitable
-{ 
-	class hitable
-	{
-		public:
+class hitable
+{
+	public:
 
-			/*
+		/*
 		
-				there's a min and max - otherwise rays can go forever
+			there's a min and max - otherwise rays can go forever
 		
-			*/
-			virtual bool hit(const ray::ray& r, float tmin, float tmax, hitRecord& rec) const = 0;
-	};
-}
+		*/
+		virtual bool hit(const ray& r, float tmin, float tmax, hitRecord& rec) const = 0;
+};
 
 #endif
