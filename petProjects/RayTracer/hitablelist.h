@@ -11,7 +11,7 @@ class hitableList : public hitable
 		// variable to maintain a list of hitable objects/points
 		hitable** list;
 
-		int listSize = 0;
+		int listSize;
 
 		/*
 			constructors

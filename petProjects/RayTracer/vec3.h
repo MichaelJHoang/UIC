@@ -135,55 +135,61 @@ class vec3
 inline vec3 operator+ (const vec3& v1, const vec3& v2)
 {
 	return vec3(v1.e[0] + v2.e[0],
-					  v1.e[1] + v2.e[1],
-					  v1.e[2] + v2.e[2]);
+				v1.e[1] + v2.e[1],
+				v1.e[2] + v2.e[2]);
 }
 
 // subtraction,
 inline vec3 operator- (const vec3& v1, const vec3& v2)
 {
 	return vec3(v1.e[0] - v2.e[0],
-					  v1.e[1] - v2.e[1],
-					  v1.e[2] - v2.e[2]);
+				v1.e[1] - v2.e[1],
+				v1.e[2] - v2.e[2]);
 }
 
 // multiplication,
 inline vec3 operator* (const vec3& v, const float n)
 {
 	return vec3(v.e[0] * n,
-					  v.e[1] * n,
-					  v.e[2] * n);
+				v.e[1] * n,
+				v.e[2] * n);
 }
 
 inline vec3 operator* (const float n, const vec3& v)
 {
 	return vec3(v.e[0] * n,
-					  v.e[1] * n,
-					  v.e[2] * n);
+				v.e[1] * n,
+				v.e[2] * n);
 }
 
 inline vec3 operator* (const vec3& v1, const vec3& v2)
 {
 	return vec3(v1.e[0] * v2.e[0], 
-					  v1.e[1] * v2.e[1], 
-					  v1.e[2] * v2.e[2]);
+				v1.e[1] * v2.e[1], 
+				v1.e[2] * v2.e[2]);
 }
 
 // and division
 inline vec3 operator/ (const vec3& v, const float n)
 {
 	return vec3(v.e[0] / n,
-					  v.e[1] / n,
-					  v.e[2] / n);
+				v.e[1] / n,
+				v.e[2] / n);
 }
 
 inline vec3 operator/ (const float n, const vec3& v)
 {
 	return vec3(v.e[0] / n,
-					  v.e[1] / n,
-					  v.e[2] / n);
+				v.e[1] / n,
+				v.e[2] / n);
 }
 
+inline vec3 operator/ (const vec3& v1, const vec3& v2)
+{
+	return vec3(v1.e[0] / v2.e[0],
+				v1.e[1] / v2.e[1],
+				v1.e[2] / v2.e[2]);
+}
 // given a vector, return its unit vector
 // making the unit vector in the same direction as the input vector
 inline vec3 unit_vector(vec3 v)
@@ -203,8 +209,8 @@ inline float dot(const vec3& v1, const vec3& v2)
 inline vec3 cross(const vec3& v1, const vec3& v2)
 {
 	return vec3((v1.e[1] * v2.e[2] - v1.e[2] * v2.e[1]),
-					 (-(v1.e[0] * v2.e[2] - v1.e[2] * v2.e[0])),
-					 (v1.e[0] * v2.e[1] - v1.e[1] * v2.e[0]));
+				(-(v1.e[0] * v2.e[2] - v1.e[2] * v2.e[0])),
+				(v1.e[0] * v2.e[1] - v1.e[1] * v2.e[0]));
 }
 /*
 

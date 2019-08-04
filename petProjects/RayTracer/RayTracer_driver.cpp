@@ -32,6 +32,8 @@
 #include "sphere.h"
 #include "vec3.h"
 
+#define drand48() (rand() / (RAND_MAX + 1.0))
+
 // using this namespace to save myself from having to type and read alot.
 using namespace std;
 
@@ -49,8 +51,6 @@ vec3 color(const ray& r, hitable *world, int depth)
 
 		vec3 attenuation;
 
-		//vec3::vec3 target = rec.p + rec.normal + randomInUnitSphere();
-
 		if (depth < 50 && rec.mat_ptr->scatter(r, rec, attenuation, scattered))
 		{
 			return attenuation * color(scattered, world, depth + 1);
@@ -59,8 +59,6 @@ vec3 color(const ray& r, hitable *world, int depth)
 		{
 			return vec3::vec3(0, 0, 0);
 		}
-
-		//return 0.5 * color(ray::ray(rec.p, target - rec.p), world);
 	}
 	else
 	{
@@ -72,7 +70,6 @@ vec3 color(const ray& r, hitable *world, int depth)
 		return (1.0 - t) * vec3::vec3(1.0, 1.0, 1.0) + t * vec3::vec3(0.5, 0.7, 1.0);
 	}
 }
-
 
 void startRayTracingProgram()
 {
@@ -91,26 +88,35 @@ void startRayTracingProgram()
 	outfile << "P3\n" << nx << " " << ny << "\n255\n";
 
 	// creates a list of hitable objects
-	hitable* list[4];
+	hitable* list[5];
+
+	float R = cos(M_PI / 4);
 
 	// in this case, spheres.
 	list[0] = new sphere(vec3(0, 0, -1), 
 						 0.5, 
-						 new lambertian(vec3(0.8, 0.3, 0.3)));
-	list[1] = new sphere(vec3(0, -100.5, -1.0), 
+						 new lambertian(vec3(0.1, 0.2, 0.5)));
+	list[1] = new sphere(vec3(0, -100.5, -1), 
 						 100, 
 						 new lambertian(vec3(0.8, 0.8, 0.0)));
 	list[2] = new sphere(vec3(1, 0, -1), 
 						 0.5, 
-						 new metal(vec3(0.8, 0.6, 0.2)));
-	list[3] = new sphere(vec3(-1, 0, -1),
-						 0.5,
-						 new metal(vec3(0.8, 0.8, 0.8)));
+						 new metal(vec3(0.8, 0.6, 0.2), 0.0));
+	list[3] = new sphere(vec3(-1, 0, -1), 
+						 0.5, 
+						 new dielectric(1.5));
+	list[4] = new sphere(vec3(-1, 0, -1), 
+						 -0.45, 
+						 new dielectric(1.5));
 
-	hitable* world = new hitableList(list, 4);
+	hitable* world = new hitableList(list, 5);
 
-	// set where the user is looking at into the scene
-	camera cam;
+	vec3 lookfrom(-2, 2, 1);
+	vec3 lookat(0, 0, -1);
+	float distToFocus = (lookfrom - lookat).length();
+	float aperture = .1;
+
+	camera cam(lookfrom, lookat, vec3(0, 1, 0), 20, float(nx) / float(ny), aperture, distToFocus);
 
 	/*
 		TODO: this section here runs too slow - need to multithread to prevent long compile times
@@ -169,7 +175,7 @@ void startRayTracingProgram()
 */
 int main()
 {
-	std::cout << "Starting the Ray-Tracing program..." << endl;
+	std::cout << "Running the Ray-Tracing program, this might take awhile..." << endl;
 
 	// time how long it takes for the thing to finish
 	clock_t initialTime = clock();

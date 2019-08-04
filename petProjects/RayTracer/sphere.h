@@ -60,7 +60,7 @@ bool sphere::hit(const ray& r, float tmin, float tmax, hitRecord& rec) const
 	float c = dot(oc, oc) - radius * radius;
 
 	// solve the discriminant - if >0, that means that there's a hit otherwise there's none
-	float discriminant = b * b * a * c;
+	float discriminant = b * b - a * c;
 
 	// if hit
 	if (discriminant > 0)
@@ -68,7 +68,7 @@ bool sphere::hit(const ray& r, float tmin, float tmax, hitRecord& rec) const
 		/*
 			TODO: elaborate more on this section?
 		*/
-		float temp = (-b - sqrt(b * b - a * c)) / a;
+		float temp = (-b - sqrt(discriminant)) / a;
 
 		if (temp < tmax && temp > tmin)
 		{
@@ -80,7 +80,7 @@ bool sphere::hit(const ray& r, float tmin, float tmax, hitRecord& rec) const
 			return true;
 		}
 
-		temp = (-b + sqrt(b * b - a * c)) / a;
+		temp = (-b + sqrt(discriminant)) / a;
 
 		if (temp < tmax && temp > tmin)
 		{
