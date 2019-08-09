@@ -13,6 +13,9 @@ vec3 randomInUnitSphere()
 {
 	vec3 p;
 
+	// pick a random point in the unit radius sphere centered around the origin
+	// through the rejection method where a random point is picked s.t. (x, y, z) range +-1
+	// attempt again if it's beyond the range.
 	do
 	{
 		p = 2.0 * vec3((rand() / (RAND_MAX + 1.0)),
@@ -24,11 +27,21 @@ vec3 randomInUnitSphere()
 	return p;
 }
 
+
+
+// reflect method to allow simulation of metal reflectance
+// where n is a unit vector and v probably is or isn't as well
 vec3 reflect(const vec3& v, const vec3& n)
 {
+	// minus sign because v points into the object - not out from it
+	// dot product to find where the reflected ray would point to 
 	return v - 2 * dot(v, n) * n;
 }
 
+
+
+// refraction method for dielectric (clear-ish) materials
+// follows similar to Snell's Law
 bool refract(const vec3& v, const vec3& n, float ni_over_nt, vec3& refracted)
 {
 	vec3 uv = unit_vector(v);
@@ -47,6 +60,10 @@ bool refract(const vec3& v, const vec3& n, float ni_over_nt, vec3& refracted)
 	return false;
 }
 
+
+
+// simulate what would we see reflected at different angles of glass using Christophe
+// Schlick's approximation
 float schlick(float cosine, float ref_idx)
 {
 	float r0 = (1 - ref_idx) / (1 + ref_idx);
@@ -58,9 +75,11 @@ float schlick(float cosine, float ref_idx)
 
 
 
-
-
-
+/*
+	The materials should do two things:
+		1. produce a scattered ray (or say it absorbed the incident ray)
+		2. if scattered, how much does the ray need to be attenuated?
+*/
 class material
 {
 	public:
@@ -70,6 +89,10 @@ class material
 
 
 
+/*
+	lambertian can either scatter and attenuate by reflectance R or
+	scatter with no attenuation but absorb the fraction 1-R of the rays
+*/
 class lambertian : public material
 {
 	public:
@@ -97,6 +120,8 @@ class metal : public material
 	public:
 
 		vec3 albedo;
+
+		// the bigger the object is, the "fuzzier" the reflections it produces will be
 		float fuzz;
 
 		metal(const vec3& albedo) : albedo(albedo)
@@ -109,6 +134,7 @@ class metal : public material
 			if (f < 1)
 				fuzz = f;
 			else
+				// have a maximum of 1 to prevent scattering too much
 				fuzz = 1;
 		};
 
@@ -123,6 +149,8 @@ class metal : public material
 			return (dot(scattered.direction(), rec.normal) > 0);
 		}
 };
+
+
 
 class dielectric : public material
 {

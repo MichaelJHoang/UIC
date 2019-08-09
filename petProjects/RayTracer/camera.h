@@ -22,6 +22,8 @@ vec3 randomInUnitDisk()
 	return p;
 }
 
+
+
 /*
 
 	camera class to allow us how to see the scene
@@ -40,11 +42,15 @@ class camera
 		vec3 u, v, w;
 		float lensRadius;
 
+
+
 		camera(vec3 lookfrom, vec3 lookat, vec3 vup, float vfov, float aspect, float aperture, float focusDist)
 		{
 			lensRadius = aperture / 2;
 
 			float theta = vfov * M_PI / 180;
+
+			// half height - height above the -z axis
 			float halfHeight = tan(theta / 2);
 			float halfWidth = aspect * halfHeight;
 
@@ -66,6 +72,8 @@ class camera
 			// and we're looking at the origin
 			// origin = vec3(0.0, 0.0, 0.0);
 		}
+
+
 
 		ray getRay(float s, float t)
 		{

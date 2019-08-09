@@ -27,6 +27,8 @@ class hitableList : public hitable
 		virtual bool hit(const ray& r, float tmin, float tmax, hitRecord& rec) const;
 };
 
+
+
 /*
 	determine whether or not if a ray hits anything
 */

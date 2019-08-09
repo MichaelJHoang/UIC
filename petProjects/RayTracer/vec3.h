@@ -27,12 +27,16 @@ class vec3
 		{
 		}
 
+
+
 		vec3(float e0, float e1, float e2)
 		{
 			e[0] = e0;
 			e[1] = e1;
 			e[2] = e2;
 		}
+
+
 
 		// basic getters
 		inline float x() const { return e[0]; }
@@ -41,6 +45,8 @@ class vec3
 		inline float r() const { return e[0]; }
 		inline float g() const { return e[1]; }
 		inline float b() const { return e[2]; }
+
+
 
 		// operator overloaders - which is relatively modern C++
 		// and allows me to easily do matrix arithmetic
@@ -125,11 +131,15 @@ class vec3
 						e[2] * e[2]);
 		}
 
+
+
 		inline float squared_length() const
 		{
 			return this->length() * this->length();
 		}
 };
+
+
 
 // basic matrix addition,
 inline vec3 operator+ (const vec3& v1, const vec3& v2)
@@ -197,6 +207,8 @@ inline vec3 unit_vector(vec3 v)
 	return v / v.length();
 }
 
+
+
 // dot product
 inline float dot(const vec3& v1, const vec3& v2)
 {
@@ -204,6 +216,8 @@ inline float dot(const vec3& v1, const vec3& v2)
 		   v1.e[1] * v2.e[1] +
 		   v1.e[2] * v2.e[2];
 }
+
+
 
 // cross product
 inline vec3 cross(const vec3& v1, const vec3& v2)

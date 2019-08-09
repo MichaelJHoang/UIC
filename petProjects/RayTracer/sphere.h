@@ -42,11 +42,13 @@ bool sphere::hit(const ray& r, float tmin, float tmax, hitRecord& rec) const
 		dor((r.origin - center), (r.origin - center)) == R*R
 	*/
 	
-	// vector from ray's origin to center of the sphere
+	// vector from ray's origin subtracted from the center of the sphere
+	// to produce a vector that is perpendicular to the surface and pointing out
 	vec3 oc = r.origin() - center;
 
 	/*
 		full form of ray p(t): dot((A + tB - C), (A + tb - C)) == R*R
+		== dot((point - center), (point - center))
 		==> t*t*dot(B,B) + 2*t*dot(A-C, A-C) + dot(C,C) = R*R
 	*/
 
@@ -68,6 +70,7 @@ bool sphere::hit(const ray& r, float tmin, float tmax, hitRecord& rec) const
 		/*
 			TODO: elaborate more on this section?
 		*/
+		// solve "t" with the quadratic formula
 		float temp = (-b - sqrt(discriminant)) / a;
 
 		if (temp < tmax && temp > tmin)
@@ -75,6 +78,8 @@ bool sphere::hit(const ray& r, float tmin, float tmax, hitRecord& rec) const
 			rec.t = temp;
 			rec.p = r.point_at_parameter(rec.t);
 			rec.normal = (rec.p - center) / radius;
+
+			// id the material of the sphere
 			rec.mat_ptr = mat;
 
 			return true;
@@ -87,6 +92,8 @@ bool sphere::hit(const ray& r, float tmin, float tmax, hitRecord& rec) const
 			rec.t = temp;
 			rec.p = r.point_at_parameter(rec.t);
 			rec.normal = (rec.p - center) / radius;
+
+			// id the material of the sphere
 			rec.mat_ptr = mat;
 
 			return true;

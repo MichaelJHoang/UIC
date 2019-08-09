@@ -21,6 +21,7 @@
 #include <string>
 #include <thread>
 #include <ctime>
+#include <omp.h>
 
 // programmer-defined includes
 #include "float.h"
@@ -32,10 +33,10 @@
 #include "sphere.h"
 #include "vec3.h"
 
-#define drand48() (rand() / (RAND_MAX + 1.0))
-
 // using this namespace to save myself from having to type and read alot.
 using namespace std;
+
+
 
 /*
 	TODO: Comment
@@ -44,7 +45,8 @@ vec3 color(const ray& r, hitable *world, int depth)
 {
 	hitRecord rec;
 
-	if (world -> hit(r, 0.001, FLT_MAX, rec))
+	// ignore hits that are very near to 0
+	if (world -> hit(r, 0.00000001, FLT_MAX, rec))
 	{
 		// TODO: comment
 		ray scattered;
@@ -71,12 +73,14 @@ vec3 color(const ray& r, hitable *world, int depth)
 	}
 }
 
+
+
 void startRayTracingProgram()
 {
 	// scene dimensions
-	int nx = 800;
-	int ny = 400;
-	int nz = 400;
+	int nx = 1200;
+	int ny = 600;
+	int nz = 600;
 
 	// as of current, the program writes to a ppm file.
 	// maybe create an application window to display result?
@@ -121,10 +125,15 @@ void startRayTracingProgram()
 	/*
 		TODO: this section here runs too slow - need to multithread to prevent long compile times
 	*/
+	// scans through each pixel, shooting rays out of them and computing what color is seen in the direction
+	// of the rays
+	// the ray is shot from the "eye" to a pixel through which it computes the ray intersections and then
+	// computing as to what color is to be seen at said intersection point
 	for (int x = ny - 1; x >= 0; x--)
 	{
 		for (int y = 0; y < nx; y++)
 		{
+			// color vector
 			vec3 col(0, 0, 0);
 
 			/*
@@ -135,8 +144,7 @@ void startRayTracingProgram()
 			*/
 			for (int z = 0; z < nz; z++)
 			{
-				// anti-aliasing magic in these two lines
-				// major runtime overhead, though - need to fix with multithreading or CUDA?
+				// used to blend the foreground with the background for antialiasing
 				float u = float(y + (rand() / (RAND_MAX + 1.0))) / float(nx);
 				float v = float(x + (rand() / (RAND_MAX + 1.0))) / float(ny);
 
@@ -147,7 +155,7 @@ void startRayTracingProgram()
 				col += color(r, world, 0);
 			}
 
-			// write the pixel value to the ppm file
+			// manipulate the gamma to get the desired lighting
 			col /= float(nz);
 
 			col = vec3(sqrt(col[0]), sqrt(col[1]), sqrt(col[2]));
@@ -156,6 +164,7 @@ void startRayTracingProgram()
 			int ig = int(255.99 * col[1]);
 			int ib = int(255.99 * col[2]);
 
+			// write the pixel value to the ppm file
 			outfile << ir << " " << ig << " " << ib << "\n";
 		}
 	}
@@ -164,6 +173,7 @@ void startRayTracingProgram()
 
 	std::cout << "Ray-Tracing complete." << endl;
 }
+
 
 
 /*
@@ -182,8 +192,7 @@ int main()
 	double duration = 0.0;
 
 	/*
-		TODO: implement multithreading. As of 7/31/2019, it takes roughly 5 minutes + several seconds to
-		finish
+		TODO: implement multithreading.
 	*/
 	thread t(startRayTracingProgram);
 
