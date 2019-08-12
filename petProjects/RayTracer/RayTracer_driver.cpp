@@ -78,9 +78,9 @@ vec3 color(const ray& r, hitable *world, int depth)
 void startRayTracingProgram()
 {
 	// scene dimensions
-	int nx = 1200;
-	int ny = 600;
-	int nz = 600;
+	int nx = 800;
+	int ny = 400;
+	int nz = 400;
 
 	// as of current, the program writes to a ppm file.
 	// maybe create an application window to display result?
@@ -129,8 +129,10 @@ void startRayTracingProgram()
 	// of the rays
 	// the ray is shot from the "eye" to a pixel through which it computes the ray intersections and then
 	// computing as to what color is to be seen at said intersection point
+	#pragma omp parallel for
 	for (int x = ny - 1; x >= 0; x--)
 	{
+		#pragma omp parallel for
 		for (int y = 0; y < nx; y++)
 		{
 			// color vector
@@ -142,6 +144,7 @@ void startRayTracingProgram()
 				What this does is that it shoots rays into the scene and sees if there was anything hit.
 				If so, return the color of the supposed hit object and anti-alias it to remove jaggies.
 			*/
+			#pragma omp parallel for
 			for (int z = 0; z < nz; z++)
 			{
 				// used to blend the foreground with the background for antialiasing
@@ -194,12 +197,7 @@ int main()
 	/*
 		TODO: implement multithreading.
 	*/
-	thread t(startRayTracingProgram);
-
-	if (t.joinable())
-	{
-		t.join();
-	}
+	startRayTracingProgram();
 
 	duration = (clock() - initialTime) / (double)CLOCKS_PER_SEC;
 
