@@ -18,6 +18,11 @@ class ray
 
 		vec3 A, B;
 
+		// used for motion blur
+		// think cameras: the shutter opens to take a picture then closes - any movement within that interval
+		// would produce motion blurs in the picture
+		float t;
+
 		/*
 		
 			constructors
@@ -34,6 +39,16 @@ class ray
 		{
 			A = a;
 			B = b;
+			t = 0;
+		}
+
+
+
+		ray(const vec3& a, const vec3& b, float time)
+		{
+			A = a;
+			B = b;
+			t = time;
 		}
 
 
@@ -50,7 +65,12 @@ class ray
 			return B;
 		}
 
+		
 
+		float time() const
+		{
+			return t;
+		}
 
 		/*
 		
@@ -60,9 +80,9 @@ class ray
 			t = distance between A and B
 
 		*/
-		vec3 point_at_parameter(float t) const
+		vec3 point_at_parameter(float tDist) const
 		{
-			return A + t * B;
+			return A + tDist * B;
 		}
 };
 

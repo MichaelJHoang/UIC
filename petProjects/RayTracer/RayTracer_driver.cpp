@@ -36,7 +36,7 @@
 // using this namespace to save myself from having to type and read alot.
 using namespace std;
 
-
+#define randomDouble (rand() / (RAND_MAX + 1.0))
 
 /*
 	TODO: Comment
@@ -46,7 +46,7 @@ vec3 color(const ray& r, hitable *world, int depth)
 	hitRecord rec;
 
 	// ignore hits that are very near to 0
-	if (world -> hit(r, 0.00000001, FLT_MAX, rec))
+	if (world -> hit(r, 0.01, FLT_MAX, rec))
 	{
 		// TODO: comment
 		ray scattered;
@@ -59,7 +59,7 @@ vec3 color(const ray& r, hitable *world, int depth)
 		}
 		else
 		{
-			return vec3::vec3(0, 0, 0);
+			return vec3(0, 0, 0);
 		}
 	}
 	else
@@ -69,18 +69,81 @@ vec3 color(const ray& r, hitable *world, int depth)
 		float t = 0.5 * (unitDirection.y() + 1.0);
 
 		// linear interpolation = blendValue = (1-t)*startValue + t*endValue
-		return (1.0 - t) * vec3::vec3(1.0, 1.0, 1.0) + t * vec3::vec3(0.5, 0.7, 1.0);
+		return (1.0 - t) * vec3(1.0, 1.0, 1.0) + t * vec3(0.5, 0.7, 1.0);
 	}
 }
+
+
+hitable* randomScene()
+{
+	int n = 1000;
+
+	hitable** list = new hitable * [n + 1];
+
+	list[0] = new sphere(vec3(0, -1000, 0), 
+		                 1000, 
+		                 new lambertian(vec3(0.5, 0.5, 0.5)));
+
+	int x = 1;
+
+	for (int a = -10; a < 10; a++)
+	{
+		for (int b = -10; b < 10; b++)
+		{
+			float chooseMat = randomDouble;
+
+			vec3 center(a + 0.9 * randomDouble,
+						0.2,
+						b + 0.9 * randomDouble);
+
+			if ((center - vec3(4, 0.2, 0)).length() > 0.9)
+			{
+				// diffuse
+				if (chooseMat < 0.8)
+				{
+					list[x++] = new movingSphere(center, 
+												 center + vec3(0, 0.5 * randomDouble, 0), 
+												 0.0, 1.0, 0.2,
+												 new lambertian(vec3(randomDouble * randomDouble, 
+																	 randomDouble * randomDouble, 
+																	 randomDouble * randomDouble)));
+				}
+				// metal
+				else if (chooseMat < 0.95)
+				{
+					list[x++] = new sphere(center, 
+										   0.2, 
+										   new metal(vec3(0.5 * (1 + randomDouble), 
+														  0.5 * (1 + randomDouble), 
+														  0.5 * (1 + randomDouble)), 
+														  0.5 * randomDouble));
+				}
+				// glass
+				else
+				{
+					list[x++] = new sphere(center, 0.2, new dielectric(1.5));
+				}
+			}
+		}
+	}
+
+	list[x++] = new sphere(vec3(0, 1, 0), 1.0, new dielectric(1.5));
+	list[x++] = new sphere(vec3(-4, 1, 0), 1.0, new lambertian(vec3(0.4, 0.2, 0.1)));
+	list[x++] = new sphere(vec3(4, 1, 0), 1.0, new metal(vec3(0.7, 0.6, 0.5), 0.0));
+
+	return new hitableList(list, x);
+}
+
+
 
 
 
 void startRayTracingProgram()
 {
 	// scene dimensions
-	int nx = 800;
-	int ny = 400;
-	int nz = 400;
+	int nx = 400;
+	int ny = 200;
+	int nz = 200;
 
 	// as of current, the program writes to a ppm file.
 	// maybe create an application window to display result?
@@ -115,12 +178,33 @@ void startRayTracingProgram()
 
 	hitable* world = new hitableList(list, 5);
 
+	world = randomScene();
+
+	/*
 	vec3 lookfrom(-2, 2, 1);
 	vec3 lookat(0, 0, -1);
 	float distToFocus = (lookfrom - lookat).length();
 	float aperture = .1;
 
-	camera cam(lookfrom, lookat, vec3(0, 1, 0), 20, float(nx) / float(ny), aperture, distToFocus);
+	camera cam(lookfrom, lookat, vec3(0, 1, 0), 20, float(nx) / float(ny), aperture, distToFocus, 0.0, 1.0);
+	*/
+
+	vec3 lookfrom(13, 2, 3);
+	vec3 lookat(0, 0, 0);
+	vec3 vup(0, 1, 0);
+
+	float distToFocus = 10.0;
+	float aperture = 0.0;
+
+	camera cam(lookfrom, 
+			   lookat, 
+			   vup,
+		       20, 
+		       float(nx) / float(ny), 
+		       aperture, 
+		       distToFocus, 
+		       0.0, 
+		       1.0);
 
 	/*
 		TODO: this section here runs too slow - need to multithread to prevent long compile times
@@ -129,10 +213,8 @@ void startRayTracingProgram()
 	// of the rays
 	// the ray is shot from the "eye" to a pixel through which it computes the ray intersections and then
 	// computing as to what color is to be seen at said intersection point
-	#pragma omp parallel for
 	for (int x = ny - 1; x >= 0; x--)
 	{
-		#pragma omp parallel for
 		for (int y = 0; y < nx; y++)
 		{
 			// color vector
@@ -144,12 +226,11 @@ void startRayTracingProgram()
 				What this does is that it shoots rays into the scene and sees if there was anything hit.
 				If so, return the color of the supposed hit object and anti-alias it to remove jaggies.
 			*/
-			#pragma omp parallel for
 			for (int z = 0; z < nz; z++)
 			{
 				// used to blend the foreground with the background for antialiasing
-				float u = float(y + (rand() / (RAND_MAX + 1.0))) / float(nx);
-				float v = float(x + (rand() / (RAND_MAX + 1.0))) / float(ny);
+				float u = float(y + randomDouble) / float(nx);
+				float v = float(x + randomDouble) / float(ny);
 
 				ray r = cam.getRay(u, v);
 
@@ -197,7 +278,13 @@ int main()
 	/*
 		TODO: implement multithreading.
 	*/
-	startRayTracingProgram();
+
+	thread badThread(startRayTracingProgram);
+
+	if (badThread.joinable())
+	{
+		badThread.join();
+	}
 
 	duration = (clock() - initialTime) / (double)CLOCKS_PER_SEC;
 

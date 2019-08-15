@@ -3,6 +3,7 @@
 #define CAMERAH
 
 #define _USE_MATH_DEFINES
+#define randomDouble (rand() / (RAND_MAX + 1.0))
 
 #include <math.h>
 
@@ -14,9 +15,10 @@ vec3 randomInUnitDisk()
 
 	do
 	{
-		p = 2.0 * vec3((rand() / (RAND_MAX + 1.0)),
-					  (rand() / (RAND_MAX + 1.0)),
-					  0) - vec3(1, 1, 0);
+		p = 2.0 * vec3(randomDouble,
+					   randomDouble,
+					   0) 
+					   - vec3(1, 1, 0);
 	} while (dot(p, p) >= 1.0);
 
 	return p;
@@ -41,11 +43,16 @@ class camera
 		vec3 vertical;
 		vec3 u, v, w;
 		float lensRadius;
+		float t0; // open
+		float t1; // close
 
 
-
-		camera(vec3 lookfrom, vec3 lookat, vec3 vup, float vfov, float aspect, float aperture, float focusDist)
+		// vfov is top to bottom in degrees
+		camera(vec3 lookfrom, vec3 lookat, vec3 vup, float vfov, float aspect, float aperture, float focusDist, float t0, float t1)
 		{
+			this->t0 = t0;
+			this->t1 = t1;
+
 			lensRadius = aperture / 2;
 
 			float theta = vfov * M_PI / 180;
@@ -81,7 +88,9 @@ class camera
 			vec3 rd = lensRadius * randomInUnitDisk();
 			vec3 offset = u * rd.x() + v * rd.y();
 
-			return ray(origin + offset, lowerLeftCorner + s * horizontal + t * vertical - origin - offset);
+			float time = t0 + randomDouble * (t1 - t0);
+
+			return ray(origin + offset, lowerLeftCorner + s * horizontal + t * vertical - origin - offset, time);
 		}
 };
 

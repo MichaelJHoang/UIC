@@ -36,7 +36,7 @@
 // using this namespace to save myself from having to type and read alot.
 using namespace std;
 
-
+#define randomDouble (rand() / (RAND_MAX + 1.0))
 
 /*
 	TODO: Comment
@@ -46,7 +46,7 @@ vec3 color(const ray& r, hitable *world, int depth)
 	hitRecord rec;
 
 	// ignore hits that are very near to 0
-	if (world -> hit(r, 0.00000001, FLT_MAX, rec))
+	if (world -> hit(r, 0.01, FLT_MAX, rec))
 	{
 		// TODO: comment
 		ray scattered;
@@ -73,14 +73,12 @@ vec3 color(const ray& r, hitable *world, int depth)
 	}
 }
 
-
-
 void startRayTracingProgram()
 {
 	// scene dimensions
-	int nx = 800;
-	int ny = 400;
-	int nz = 400;
+	int nx = 400;
+	int ny = 200;
+	int nz = 200;
 
 	// as of current, the program writes to a ppm file.
 	// maybe create an application window to display result?
@@ -115,12 +113,23 @@ void startRayTracingProgram()
 
 	hitable* world = new hitableList(list, 5);
 
+	/*
 	vec3 lookfrom(-2, 2, 1);
 	vec3 lookat(0, 0, -1);
 	float distToFocus = (lookfrom - lookat).length();
 	float aperture = .1;
 
 	camera cam(lookfrom, lookat, vec3(0, 1, 0), 20, float(nx) / float(ny), aperture, distToFocus);
+	*/
+
+	vec3 lookfrom(13, 2, 3);
+	vec3 lookat(0, 0, 0);
+	vec3 vup(0, 1, 0);
+
+	float distToFocus = 10;
+	float aperture = 0.1;
+
+	camera cam(lookfrom, lookat, vup, 20, float(nx) / float(ny), aperture, distToFocus);
 
 	/*
 		TODO: this section here runs too slow - need to multithread to prevent long compile times

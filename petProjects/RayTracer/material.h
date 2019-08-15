@@ -8,6 +8,8 @@
 #include "ray.h"
 #include "hitable.h"
 
+#define randomDouble (rand() / (RAND_MAX + 1.0))
+
 // TODO: put this somewhere else?
 vec3 randomInUnitSphere()
 {
@@ -18,10 +20,10 @@ vec3 randomInUnitSphere()
 	// attempt again if it's beyond the range.
 	do
 	{
-		p = 2.0 * vec3((rand() / (RAND_MAX + 1.0)),
-			(rand() / (RAND_MAX + 1.0)),
-			(rand() / (RAND_MAX + 1.0)))
-			- vec3(1, 1, 1);
+		p = 2.0 * vec3(randomDouble,
+					   randomDouble,
+					   randomDouble)
+					   - vec3(1, 1, 1);
 	} while (p.squared_length() >= 1.0);
 
 	return p;
@@ -105,7 +107,7 @@ class lambertian : public material
 		{
 			vec3 target = rec.p + rec.normal + randomInUnitSphere();
 
-			scattered = ray(rec.p, target - rec.p);
+			scattered = ray(rec.p, target - rec.p, r_in.time());
 
 			attenuation = albedo;
 
@@ -142,7 +144,7 @@ class metal : public material
 		{
 			vec3 reflected = reflect(unit_vector(r_in.direction()), rec.normal);
 
-			scattered = ray(rec.p, reflected + fuzz * randomInUnitSphere());
+			scattered = ray(rec.p, reflected + fuzz * randomInUnitSphere(), r_in.time());
 
 			attenuation = albedo;
 
@@ -198,16 +200,17 @@ class dielectric : public material
 			}
 			else
 			{
+				scattered = ray(rec.p, reflected, r_in.time());
 				reflectProb = 1.0;
 			}
 
 			if ((rand() / (RAND_MAX + 1.0)) < reflectProb)
 			{
-				scattered = ray(rec.p, reflected);
+				scattered = ray(rec.p, reflected, r_in.time());
 			}
 			else
 			{
-				scattered = ray(rec.p, refracted);
+				scattered = ray(rec.p, refracted, r_in.time());
 			}
 
 			return true;

@@ -2,32 +2,42 @@
 C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\vec3.h(117,1): warning C4244:  '*=': conversion from 'double' to 'float', possible loss of data
 C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\vec3.h(118,1): warning C4244:  '*=': conversion from 'double' to 'float', possible loss of data
 C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\vec3.h(119,1): warning C4244:  '*=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\camera.h(18,16): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\camera.h(17,26): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\camera.h(51,16): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\material.h(23,12): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\material.h(22,12): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\material.h(21,26): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\material.h(51,21): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\material.h(184,18): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\material.h(190,23): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\camera.h(19,9): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\camera.h(18,18): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\camera.h(58,16): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\camera.h(91,15): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\material.h(25,9): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\material.h(24,9): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\material.h(23,18): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\material.h(53,21): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\material.h(186,18): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\material.h(192,23): warning C4244:  '=': conversion from 'double' to 'float', possible loss of data
 C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\hitablelist.h(46,29): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(49,5): warning C4305:  'argument': truncation from 'double' to 'float'
 C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(69,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
 C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(72,15): warning C4244:  'argument': conversion from 'double' to 'const float', possible loss of data
 C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(72,78): warning C4305:  'argument': truncation from 'double' to 'float'
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(97,10): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(102,41): warning C4305:  'argument': truncation from 'double' to 'float'
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(105,41): warning C4305:  'argument': truncation from 'double' to 'float'
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(108,36): warning C4305:  'argument': truncation from 'double' to 'float'
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(114,28): warning C4305:  'argument': truncation from 'double' to 'float'
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(121,21): warning C4305:  'initializing': truncation from 'double' to 'float'
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(93,20): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(97,9): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(97,30): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(95,18): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(99,7): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(105,35): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(109,32): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(108,32): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(107,47): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(109,49): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(118,21): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(117,21): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(116,33): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(119,21): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(119,37): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(124,62): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(131,79): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(132,73): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(160,10): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(165,41): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(168,41): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(171,36): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(177,28): warning C4305:  'argument': truncation from 'double' to 'float'
   RayTracer.vcxproj -> C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\Debug\RayTracer.exe
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\material.h(51): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\material.h(51): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\material.h(184): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\material.h(184): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\hitablelist.h(19): warning C26495: Variable 'hitableList::listSize' is uninitialized. Always initialize a member variable (type.6).
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\hitable.h(21): warning C26495: Variable 'hit_record::t' is uninitialized. Always initialize a member variable (type.6).
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\sphere.h(20): warning C26495: Variable 'sphere::radius' is uninitialized. Always initialize a member variable (type.6).
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer\RayTracer_driver.cpp(202): warning C26451: Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).
