@@ -76,7 +76,7 @@ vec3 color(const ray& r, hitable *world, int depth)
 
 hitable* randomScene()
 {
-	int n = 1000;
+	int n = 100;
 
 	hitable** list = new hitable * [n + 1];
 
@@ -189,7 +189,7 @@ void startRayTracingProgram()
 	camera cam(lookfrom, lookat, vec3(0, 1, 0), 20, float(nx) / float(ny), aperture, distToFocus, 0.0, 1.0);
 	*/
 
-	vec3 lookfrom(13, 2, 3);
+	vec3 lookfrom(15, 5, 7);
 	vec3 lookat(0, 0, 0);
 	vec3 vup(0, 1, 0);
 
