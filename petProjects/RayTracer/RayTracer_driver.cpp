@@ -22,6 +22,8 @@
 #include <thread>
 #include <ctime>
 #include <omp.h>
+#include <vector>
+#include <mutex>
 
 // programmer-defined includes
 #include "float.h"
@@ -35,6 +37,7 @@
 
 // using this namespace to save myself from having to type and read alot.
 using namespace std;
+mutex mux;
 
 #define randomDouble (rand() / (RAND_MAX + 1.0))
 
@@ -43,6 +46,7 @@ using namespace std;
 */
 vec3 color(const ray& r, hitable *world, int depth)
 {
+	/*
 	hitRecord rec;
 
 	// ignore hits that are very near to 0
@@ -55,7 +59,8 @@ vec3 color(const ray& r, hitable *world, int depth)
 
 		if (depth < 50 && rec.mat_ptr->scatter(r, rec, attenuation, scattered))
 		{
-			return attenuation * color(scattered, world, depth + 1);
+			// problem: causes stack overflow - need to fix
+			return attenuation * color(scattered, world, depth++);
 		}
 		else
 		{
@@ -71,12 +76,48 @@ vec3 color(const ray& r, hitable *world, int depth)
 		// linear interpolation = blendValue = (1-t)*startValue + t*endValue
 		return (1.0 - t) * vec3(1.0, 1.0, 1.0) + t * vec3(0.5, 0.7, 1.0);
 	}
+	*/
+
+	ray currentRay = r;
+	vec3 currentAttenuation = vec3(1.0, 1.0, 1.0);
+
+	for (int x = 0; x < 50; x++)
+	{
+		hitRecord rec;
+
+		if (world ->hit(currentRay, 0.01, FLT_MAX, rec))
+		{
+			ray scattered;
+			vec3 attenuation;
+
+			if (rec.mat_ptr->scatter(currentRay, rec, attenuation, scattered))
+			{
+				currentAttenuation *= attenuation;
+
+				currentRay = scattered;
+			}
+			else
+				return vec3(0.0, 0.0, 0.0);
+		}
+		else
+		{
+			vec3 unitDirection = unit_vector(currentRay.direction());
+
+			float t = 0.5 * (unitDirection.y() + 1.0);
+
+			vec3 c = (1.0 - t) * vec3(1.0, 1.0, 1.0) + t * vec3(0.5, 0.7, 1.0);
+
+			return currentAttenuation * c;
+		}
+	}
+
+	return vec3(0, 0, 0);
 }
 
 
 hitable* randomScene()
 {
-	int n = 1000;
+	int n = 500;
 
 	hitable** list = new hitable * [n + 1];
 
@@ -213,6 +254,24 @@ void startRayTracingProgram()
 	// of the rays
 	// the ray is shot from the "eye" to a pixel through which it computes the ray intersections and then
 	// computing as to what color is to be seen at said intersection point
+
+	auto shootRay = [&](int x, int y, int nx, int ny,
+		camera theCamera, vec3& theColor, hitable* theWorld,
+		int lowerBound, int upperBound)
+	{
+		for (int count = lowerBound; count < upperBound; count++)
+		{
+			// used to blend the foreground with the background for antialiasing
+			float u = float(y + randomDouble) / float(nx);
+			float v = float(x + randomDouble) / float(ny);
+
+			ray r = theCamera.getRay(u, v);
+
+			theColor += color(r, theWorld, 0);
+		}
+	};
+
+
 	for (int x = ny - 1; x >= 0; x--)
 	{
 		for (int y = 0; y < nx; y++)
@@ -226,17 +285,28 @@ void startRayTracingProgram()
 				What this does is that it shoots rays into the scene and sees if there was anything hit.
 				If so, return the color of the supposed hit object and anti-alias it to remove jaggies.
 			*/
-			for (int z = 0; z < nz; z++)
+			vector<thread> threadVector;
+
+			try
 			{
-				// used to blend the foreground with the background for antialiasing
-				float u = float(y + randomDouble) / float(nx);
-				float v = float(x + randomDouble) / float(ny);
+				threadVector.push_back(thread(shootRay, x, y, nx, ny, cam, ref(col), world, 0, 50));
+				threadVector.push_back(thread(shootRay, x, y, nx, ny, cam, ref(col), world, 50, 100));
+				threadVector.push_back(thread(shootRay, x, y, nx, ny, cam, ref(col), world, 100, 150));
+				threadVector.push_back(thread(shootRay, x, y, nx, ny, cam, ref(col), world, 150, 200));
 
-				ray r = cam.getRay(u, v);
+				for (thread& th : threadVector)
+				{
+					if (th.joinable())
+						th.join();
+					else
+						cout << "Thread" << th.get_id() << " is not joinable." << endl;
+				}
+			}
+			catch (exception& e)
+			{
+				cout << e.what() << endl;
 
-				vec3 p = r.point_at_parameter(2.0);
-
-				col += color(r, world, 0);
+				exit(-100);
 			}
 
 			// manipulate the gamma to get the desired lighting
@@ -264,8 +334,6 @@ void startRayTracingProgram()
 
 	Main
 
-	TODO: implement threads.
-
 */
 int main()
 {
@@ -275,16 +343,7 @@ int main()
 	clock_t initialTime = clock();
 	double duration = 0.0;
 
-	/*
-		TODO: implement multithreading.
-	*/
-
-	thread badThread(startRayTracingProgram);
-
-	if (badThread.joinable())
-	{
-		badThread.join();
-	}
+	startRayTracingProgram();
 
 	duration = (clock() - initialTime) / (double)CLOCKS_PER_SEC;
 
