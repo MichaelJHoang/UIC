@@ -53,21 +53,21 @@ class ray
 
 
 
-		vec3 origin() const
+		inline vec3 origin() const
 		{
 			return A;
 		}
 
 
 
-		vec3 direction() const
+		inline vec3 direction() const
 		{
 			return B;
 		}
 
 		
 
-		float time() const
+		inline float time() const
 		{
 			return t;
 		}
@@ -80,7 +80,7 @@ class ray
 			t = distance between A and B
 
 		*/
-		vec3 point_at_parameter(float tDist) const
+		inline vec3 point_at_parameter(float tDist) const
 		{
 			return A + tDist * B;
 		}

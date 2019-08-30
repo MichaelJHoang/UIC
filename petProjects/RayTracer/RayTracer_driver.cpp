@@ -24,6 +24,7 @@
 #include <omp.h>
 #include <vector>
 #include <mutex>
+#include <gl/freeglut.h>
 
 // programmer-defined includes
 #include "float.h"
@@ -46,38 +47,6 @@ mutex mux;
 */
 vec3 color(const ray& r, hitable *world, int depth)
 {
-	/*
-	hitRecord rec;
-
-	// ignore hits that are very near to 0
-	if (world -> hit(r, 0.01, FLT_MAX, rec))
-	{
-		// TODO: comment
-		ray scattered;
-
-		vec3 attenuation;
-
-		if (depth < 50 && rec.mat_ptr->scatter(r, rec, attenuation, scattered))
-		{
-			// problem: causes stack overflow - need to fix
-			return attenuation * color(scattered, world, depth++);
-		}
-		else
-		{
-			return vec3(0, 0, 0);
-		}
-	}
-	else
-	{
-		vec3 unitDirection = unit_vector(r.direction());
-
-		float t = 0.5 * (unitDirection.y() + 1.0);
-
-		// linear interpolation = blendValue = (1-t)*startValue + t*endValue
-		return (1.0 - t) * vec3(1.0, 1.0, 1.0) + t * vec3(0.5, 0.7, 1.0);
-	}
-	*/
-
 	ray currentRay = r;
 	vec3 currentAttenuation = vec3(1.0, 1.0, 1.0);
 
@@ -289,10 +258,14 @@ void startRayTracingProgram()
 
 			try
 			{
-				threadVector.push_back(thread(shootRay, x, y, nx, ny, cam, ref(col), world, 0, 50));
-				threadVector.push_back(thread(shootRay, x, y, nx, ny, cam, ref(col), world, 50, 100));
-				threadVector.push_back(thread(shootRay, x, y, nx, ny, cam, ref(col), world, 100, 150));
-				threadVector.push_back(thread(shootRay, x, y, nx, ny, cam, ref(col), world, 150, 200));
+				/*
+					threadVector.push_back(thread(shootRay, x, y, nx, ny, cam, ref(col), world, 0, 50));
+					threadVector.push_back(thread(shootRay, x, y, nx, ny, cam, ref(col), world, 50, 100));
+					threadVector.push_back(thread(shootRay, x, y, nx, ny, cam, ref(col), world, 100, 150));
+					threadVector.push_back(thread(shootRay, x, y, nx, ny, cam, ref(col), world, 150, 200));
+				*/
+				for (int temp = 0; temp < 4; temp++)
+					threadVector.push_back(thread(shootRay, x, y, nx, ny, cam, ref(col), world, 0, nz/4));
 
 				for (thread& th : threadVector)
 				{
@@ -335,7 +308,7 @@ void startRayTracingProgram()
 	Main
 
 */
-int main()
+int main(int argc, char** argv)
 {
 	std::cout << "Running the Ray-Tracing program, this might take awhile..." << endl;
 
