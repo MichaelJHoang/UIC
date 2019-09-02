@@ -37,28 +37,6 @@ class aabb
 			return maximum;
 		}
 
-		/*
-			__device__ bool hit(const ray& r, float tmin, float tmax) const
-			{
-				for (int x = 0; x < 3; x++)
-				{
-					float t0 = ffmin((minimum[x] - r.origin[x]) / r.direction()[x],
-									 (maximum[x] - r.origin()[x]) / r.direction()[x]);
-
-					float t1 = ffmax((minimum[x] - r.origin[x]) / r.direction()[x],
-									 (maximum[x] - r.origin()[x]) / r.direction()[x]);
-
-					tmin = ffmax(t0, tmin);
-					tmax = ffmin(t1, tmax);
-
-					if (tmax <= tmin)
-						return false;
-				}
-
-				return true;
-			}
-		*/
-
 		__device__ bool hit(const ray& r, float tmin, float tmax) const;
 };
 

@@ -80,14 +80,14 @@ __global__ void randInit(curandState* randState)
 __device__ vec3 color(const ray& r, hitable** world, int depth, curandState *randState)
 {
 	ray currentRay = r;
-	vec3 currentAttenuation = vec3(1.0, 1.0, 1.0);
+	vec3 currentAttenuation = vec3(1.0f, 1.0f, 1.0f);
 
 	// 50 iterations
 	for (int x = 0; x < 50; x++)
 	{
 		hitRecord rec;
 
-		if ((*world)->hit(currentRay, 0.01, FLT_MAX, rec))
+		if ((*world)->hit(currentRay, 0.01f, FLT_MAX, rec))
 		{
 			ray scattered;
 			vec3 attenuation;
@@ -99,23 +99,23 @@ __device__ vec3 color(const ray& r, hitable** world, int depth, curandState *ran
 				currentRay = scattered;
 			}
 			else
-				return vec3(0.0, 0.0, 0.0);
+				return vec3(0.0f, 0.0f, 0.0f);
 		}
 		else
 		{
 			vec3 unitDirection = unit_vector(currentRay.direction());
 
-			float t = 0.5 * (unitDirection.y() + 1.0);
+			float t = 0.5f * (unitDirection.y() + 1.0f);
 
 			// make the background with
 			// linear interpolation
-			vec3 c = (1.0 - t) * vec3(1.0, 1.0, 1.0) + t * vec3(0.5, 0.7, 1.0);
+			vec3 c = (1.0f - t) * vec3(1.0f, 1.0f, 1.0f) + t * vec3(0.5f, 0.7f, 1.0f);
 
 			return currentAttenuation * c;
 		}
 	}
 
-	return vec3(0, 0, 0);
+	return vec3(0.0f, 0.0f, 0.0f);
 }
 
 
@@ -150,7 +150,7 @@ __global__ void render(vec3* fb, int xMax, int yMax, int numSamples, camera **ca
 
 	curandState thisRandState = randState[pixelIndex];
 
-	vec3 col(0, 0, 0);
+	vec3 col(0.0f, 0.0f, 0.0f);
 
 	for (int sample = 0; sample < numSamples; sample++)
 	{
@@ -177,8 +177,11 @@ __global__ void randomScene(hitable** list, hitable** world, camera** cam, int n
 	{
 		curandState* thisRandState = randState;
 
-		list[0] = new sphere(vec3(0, -1000, -1), 1000,
-				  new lambertian(vec3(.5, .5, .5)));
+		theTexture* checker = new checkerTexture(new constantTexture(vec3(.0f, .0f, .0f)),
+							  new constantTexture(vec3(.9f, .9f, .9f)));
+
+		list[0] = new sphere(vec3(0.0f, -1000.0f, -1), 1000.0f,
+				  new lambertian(checker));
 
 		int x = 1;
 
@@ -188,60 +191,61 @@ __global__ void randomScene(hitable** list, hitable** world, camera** cam, int n
 			{
 				float chooseMat = curand_uniform(thisRandState);
 
-				vec3 center(a + .9 * curand_uniform(thisRandState),
-							.2,
-							b + .9 * curand_uniform(thisRandState));
+				vec3 center(a + .9f * curand_uniform(thisRandState),
+							.2f,
+							b + .9f * curand_uniform(thisRandState));
 
 				// diffuse
-				if (chooseMat < .8)
+				if (chooseMat < .8f)
 				{
 					list[x++] = new movingSphere(center,
-												 center + vec3(0, .5 * curand_uniform(thisRandState), 0),
-												 0, 1, .2,
-												 new lambertian(vec3(curand_uniform(thisRandState) * curand_uniform(thisRandState),
-																	 curand_uniform(thisRandState) * curand_uniform(thisRandState),
-																	 curand_uniform(thisRandState) * curand_uniform(thisRandState))));
+												 center + vec3(0.0f, .5f * curand_uniform(thisRandState), 0.0f),
+												 0.0f, 1.0f, .2f,
+												 new lambertian(vec3(
+												 curand_uniform(thisRandState) * curand_uniform(thisRandState),
+												 curand_uniform(thisRandState) * curand_uniform(thisRandState),
+												 curand_uniform(thisRandState) * curand_uniform(thisRandState))));
 				}
 				// metal
-				else if (chooseMat < .95)
+				else if (chooseMat < .95f)
 				{
 					list[x++] = new sphere(center,
-										   .2,
-										   new metal (vec3(.5 * (1 + curand_uniform(thisRandState)),
-														   .5 * (1 + curand_uniform(thisRandState)),
-														   .5 * (1 + curand_uniform(thisRandState)))));
+										   .2f,
+										   new metal (vec3(.5f * (1.0f + curand_uniform(thisRandState)),
+														   .5f * (1.0f + curand_uniform(thisRandState)),
+														   .5f * (1.0f + curand_uniform(thisRandState)))));
 				}
 				// glass
 				else
 				{
-					list[x++] = new sphere(center, .2, new dielectric(1.5));
+					list[x++] = new sphere(center, .2f, new dielectric(1.5f));
 				}
 			}
 		}
 
-		list[x++] = new sphere(vec3(0, 1, 0), 1.0, new dielectric(1.5));
-		list[x++] = new sphere(vec3(-4, 1, 0), 1.0, new lambertian(vec3(0.4, 0.2, 0.1)));
-		list[x++] = new sphere(vec3(4, 1, 0), 1.0, new metal(vec3(0.7, 0.6, 0.5), 0.0));
+		list[x++] = new sphere(vec3(0.0f, 1.0f, 0.0f), 1.0f, new dielectric(1.5f));
+		list[x++] = new sphere(vec3(-4.0f, 1.0f, 0.0f), 1.0f, new lambertian(vec3(0.4f, 0.2f, 0.1f)));
+		list[x++] = new sphere(vec3(4.0f, 1.0f, 0.0f), 1.0f, new metal(vec3(0.7f, 0.6f, 0.5f), 0.0f));
 
 		randState = thisRandState;
 
 		*world = new hitableList(list, 22 * 22 + 1 + 3);
 
-		vec3 lookfrom(13, 2, 3);
-		vec3 lookat(0, 0, 0);
-		vec3 vup(0, 1, 0);
+		vec3 lookfrom(13.0f, 2.0f, 3.0f);
+		vec3 lookat(0.0f, 0.0f, 0.0f);
+		vec3 vup(0.0f, 1.0f, 0.0f);
 
-		float distToFocus = 10;
-		float aperture = 0;
+		float distToFocus = 10.0f;
+		float aperture = 0.0f;
 
 		*cam = new camera(lookfrom, 
 						  lookat, 
 						  vup, 
-						  30, 
+						  30.0f, 
 						  float(nx) / float(ny), 
 						  aperture, 
 						  distToFocus, 
-						  0, 1.0);
+						  0.0f, 1.0f);
 	}
 }
 
@@ -260,7 +264,7 @@ __global__ void freeWorld(hitable** list, hitable** world, camera** cam)
 
 
 
-void startRayTracingProgram()
+__host__ void startRayTracingProgram()
 {
 	// scene dimensions
 	int nx = 800;
@@ -360,9 +364,9 @@ void startRayTracingProgram()
 		{
 			size_t pixelIndex = y * nx + x;
 
-			int ir = int(255.99 * frameBuffer[pixelIndex].r());
-			int ig = int(255.99 * frameBuffer[pixelIndex].g());
-			int ib = int(255.99 * frameBuffer[pixelIndex].b());
+			int ir = int(255.99f * frameBuffer[pixelIndex].r());
+			int ig = int(255.99f * frameBuffer[pixelIndex].g());
+			int ib = int(255.99f * frameBuffer[pixelIndex].b());
 
 			outfile << ir << " "
 					<< ig << " "
@@ -377,7 +381,7 @@ void startRayTracingProgram()
 	// clean up
 	checkCudaErrors(cudaDeviceSynchronize());
 
-	freeWorld << <1, 1 >> > (list, world, cam);
+	//freeWorld << <1, 1 >> > (list, world, cam);
 
 	// TODO: somehow, freeing up these causes a seg-fault;
 	//       need to fix.
@@ -396,7 +400,7 @@ void startRayTracingProgram()
 		cout << endl << e.what() << endl;
 	}
 
-	//outfile.close();
+	outfile.close();
 
 	cout << "Ray-Tracing complete" << endl;
 

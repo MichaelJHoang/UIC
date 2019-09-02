@@ -7,7 +7,7 @@
 
 #include "ray.h"
 #include "hitable.h"
-
+#include "texture.h"
 
 // TODO: put this somewhere else?
 __device__ vec3 randomInUnitSphere(curandState *randState)
@@ -19,11 +19,11 @@ __device__ vec3 randomInUnitSphere(curandState *randState)
 	// attempt again if it's beyond the range.
 	do
 	{
-		p = 2.0 * vec3(curand_uniform(randState),
-					   curand_uniform(randState),
-					   curand_uniform(randState))
-				- vec3(1, 1, 1);
-	} while (p.squared_length() >= 1.0);
+		p = 2.0f * vec3(curand_uniform(randState),
+					    curand_uniform(randState),
+					    curand_uniform(randState))
+				 - vec3(1.0f, 1.0f, 1.0f);
+	} while (p.squared_length() >= 1.0f);
 
 	return p;
 }
@@ -49,7 +49,7 @@ __device__ bool refract(const vec3& v, const vec3& n, float ni_over_nt, vec3& re
 
 	float dt = dot(uv, n);
 
-	float discriminant = 1.0 - ni_over_nt * ni_over_nt * (1 - dt * dt);
+	float discriminant = 1.0f - ni_over_nt * ni_over_nt * (1.0f - dt * dt);
 
 	if (discriminant > 0)
 	{
@@ -67,11 +67,11 @@ __device__ bool refract(const vec3& v, const vec3& n, float ni_over_nt, vec3& re
 // Schlick's approximation
 __device__ float schlick(float cosine, float ref_idx)
 {
-	float r0 = (1 - ref_idx) / (1 + ref_idx);
+	float r0 = (1.0f - ref_idx) / (1.0f + ref_idx);
 
 	r0 = r0 * r0;
 
-	return r0 + (1 - r0) * pow((1 - cosine), 5);
+	return r0 + (1.0f - r0) * pow((1.0f - cosine), 5);
 }
 
 
@@ -98,9 +98,16 @@ class lambertian : public material
 {
 	public:
 
-		vec3 albedo;
+		theTexture* albedo;
 
-		__device__ lambertian(const vec3& v) : albedo(v) {};
+		vec3 color;
+
+		__device__ lambertian(theTexture* theTexture) : albedo(theTexture) {}
+
+		__device__ lambertian(vec3 color) : color(color) 
+		{ 
+			albedo = nullptr; 
+		}
 
 		__device__ virtual bool scatter(const ray& r_in, const hitRecord& rec, vec3& attenuation, ray& scattered, curandState *randState) const
 		{
@@ -108,7 +115,10 @@ class lambertian : public material
 
 			scattered = ray(rec.p, target - rec.p, r_in.time());
 
-			attenuation = albedo;
+			if (albedo != nullptr)
+				attenuation = albedo->value(0.0f, 0.0f, rec.p);
+			else
+				attenuation = color;
 
 			return true;
 		}
@@ -127,7 +137,7 @@ class metal : public material
 
 		__device__ metal(const vec3& albedo) : albedo(albedo)
 		{
-			fuzz = 0;
+			fuzz = 0.0f;
 		}
 
 		__device__ metal(const vec3& albedo, float f) : albedo(albedo), fuzz(f)
@@ -168,7 +178,7 @@ class dielectric : public material
 
 			float ni_over_nt;
 
-			attenuation = vec3(1.0, 1.0, 1.0);
+			attenuation = vec3(1.0f, 1.0f, 1.0f);
 
 			vec3 refracted;
 
@@ -182,13 +192,13 @@ class dielectric : public material
 				ni_over_nt = ref_idx;
 
 				cosine = dot(r_in.direction(), rec.normal) / r_in.direction().length();
-				cosine = sqrt(1.0 - ref_idx * ref_idx * (1 - cosine * cosine));
+				cosine = sqrt(1.0f - ref_idx * ref_idx * (1.0f - cosine * cosine));
 			}
 			else
 			{
 				outwardNormal = rec.normal;
 
-				ni_over_nt = (1.0 / ref_idx);
+				ni_over_nt = (1.0f / ref_idx);
 
 				cosine = -dot(r_in.direction(), rec.normal) / r_in.direction().length();
 			}
