@@ -25,6 +25,8 @@ class hitableList : public hitable
 
 		// inheritable/overloadable function
 		__device__ virtual bool hit(const ray& r, float tmin, float tmax, hitRecord& rec) const;
+
+		__device__ virtual bool boundingBox(float t0, float t1, aabb& box) const;
 };
 
 
@@ -52,6 +54,33 @@ __device__ bool hitableList::hit(const ray& r, float tmin, float tmax, hitRecord
 	}
 
 	return hitAnything;
+}
+
+__device__ bool hitableList::boundingBox(float t0, float t1, aabb& box) const
+{
+	if (listSize < 1)
+		return false;
+
+	aabb tempBox;
+
+	bool firstTrue = list[0]->boundingBox(t0, t1, tempBox);
+
+	if (firstTrue)
+		return false;
+	else
+		box = tempBox;
+
+	for (int x = 1; x < listSize; x++)
+	{
+		if (list[0]->boundingBox(t0, t1, tempBox))
+		{
+			box = surroundingBox(box, tempBox);
+		}
+		else
+			return false;
+	}
+
+	return true;
 }
 
 #endif // !HITABLELISTH

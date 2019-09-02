@@ -1,9 +1,1 @@
-﻿  Compiling CUDA source file raytracer_cuda_driver.cu...
-  
-  C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer_CUDA>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\bin\HostX86\x64" -x cu  -IC:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer_CUDA\packages\nupengl.core.0.1.0.1\build\native\../..//build/native/include/ -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\raytracer_cuda_driver.cu.obj "C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer_CUDA\raytracer_cuda_driver.cu" 
-CUDACOMPILE : ptxas warning : Stack size for entry function '_Z6renderP4vec3iiiPP6cameraPP7hitableP17curandStateXORWOW' cannot be statically determined
-  raytracer_cuda_driver.cu
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer_CUDA\vec3.h(116): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer_CUDA\vec3.h(117): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer_CUDA\vec3.h(118): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
-  RayTracer_CUDA.vcxproj -> C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer_CUDA\x64\Debug\RayTracer_CUDA.exe
+﻿  RayTracer_CUDA.vcxproj -> C:\Users\Coord\Downloads\userGitRepository\UIC\petProjects\RayTracer_CUDA\x64\Debug\RayTracer_CUDA.exe

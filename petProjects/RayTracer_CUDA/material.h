@@ -203,7 +203,7 @@ class dielectric : public material
 				reflectProb = 1.0;
 			}
 
-			if ((curand_uniform(randState) / (RAND_MAX + 1.0)) < reflectProb)
+			if ((curand_uniform(randState)) < reflectProb)
 			{
 				scattered = ray(rec.p, reflected, r_in.time());
 			}

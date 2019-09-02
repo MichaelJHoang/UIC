@@ -3,6 +3,7 @@
 #define HITABLEH
 
 #include "ray.h"
+#include "aabb.h"
 
 // tell the C++ compiler that the pointer is to a class
 class material;
@@ -37,6 +38,8 @@ class hitable
 
 		*/
 		__device__ virtual bool hit(const ray& r, float tmin, float tmax, hitRecord& rec) const = 0;
+
+		__device__ virtual bool boundingBox(float t0, float t1, aabb& box) const = 0;
 };
 
 #endif

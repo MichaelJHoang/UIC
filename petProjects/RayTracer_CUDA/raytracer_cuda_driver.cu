@@ -35,6 +35,7 @@
 #include "ray.h"
 #include "sphere.h"
 #include "vec3.h"
+#include "movingSphere.h"
 
 // TODO: probably have glut work?
 #include "GL\freeglut.h"
@@ -248,7 +249,7 @@ __global__ void randomScene(hitable** list, hitable** world, camera** cam, int n
 
 __global__ void freeWorld(hitable** list, hitable** world, camera** cam) 
 {
-	for (int x = 0; x < 404; x++) 
+	for (int x = 0; x < 22 * 22 + 4; x++) 
 	{
 		delete ((sphere*)list[x])->mat;
 		delete list[x];
@@ -274,8 +275,8 @@ void startRayTracingProgram()
 
 	// as of current, the program writes to a ppm file.
 	// maybe create an application window to display result?
-	ofstream outfile;
-	outfile.open("raytrace_cuda_output.ppm");
+	ofstream outfile("raytrace_cuda_output.ppm");
+	//outfile.open("raytrace_cuda_output.ppm");
 
 	// allocate numPixels sized frame buffer on the host to hold the RGB values calculated
 	// by the GPU
@@ -380,14 +381,22 @@ void startRayTracingProgram()
 
 	// TODO: somehow, freeing up these causes a seg-fault;
 	//       need to fix.
-	checkCudaErrors(cudaFree(cam));
-	checkCudaErrors(cudaFree(world));
-	checkCudaErrors(cudaFree(list));
-	checkCudaErrors(cudaFree(randState));
-	checkCudaErrors(cudaFree(randState2));
-	checkCudaErrors(cudaFree(frameBuffer));
 
-	outfile.close();
+	try
+	{
+		checkCudaErrors(cudaFree(cam));
+		checkCudaErrors(cudaFree(world));
+		checkCudaErrors(cudaFree(list));
+		checkCudaErrors(cudaFree(randState));
+		checkCudaErrors(cudaFree(randState2));
+		checkCudaErrors(cudaFree(frameBuffer));
+	}
+	catch (exception e)
+	{
+		cout << endl << e.what() << endl;
+	}
+
+	//outfile.close();
 
 	cout << "Ray-Tracing complete" << endl;
 
@@ -414,6 +423,8 @@ int main(int argc, char** argv)
 	duration = (clock() - initialTime) / (double)CLOCKS_PER_SEC;
 
 	std::cout << "Duration: " << int(duration / 60) << " minutes and " << fmod(duration, 60) << " seconds." << endl;
+
+	//system("xdg-open raytrace_cuda_output.ppm");
 
 	return 0;
 }
