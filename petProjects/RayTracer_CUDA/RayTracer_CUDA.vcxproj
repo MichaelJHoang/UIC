@@ -83,6 +83,7 @@
     <ClInclude Include="aabb.h" />
     <ClInclude Include="bvhNode.h" />
     <ClInclude Include="camera.h" />
+    <ClInclude Include="cone.h" />
     <ClInclude Include="cube.h" />
     <ClInclude Include="hitable.h" />
     <ClInclude Include="hitablelist.h" />

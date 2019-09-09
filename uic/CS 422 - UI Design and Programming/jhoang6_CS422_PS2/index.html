@@ -1,0 +1,376 @@
+<!--
+CandyCrush
+
+Your Name: Jon-Michael Hoang
+
+Collaborators: Do the TAs and Professors count?
+
+Resources: W3Schools and alot of googling and looking through Quora/TutorialsPoint/GeeksForGeeks/StackOverflow
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CandyCrush</title>
+
+<!-- Load style sheets -->
+<link rel="stylesheet" href=
+  "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css">
+
+<link rel="stylesheet" href="mainLayout.css">
+
+<!-- Use mobile-aware viewport -->
+<meta name="viewport" content=
+  "width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Load any supplemental Javascript libraries here -->
+<script src=
+  "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src=
+  "https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.2/seedrandom.js">
+</script>
+<script src="candy.js"></script>
+<script src="board.js"></script>
+<script src="rules.js"></script>
+
+<script>
+// By default, the first board loaded by your page will be the same 
+// each time you load (which is accomplished by "seeding" the random
+// number generator. This makes testing (and grading!) easier!
+Math.seedrandom(0);
+// A short jQuery extension to read query parameters from the URL.
+$.extend({
+  getUrlVars: function() {
+    var vars = [], pair;
+    var pairs = window.location.search.substr(1).split('&');
+    for (var i = 0; i < pairs.length; i++) {
+      pair = pairs[i].split('=');
+      vars.push(pair[0]);
+      vars[pair[0]] = pair[1] &&
+          decodeURIComponent(pair[1].replace(/\+/g, ' '));
+    }
+    return vars;
+  },
+  getUrlVar: function(name) {
+    return $.getUrlVars()[name];
+  }
+});
+// constants
+var DEFAULT_BOARD_SIZE = 8;
+
+// data model at global scope for easier debugging
+var board;
+var rules;
+
+// variable to maintain the candies within the board
+var candy;
+
+// variable to identify the letter input of the user's input
+var letterInput;
+// ... and their number input
+var numInput;
+
+// variable to keep track of the candy crush length
+var crushLength;
+
+
+// initialize board
+if ($.getUrlVar('size') && $.getUrlVar('size') >= 3) {
+  board = new Board($.getUrlVar('size'));
+} else {
+  board = new Board(DEFAULT_BOARD_SIZE);
+}
+
+// load a rule
+rules = new Rules(board);
+
+
+
+// Final initialization entry point: the Javascript code inside this block
+// runs at the end of start-up when the page has finished loading.
+$(document).ready(function()
+{
+  // Your code here.
+  
+  //Create the 8x8 candy board by stitching up alot of javascript together
+  $('#candyBoardDiv').append("<table id='candyBoard'>");
+  for(var x = 0; x < 8; x++)
+  {
+	// variable to maintain and build the board's cells
+    var cellBuilder ="<tr>";
+	
+	// build each row in the table
+    for(var y = 0; y < 8; y++)
+      cellBuilder += "<td>"+ String.fromCharCode("a".charCodeAt() + y) + x + "</td>";
+	
+	// once done, go on to the next row
+    cellBuilder += "</tr>";
+	
+    $('#candyBoard').append(cellBuilder);
+  }
+  
+  // finally finished building the board
+  $('#candyBoard').append("</table>");
+  
+  // now adjust the page now that the board is made
+  //make the middle col 50% of the page.
+  $('#maincol').css('min-width', '50%'); 
+  
+  // make the left col 25%
+  $('#firstcol').css('max-width', '25%');
+  
+  // and the right 25%
+  $('#lastcol').css('max-width', '25%');
+  
+  // start the new game
+  rules.prepareNewGame();
+});
+
+
+
+/* Event Handlers */
+// access the candy object with info.candy
+// add a candy to the board
+$(board).on('add', function(e, info)
+{
+  // add the candies to the board
+  $('#candyBoard tr:eq('+info.toRow+') td:eq('+info.toCol+')').css('background-color', info.candy.toString()); 
+  
+  //make sure the yellow candy gets black text
+  $("#candyBoard td").each(function() 
+  {
+    if ($(this).css("background-color") == 'rgb(255, 255, 0)') 
+      $(this).css('color', 'black');
+  });
+});
+
+
+// move a candy on the board
+$(board).on('move', function(e, info)
+{
+  $('#candyBoard tr:eq('+ info.toRow +') td:eq('+ info.toCol +')').css('background-color', info.candy.toString()); 
+  
+  //change the color of the annotation of the cell
+  $("#candyBoard td").each(function()
+  {
+	// yellow candy
+    if ($(this).css("background-color") == 'rgb(255, 255, 0)') 
+      $(this).css('color', 'black');
+	// not yellow candy
+    else
+      $(this).css('color', 'white');
+  });
+  
+  // after the move, check if there exists any crushable candies on the board
+  if(rules.getCandyCrushes() != 0)
+  {
+    //enable crushOnceButton
+    $('#crushOnceButton').prop('disabled', false);
+    $('.arrowButton').prop('disabled', true);
+  }
+  else
+    $('#crushOnceButton').prop('disabled', true);
+});
+
+// remove a candy from the board
+$(board).on('remove', function(e, info)
+{
+	// make a call to bring down more candies upon removal
+	rules.moveCandiesDown();
+});
+
+
+// Button Events
+
+// assign functions to the new game button
+$(document).on('click', "#newGameButton", function(event)
+{
+  // clear the board of all candies
+  board.clear();
+  
+  // make a new game
+  rules.prepareNewGame();
+});
+
+
+
+// assign functions to the crush once button such that it would crush candies
+// upon click
+$(document).on('click', "#crushOnceButton", function(event)
+{
+  var crushable = rules.getCandyCrushes();
+  crushLength = crushable.length;
+  
+  // if the crush length is not 0, obviously that means that crushing is allowed
+  if (crushLength != 0) 
+    rules.removeCrushes(crushable);
+});
+
+
+
+// assign funtions to the arrows on the board
+// to allow movement of the candies on valid selections
+// and to light up - telling the user that they can press
+// the arrow button to make their move
+$(document).on('click', ".arrowButton", function(event)
+{
+  var row = numInput;
+  var col = letterInput.charCodeAt()- 97;
+  
+  // if the move is valid, that means that the candies are switchable
+  if (rules.isMoveTypeValid(board.getCandyAt(row, col), this.id) > 0 )
+    board.flipCandies(board.getCandyAt(row, col), board.getCandyInDirection(board.getCandyAt(row, col), this.id));
+	
+  // clear the user input field
+  $('#moveInput').val('');
+  
+  // turn off the arrow buttons
+  $('.arrowButton').prop('disabled','true');
+});
+
+
+
+// keyboard events arrive here
+// Changed 'keydown' to 'keyup'
+$(document).on('keyup', function(event) 
+{
+  // array of buttons for button needs
+  var buttons = ['up','down','right','left'];
+  
+  // get the user input from the input text field
+  var userInput = $('#moveInput').val();
+  
+  // having the user press the space bar will allow them to crush once
+  if(event.keyCode == 32)
+  {
+    $('#crushOnceButton').trigger("click");
+    $('#moveInput').val('');
+  }
+  // having them press [ N ] will allow them to reset the board
+  else if(event.keyCode == 78)
+  {
+    $('#newGameButton').trigger( "click" );
+  }
+  
+  
+  // check the user's input
+  if(userInput !='' && userInput.length == 2)
+  {
+    // break the user's input into two (2) pieces
+    letterInput = userInput[0];
+    numInput = userInput[1];
+
+    // and convert them into integer rows and columns
+    var row = numInput;
+    var col= letterInput.charCodeAt()- 97;
+	
+	// check in all 4 directions and enable movement if moveTypeValid
+    for(var x = 0; x < 4 ; x++)
+    {
+	  // disable highlight and action of the button
+      $('#'+ buttons[x].toString()).prop('disabled', true);
+	  
+	  // if letterInput is a char - be it caps or lowercase and numInput is a valid number...
+      if((letterInput.match(/^[a-h]$/) || letterInput.match(/^[A-H]$/)) && numInput.match(/^[0-7]$/))
+        if(rules.isMoveTypeValid(board.getCandyAt(row, col), buttons[x]) > 0 )
+		  // highlight and enable the button for the user to interact with
+          $('#'+ buttons[x].toString()).prop('disabled', false);
+    }
+  }
+  else
+    $('.arrowButton').prop('disabled', true);	// disabled button
+	
+});
+
+
+
+// allow the user to input their name
+$(document).on('click', "#nameInputButton", function(event)
+{
+  if(this.value == 'Submit')
+  {
+    $('#nameInput').hide();
+    $('#name').text($('#nameInput').val());
+    $('#name').show();
+    $('#nameInputButton').prop('value', 'Edit');
+  }
+  else
+  {
+    $('#name').hide();
+    $('#nameInput').text($('#nameInput').val());
+    $('#nameInput').show();
+    $('#nameInputButton').prop('value', 'Submit');
+  }
+});
+
+
+
+</script>
+
+
+</head>
+<body>
+<!-- allow the user to enter in their name and edit it whenever -->
+  <div id = "nameInputDiv">
+    <label for = "nameInput">Enter your name here:</label>
+    <input class = "form-control" type = "text" id = "nameInput">
+    <div id = "name" style = "display: none;"> </div>
+    <input class = "btn" id ="nameInputButton" type="button" value="Submit">
+  </div>
+
+
+
+<!-- here lies the name of the game and the reset button for the candy board -->
+<div class = "container">
+  <div class = "row">
+    <div class = "col-md-4" id = "firstcol">
+      <div>
+      <!-- col 1 Code Here -->
+      <p id="candyCrushName">Candy</br>Crush</p>
+      <input class = "btn" id = "newGameButton" type = "button" value = "New Game">
+      </div>
+  </div>
+
+
+
+<!-- the candy board itself -->
+    <div class="col-md-4" id="maincol">
+      <!-- col 2 Code Here -->
+	  <center>
+      <div id ="candyBoardDiv">
+      </div>
+	  </center>
+    </div>
+
+
+
+<!-- column that contains the text field for user input and the arrow buttons -->
+    <div class="col-md-4" id="lastcol">
+
+      <!-- col 3 Code Here -->
+	  
+	  <!-- the moveInput text field -->
+      <div id = "moveInputDiv">
+        <label for = "moveInput" id = "moveInput-label">Move:</label>
+        <input class = "form-control" type = "text" id = "moveInput">
+      </div>
+	  
+	  <!-- arrows -->
+      <div id= "arrows"> 
+		<input class = "btn arrowButton" id = "up" type = "button" value = "↑" disabled = 'true'>
+        <input class = "btn arrowButton" type = "button" value = "←" disabled = 'true'>
+        <input class = "btn arrowButton" id = "right" type = "button" value = "→" disabled = 'true'>
+        <input class = "btn arrowButton" id = "down" type = "button" value = "↓" disabled = 'true'>
+      </div>
+	  
+	  <!-- crush once button for crushing needs -->
+      <input class= "btn" id ="crushOnceButton" type="button" value="Crush Once">
+
+    </div>
+  </div> <!-- class="row" -->
+</div> <!-- class="container" -->
+
+</body>
+
+</html>

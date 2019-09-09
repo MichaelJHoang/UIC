@@ -1,0 +1,211 @@
+GDF 3.1 Mystic City	// Magic word, version number, and Environment name.
+
+PLACES 14	// Fourteen Places in this file
+// In this test file, the first 6 room numbers are chosen in an X-Y fashion
+// The tens digit indicates the column and the units digit indicates the row
+
+12 	Entrance Hall	//EH
+3
+You are standing in the entrance hall of the great six-room dungeon
+There are doors to the east and north, and a stairway leading down
+The main exit ( from the game ) is to the west
+
+13	Ogre's Lair	// OL
+2
+You have entered the Ogre's Lair!  Better leave before he wakes up . . .
+There are doors to the south and the east
+
+23	Treasure Storeroom	// TS
+2
+You have found a storeroom full of gold, jewels, and treasure!
+There are doors to the north, south, and east.
+
+22	Pool of Enchantment	// PE
+4
+You are in a round room with a clear enchanting pool of water.
+There are doors to the north and west.
+There is a slide leading downwards to the floor below.
+You can go down safely, but you might not be able to get back up.
+
+21	Potions Lab		// PL
+3
+There is a cauldron of thick green goop here, 
+bubbling slowly over a cool blue flame.
+Doors lead to the west and east.
+
+11	Potions Storeroom	// PS
+3
+This room has shelves full of bottles and jars
+Some labels read "Powdered bat's wings" and "Toad eyes".
+There is a door to the east, and a stairway leading up.
+
+
+//The next set of rooms is version 1 of the catacombs. 
+//You need to travel through and back in order to get to the stage 2 of the game,
+//This is why these rooms are in the shape of the number ?2?
+
+101	Room 101		//C1
+2
+This is room 101 of the catacombs
+There are doors to the west and northeast
+
+102	Room 102		//C2
+2
+This is room 102 of the catacombs
+There are doors to the southeast and southwest
+
+103	Room 103		//C3
+2
+This is room 103 of the catacombs
+There are doors to the east, northwest, and south-southeast
+
+104	Room 104		//C4
+2
+This is room 104 of the catacombs
+There are doors to the north-northwest and west-southwest
+
+105	Room 105		//C5
+2
+This is room 105 of the catacombs
+There are doors to the east-northeast and south-southwest
+
+106	Room 106		//C6
+2
+This is room 106 of the catacombs
+There are doors to the south and north-northeast
+
+107	Room 107		//C7
+3
+This is room 107 of the catacombs
+On the wall is written "XYZZY"
+There are doors to the north, south, and east-southeast
+
+108	Room 108		//C8
+2
+This is room 108 of the catacombs
+There are doors to the east and west-northwest
+
+
+DIRECTIONS 35	//Thirty five directions defined ( No number 15 )
+
+//Direction numbers are chosen arbitrarily from top to bottom and left to right
+
+1	23	N	13	0	// TS to OL
+2	13	E	-23	1002	// OL to TS, locked
+
+3	13	S	12	0	// OL to EH
+4	12	N	13	0	// EH to OL
+5	22	N	-23	1002	// PE to TS, locked
+6	23	S	-22	1003	// TS to PE, locked
+
+7	12	W	1	0	// EH to Exit
+8	12	E	22	0	// EH to PE
+9	22	W	12	0	// PE to EH
+
+
+10	12	D	-11	1001	// EH to PS, locked
+11	11	U	-12	1001	// PS to EH, locked
+12	22	D	21	0	// PE to PL
+
+13	21	W	-11	1001	// PL to PS, locked
+14	11	E	21	0	// PS to PL
+// REMOVED:  15	21	E	0	0	// PL to nowhere, locked
+
+16	21	E	101	0	//PL to C1
+17	101	NE	102	0	//C1 to C2
+18	102	SE	103	0	//C2 to C3
+19	103 	SSE	104	0	//C3 to C4
+20	104 	WSW	105	0	//C4 to C5
+21	105 	SSW	106	0	//C5 to C6
+22	106	S	107	0	//C6 to C7
+23	107	ESE	108	0	//C7 to C8
+
+24	108	WNW	107	0	//C8 to C7
+25	107 	N	106	0	//C7 to C6
+26	106	NNE	105	0	//C6 to C5
+27	105	ENE	104	0	//C5 to C4
+28	104 	NNW	103	0	//C4 to C3
+29	103	NW	102	0	//C3 to C2
+30	102	SW	101	0	//C2 to C1
+31	101	W	21	0	//C1 to PL
+
+32	108	E	0	0	// C8 to nowhere, locked
+
+// New paths added in version 3.0
+
+33	23	E	0	0	// TS to nowhere, locked
+34	103	E	0	0	// C3 to nowhere, locked
+35	107	S	0	0	// C7 to nowhere, locked
+36	106	NW	11	0	// C6 to PS, shortcut
+
+
+ARTIFACTS	11	// Semi-random artifacts
+
+23
+1		1000	-1  0	Jewel-encrusted chest	// Too heavy to move!
+4
+The chest is about two feet by 3 feet by 2 feet high.
+It appears to be made of solid gold, encrusted with 
+diamonds, emeralds, rubies, and sapphires.
+It is also locked, and too heavy to move.
+
+23
+2		100	 1  0  Golden chalice
+2
+The chalice is about 6 inches high, with a 
+finely detailed design in white and yellow gold.
+
+11
+3		100	 1	0  Purple potion
+3
+The potion is in a small stoppered glass bottle.
+The purple fluid swirls and shimmers invitingly.
+There seems to be one good dose in the bottle.
+
+101
+4		50	1	0  Holly wand
+1
+This wand is light and delicate, fashioned of holly wood.
+
+11
+5		50	1	0  Parchment scroll
+1
+The scroll just says "XYZZY"
+
+105
+6		100	1	0  Sparkling rubies
+1
+The rubies are bright, shiny, and fiery red!
+
+103
+7		40	1	0  Oak mallet
+2
+This is a large wooden mallet, with a 3-foot handle
+and a large wooden head about 6 inches in diameter.
+
+12
+8		20	1	0  Leather bag
+1
+This large leather bag looks like it would hold a lot.
+
+13
+9		11	2	1001	Brass key	// Potions storeroom
+2
+This is a small brass key with some discoloration,
+As if some strong chemicals have spilled on it.
+
+108
+10		12	2	1002	Golden key // Treasure room
+1
+This beautifully filigreed golden key has "TS" inscribed on it.
+
+22
+11		10	1	1003	Ivory key // TS to PE
+2
+This key is made of finely carved ivory.
+It looks like it took a long time to make.
+
+
+
+
+

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=GameTester
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=filename
+comment2.target=java.io.File\ getCleanFile(java.lang.String)
+numComments=3

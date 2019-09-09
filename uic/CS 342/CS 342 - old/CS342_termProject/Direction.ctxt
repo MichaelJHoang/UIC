@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Direction
+comment1.params=ID\ from\ to\ dir
+comment1.target=Direction(int,\ Place,\ Place,\ java.lang.String)
+comment2.params=s
+comment2.target=boolean\ match(java.lang.String)
+comment3.params=
+comment3.target=void\ lock()
+comment4.params=
+comment4.target=void\ unlock()
+comment5.params=
+comment5.target=boolean\ isLocked()
+comment6.params=
+comment6.target=Place\ follow()
+comment7.params=
+comment7.target=void\ print()
+comment8.params=
+comment8.target=Place\ getFrom()
+comment9.params=
+comment9.target=Place\ getTo()
+numComments=10

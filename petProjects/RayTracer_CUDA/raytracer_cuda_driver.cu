@@ -26,7 +26,6 @@
 #include "device_launch_parameters.h"
 
 // programmer-defined includes
-#include "vec3.h"
 #include "float.h"
 #include "camera.h"
 #include "material.h"
@@ -171,6 +170,36 @@ __global__ void render(vec3* fb, int xMax, int yMax, int numSamples, camera **ca
 
 
 
+__global__ void twoSpheres(hitable** list, hitable** world, camera** cam, int nx, int ny)
+{
+	theTexture* checker = new checkerTexture(new constantTexture(vec3(.1f, .1f, .1f)),
+						  new constantTexture(vec3(.9f, .9f, .9f)));
+
+	int num = 50;
+
+	list = new hitable * [num + 1];
+
+	list[0] = new sphere(vec3(0.0f, -10.0f, 0.0f), 10.0f, new lambertian(checker));
+	list[1] = new sphere(vec3(0.0f, 10.0f, 0.0f), 10.0f, new lambertian(checker));
+
+	vec3 lookfrom(13.0f, 2.0f, 3.0f);
+	vec3 lookat(0.0f, 0.0f, 0.0f);
+	vec3 vup(0.0f, 1.0f, 0.0f);
+
+	float distToFocus = 10.0f;
+	float aperture = 0.0f;
+
+	*cam = new camera(lookfrom,
+					  lookat,
+					  vup,
+					  20.0f,
+					  float(nx) / float(ny),
+					  aperture,
+					  distToFocus,
+					  0.0f, 0.0f);
+}
+
+
 __global__ void randomScene(hitable** list, hitable** world, camera** cam, int nx, int ny, curandState* randState) 
 {
 	if (threadIdx.x == 0 && blockIdx.x == 0)
@@ -267,8 +296,8 @@ __global__ void freeWorld(hitable** list, hitable** world, camera** cam)
 __host__ void startRayTracingProgram()
 {
 	// scene dimensions
-	int nx = 800;
-	int ny = 400;
+	int nx = 400;
+	int ny = 200;
 
 	// number of samples per pixel
 	int numSamples = 400;
@@ -276,6 +305,8 @@ __host__ void startRayTracingProgram()
 	// divide the work on the GPU into tx x ty blocks of threads
 	int tx = 16;
 	int ty = 16;
+
+	// create and open the file first
 
 	// as of current, the program writes to a ppm file.
 	// maybe create an application window to display result?
@@ -328,7 +359,11 @@ __host__ void startRayTracingProgram()
 	
 	checkCudaErrors(cudaMalloc((void**)& cam, sizeof(camera*)));
 
+	// SCENE SELECT
+
 	randomScene << <1, 1 >> > (list, world, cam, nx, ny, randState2);
+
+	//twoSpheres << <1, 1 >> > (list, world, cam, nx, ny);
 
 	checkCudaErrors(cudaGetLastError());
 	checkCudaErrors(cudaDeviceSynchronize());
@@ -416,7 +451,7 @@ __host__ void startRayTracingProgram()
 */
 int main(int argc, char** argv)
 {
-	std::cout << "Running the Ray-Tracing program, this might take awhile..." << endl;
+	std::cout << "Running the Ray-Tracing program, this will take a long time..." << endl;
 
 	// time how long it takes for the thing to finish
 	clock_t initialTime = clock();

@@ -19,7 +19,7 @@ class vec3
 {
 	public:
 
-		float e[3] = { 0, 0, 0 };
+		float e[3] = { 0.0f, 0.0f, 0.0f };
 
 		// constructors
 		__host__ __device__ vec3()
@@ -113,9 +113,9 @@ class vec3
 
 		__host__ __device__ inline vec3& operator/= (const float t)
 		{
-			e[0] *= (1.0 / t);
-			e[1] *= (1.0 / t);
-			e[2] *= (1.0 / t);
+			e[0] *= (1.0f / t);
+			e[1] *= (1.0f / t);
+			e[2] *= (1.0f / t);
 
 			return *this;
 		}

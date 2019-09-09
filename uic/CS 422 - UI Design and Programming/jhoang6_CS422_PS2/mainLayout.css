@@ -1,0 +1,151 @@
+/*
+CandyCrush
+
+Your Name: Jon-Michael Hoang
+
+Collaborators: Do the TAs and Professors count?
+
+Resources: W3Schools and alot of googling and looking through Quora/TutorialsPoint/GeeksForGeeks/StackOverflow
+*/
+/*
+
+	CSS for the columns in general
+
+*/
+.col-md-4 
+{
+	/* padding between the columns */
+	display:inline;
+	padding: 10px 10px;
+	margin: auto;
+}
+
+
+
+
+
+/*
+
+	CSS for the left column
+
+*/
+#candyCrushName
+{
+	color: blue;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#newGameButton 
+{
+	display: block;
+	margin: auto;
+	font-weight: bold;
+}
+
+
+
+
+/*
+
+	CSS for the main column
+
+*/
+#candyBoard
+{
+	/* to meet the 320 x 320 size req */
+	height: 320px;
+    width: 320px;
+	
+}
+
+#candyBoard td
+{
+	/* each cell is 40x40 px with their text bolded and aligned in the center */
+	width: 40px;
+	text-align: center;
+	color: white;
+ 	font-weight: bold;
+}
+
+/* user name stuff */
+#nameInputDiv
+{
+	text-align: center;
+	font-weight: bolder;
+}
+
+#nameInput
+{
+	width: 100px;
+	display: inline;
+}
+
+
+
+
+
+/*
+
+	CSS for the right column
+
+*/
+/* user input fields */
+#moveInputDiv
+{
+	text-align: center;
+	font-weight: bolder;
+}
+
+#moveInput
+{
+	/* to allow the move text be right next to the text field */
+	width: 50px;
+	display: inline;
+}
+
+
+/* arrows */
+/* design the arrows such that they look similar to what is needed for the project */
+#arrows
+{
+	position: relative;
+	margin-top: 10px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+#up
+{
+	display: block;
+	margin: auto;
+}
+
+
+#right
+{
+	margin-left: 50px;
+}
+
+#down
+{
+	display: block;
+	margin: auto;
+}
+
+/* change the highlight color of the arrow buttons so that it's more visible */
+.arrowButton:not([disabled])
+{
+	background:lightblue;
+}
+
+
+/* crush button */
+#crushOnceButton
+{
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+	font-weight: bold;
+}

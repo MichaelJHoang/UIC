@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Place
+comment1.params=ID\ name\ desc
+comment1.target=Place(int,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=
+comment3.target=java.lang.String\ getDesc()
+comment4.params=
+comment4.target=int\ getID()
+comment5.params=dir
+comment5.target=void\ addDirection(Direction)
+comment6.params=element
+comment6.target=void\ lockDirection(int)
+comment7.params=input
+comment7.target=Place\ followDirection(java.lang.String)
+comment8.params=
+comment8.target=void\ print()
+numComments=9

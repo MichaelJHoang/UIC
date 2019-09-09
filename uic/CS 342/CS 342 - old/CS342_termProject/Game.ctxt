@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Game
+comment1.params=name
+comment1.target=Game(java.lang.String)
+comment2.params=place
+comment2.target=void\ addPlace(Place)
+comment3.params=
+comment3.target=void\ play()
+numComments=4
