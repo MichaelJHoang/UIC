@@ -5,5 +5,4 @@ D:\userGitRepository\UIC\petProjects\RayTracer_CUDA\aabb.h(78): warning : missin
   
 CUDACOMPILE : ptxas warning : Stack size for entry function '_Z6renderP4vec3iiiPP6cameraPP7hitableP17curandStateXORWOW' cannot be statically determined
   raytracer_cuda_driver.cu
-     Creating library D:\userGitRepository\UIC\petProjects\RayTracer_CUDA\x64\Debug\RayTracer_CUDA.lib and object D:\userGitRepository\UIC\petProjects\RayTracer_CUDA\x64\Debug\RayTracer_CUDA.exp
   RayTracer_CUDA.vcxproj -> D:\userGitRepository\UIC\petProjects\RayTracer_CUDA\x64\Debug\RayTracer_CUDA.exe

@@ -182,6 +182,8 @@ __global__ void twoSpheres(hitable** list, hitable** world, camera** cam, int nx
 	list[0] = new sphere(vec3(0.0f, -10.0f, 0.0f), 10.0f, new lambertian(checker));
 	list[1] = new sphere(vec3(0.0f, 10.0f, 0.0f), 10.0f, new lambertian(checker));
 
+	*world = new hitableList(list, 2);
+
 	vec3 lookfrom(13.0f, 2.0f, 3.0f);
 	vec3 lookat(0.0f, 0.0f, 0.0f);
 	vec3 vup(0.0f, 1.0f, 0.0f);
@@ -282,7 +284,7 @@ __global__ void randomScene(hitable** list, hitable** world, camera** cam, int n
 
 __global__ void freeWorld(hitable** list, hitable** world, camera** cam) 
 {
-	for (int x = 0; x < 22 * 22 + 4; x++) 
+	for (int x = 0; x < 2; x++) 
 	{
 		delete ((sphere*)list[x])->mat;
 		delete list[x];
@@ -296,11 +298,11 @@ __global__ void freeWorld(hitable** list, hitable** world, camera** cam)
 __host__ void startRayTracingProgram()
 {
 	// scene dimensions
-	int nx = 400;
-	int ny = 200;
+	int nx = 1200;
+	int ny = 600;
 
 	// number of samples per pixel
-	int numSamples = 400;
+	int numSamples = 600;
 
 	// divide the work on the GPU into tx x ty blocks of threads
 	int tx = 16;
@@ -344,7 +346,7 @@ __host__ void startRayTracingProgram()
 
 	// creates a list of hitable objects
 	hitable** list;
-	int numHitables = 22 * 22 + 1 + 3;
+	int numHitables = 2;
 
 	checkCudaErrors(cudaMalloc((void**) & list, numHitables * sizeof(hitable*)));
 
@@ -361,7 +363,7 @@ __host__ void startRayTracingProgram()
 
 	// SCENE SELECT
 
-	randomScene << <1, 1 >> > (list, world, cam, nx, ny, randState2);
+	twoSpheres << <1, 1 >> > (list, world, cam, nx, ny);
 
 	//twoSpheres << <1, 1 >> > (list, world, cam, nx, ny);
 
