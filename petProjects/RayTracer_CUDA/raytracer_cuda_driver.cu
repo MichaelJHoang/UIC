@@ -298,11 +298,11 @@ __global__ void freeWorld(hitable** list, hitable** world, camera** cam)
 __host__ void startRayTracingProgram()
 {
 	// scene dimensions
-	int nx = 1200;
-	int ny = 600;
+	int nx = 1600;
+	int ny = 800;
 
 	// number of samples per pixel
-	int numSamples = 600;
+	int numSamples = 400;
 
 	// divide the work on the GPU into tx x ty blocks of threads
 	int tx = 16;
@@ -388,11 +388,16 @@ __host__ void startRayTracingProgram()
 			<< nx << " "
 			<< ny << " "
 			<< "\n255\n";
+	/*
+		cerr << "P3\n"
+			<< nx << " "
+			<< ny << " "
+			<< "\n255\n";
+	*/
 
-	cerr << "P3\n"
-		<< nx << " "
-		<< ny << " "
-		<< "\n255\n";
+
+	std:cout << "\nFinished calculating - writing to file...\n";
+
 
 	// output the frame buffer into the ppm file
 	for (int y = ny - 1; y >= 0; y--)
@@ -409,9 +414,11 @@ __host__ void startRayTracingProgram()
 					<< ig << " "
 					<< ib << "\n";
 
-			cerr << ir << " "
-				<< ig << " "
-				<< ib << "\n";
+			/*
+				cerr << ir << " "
+					<< ig << " "
+					<< ib << "\n";
+			*/
 		}
 	}
 

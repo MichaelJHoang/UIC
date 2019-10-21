@@ -89,6 +89,8 @@
     <ClInclude Include="hitablelist.h" />
     <ClInclude Include="material.h" />
     <ClInclude Include="movingSphere.h" />
+    <ClInclude Include="perlin.h" />
+    <ClInclude Include="ppmViewer.h" />
     <ClInclude Include="ray.h" />
     <ClInclude Include="sphere.h" />
     <ClInclude Include="texture.h" />

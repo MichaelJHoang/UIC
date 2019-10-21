@@ -3,6 +3,7 @@
 #define TEXTUREH
 
 #include "ray.h"
+#include "perlin.h"
 
 
 class theTexture
@@ -65,4 +66,19 @@ class checkerTexture : public theTexture
 		}
 };
 
+
+
+class noiseTexture : public theTexture
+{
+	public:
+
+		perlin noise;
+
+		__device__ noiseTexture() {}
+
+		__device__ virtual vec3 value(float u, float v, const vec3& p) const
+		{
+			return vec3(1, 1, 1) * noise.noise(p);
+		}
+};
 #endif
