@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6ce607a5-9999-4900-ad16-0fe9c40ee330" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CareTaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Memento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main_driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/queryResultContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/savedInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/.vs/RayTracer_CUDA/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/.vs/RayTracer_CUDA/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/.vs/RayTracer_CUDA/v16/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/.vs/RayTracer_CUDA/v16/Browse.VC.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/.vs/RayTracer_CUDA/v16/ipch/AutoPCH/c30cee1961a7a5ef/RAYTRACER_CUDA_DRIVER.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/.vs/RayTracer_CUDA/v16/ipch/AutoPCH/c30cee1961a7a5ef/RAYTRACER_CUDA_DRIVER.ipch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/RayTracer_CUDA.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/RayTracer_CUDA.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/raytrace_cuda_output.ppm" beforeDir="false" afterPath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/raytrace_cuda_output.ppm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/raytracer_cuda_driver.cu" beforeDir="false" afterPath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/raytracer_cuda_driver.cu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/x64/Debug/RayTracer_CUDA.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/x64/Debug/RayTracer_CUDA.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/x64/Debug/RayTracer_CUDA.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/x64/Debug/RayTracer_CUDA.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/x64/Debug/RayTracer_CUDA.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/x64/Debug/RayTracer_CUDA.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/x64/Debug/RayTracer_CUDA.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/x64/Debug/RayTracer_CUDA.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/x64/Debug/RayTracer_CUDA.tlog/RayTracer_CUDA.write.1u.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/x64/Debug/RayTracer_CUDA.tlog/RayTracer_CUDA.write.1u.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/x64/Debug/raytracer_cuda_driver.cu.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/x64/Debug/raytracer_cuda_driver.cu.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/x64/Debug/vc142.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../petProjects/RayTracer_CUDA/x64/Debug/vc142.pdb" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\userGitRepository\UIC\uic\CS 474 - OO Languages &amp; Environments\jhoang6_CS474_homework1\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1RcwGJSjP5bmwGOyVez072fduI6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="main_driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main_driver" />
+      <module name="jhoang6_CS474_homework1.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main_driver" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ce607a5-9999-4900-ad16-0fe9c40ee330" name="Default Changelist" comment="" />
+      <created>1569979594514</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569979594514</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

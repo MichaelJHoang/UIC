@@ -1,0 +1,131 @@
+[debug] Packaging D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\jhoang6_cs474_homework3_2.13-0.1.jar ...
+[debug] Input file mappings:
+[debug] 	
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes
+[debug] 	Argument$.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\Argument$.class
+[debug] 	Argument.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\Argument.class
+[debug] 	CommandBuilder$.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$.class
+[debug] 	CommandBuilder$Command.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$Command.class
+[debug] 	CommandBuilder$GetItem$.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetItem$.class
+[debug] 	CommandBuilder$GetItem$EmptyGetItem.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetItem$EmptyGetItem.class
+[debug] 	CommandBuilder$GetItem$Exclude.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetItem$Exclude.class
+[debug] 	CommandBuilder$GetItem$Filter.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetItem$Filter.class
+[debug] 	CommandBuilder$GetItem$Force.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetItem$Force.class
+[debug] 	CommandBuilder$GetItem$Include.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetItem$Include.class
+[debug] 	CommandBuilder$GetItem$Path.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetItem$Path.class
+[debug] 	CommandBuilder$GetItem$Stream.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetItem$Stream.class
+[debug] 	CommandBuilder$GetItem.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetItem.class
+[debug] 	CommandBuilder$GetProcess$.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetProcess$.class
+[debug] 	CommandBuilder$GetProcess$EmptyGetProcess.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetProcess$EmptyGetProcess.class
+[debug] 	CommandBuilder$GetProcess$FileVersionInfo.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetProcess$FileVersionInfo.class
+[debug] 	CommandBuilder$GetProcess$Id.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetProcess$Id.class
+[debug] 	CommandBuilder$GetProcess$IncludeUserName.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetProcess$IncludeUserName.class
+[debug] 	CommandBuilder$GetProcess$Module.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetProcess$Module.class
+[debug] 	CommandBuilder$GetProcess$Name.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetProcess$Name.class
+[debug] 	CommandBuilder$GetProcess.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetProcess.class
+[debug] 	CommandBuilder$GetService$.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetService$.class
+[debug] 	CommandBuilder$GetService$DependentServices.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetService$DependentServices.class
+[debug] 	CommandBuilder$GetService$DisplayName.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetService$DisplayName.class
+[debug] 	CommandBuilder$GetService$EmptyGetService.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetService$EmptyGetService.class
+[debug] 	CommandBuilder$GetService$Exclude.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetService$Exclude.class
+[debug] 	CommandBuilder$GetService$Include.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetService$Include.class
+[debug] 	CommandBuilder$GetService$Name.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetService$Name.class
+[debug] 	CommandBuilder$GetService$RequiredServices.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetService$RequiredServices.class
+[debug] 	CommandBuilder$GetService.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$GetService.class
+[debug] 	CommandBuilder$TestConnection$.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestConnection$.class
+[debug] 	CommandBuilder$TestConnection$BufferSize.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestConnection$BufferSize.class
+[debug] 	CommandBuilder$TestConnection$Count.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestConnection$Count.class
+[debug] 	CommandBuilder$TestConnection$Delay.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestConnection$Delay.class
+[debug] 	CommandBuilder$TestConnection$EmptyTestConnection.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestConnection$EmptyTestConnection.class
+[debug] 	CommandBuilder$TestConnection$Quiet.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestConnection$Quiet.class
+[debug] 	CommandBuilder$TestConnection$URL.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestConnection$URL.class
+[debug] 	CommandBuilder$TestConnection.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestConnection.class
+[debug] 	CommandBuilder$TestPath$.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestPath$.class
+[debug] 	CommandBuilder$TestPath$EmptyTestPath.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestPath$EmptyTestPath.class
+[debug] 	CommandBuilder$TestPath$Exclude.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestPath$Exclude.class
+[debug] 	CommandBuilder$TestPath$Filter.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestPath$Filter.class
+[debug] 	CommandBuilder$TestPath$Include.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestPath$Include.class
+[debug] 	CommandBuilder$TestPath$IsValid.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestPath$IsValid.class
+[debug] 	CommandBuilder$TestPath$LiteralPath.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestPath$LiteralPath.class
+[debug] 	CommandBuilder$TestPath$NewerThan.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestPath$NewerThan.class
+[debug] 	CommandBuilder$TestPath$OlderThan.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestPath$OlderThan.class
+[debug] 	CommandBuilder$TestPath$Path.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestPath$Path.class
+[debug] 	CommandBuilder$TestPath.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder$TestPath.class
+[debug] 	CommandBuilder.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\CommandBuilder.class
+[debug] 	GetItemBuilder$.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\GetItemBuilder$.class
+[debug] 	GetItemBuilder.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\GetItemBuilder.class
+[debug] 	GetProcessBuilder$.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\GetProcessBuilder$.class
+[debug] 	GetProcessBuilder.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\GetProcessBuilder.class
+[debug] 	GetServiceBuilder$.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\GetServiceBuilder$.class
+[debug] 	GetServiceBuilder.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\GetServiceBuilder.class
+[debug] 	main_driver$.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\main_driver$.class
+[debug] 	main_driver$delayedInit$body.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\main_driver$delayedInit$body.class
+[debug] 	main_driver.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\main_driver.class
+[debug] 	TestConnectionBuilder$.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\TestConnectionBuilder$.class
+[debug] 	TestConnectionBuilder.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\TestConnectionBuilder.class
+[debug] 	TestPathBuilder$.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\TestPathBuilder$.class
+[debug] 	TestPathBuilder.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework3\target\scala-2.13\classes\TestPathBuilder.class
+[debug] Done packaging.

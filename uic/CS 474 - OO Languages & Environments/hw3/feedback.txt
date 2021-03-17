@@ -1,0 +1,12 @@
+Hi Jon,
+
+Thanks for your submission, here are a few comments:
+
+1. Good documentation and well commented. However, code is difficult to read as eveything is coded in one file. 
+2. Implementation is functional. However it is not clear how you are using phantom type to make some options mandatory. I do not see compilation error when I remove a builder method. -1
+3. I did not see examples of how user would use monadic combinators on command execution. -1
+
+Grade - 11%
+
+Regards,
+Mark and Aditya
