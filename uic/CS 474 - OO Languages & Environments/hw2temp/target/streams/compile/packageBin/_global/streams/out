@@ -1,0 +1,37 @@
+[debug] Packaging D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\jhoang6_cs474_homework2_2.13-0.1.jar ...
+[debug] Input file mappings:
+[debug] 	
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\classes
+[debug] 	Client$.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\classes\Client$.class
+[debug] 	Client$delayedInit$body.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\classes\Client$delayedInit$body.class
+[debug] 	Client.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\classes\Client.class
+[debug] 	CustomProcessor.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\classes\CustomProcessor.class
+[debug] 	FacadeAnnotation$.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\classes\FacadeAnnotation$.class
+[debug] 	FacadeAnnotation.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\classes\FacadeAnnotation.class
+[debug] 	generated
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\classes\generated
+[debug] 	GuideBooking.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\classes\GuideBooking.class
+[debug] 	HotelBooking.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\classes\HotelBooking.class
+[debug] 	META-INF
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\classes\META-INF
+[debug] 	META-INF\jhoang6_cs474_homework2.kotlin_module
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\classes\META-INF\jhoang6_cs474_homework2.kotlin_module
+[debug] 	ServerFacade.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\classes\ServerFacade.class
+[debug] 	ServerScheduler.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\classes\ServerScheduler.class
+[debug] 	ShuttleBooking.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\classes\ShuttleBooking.class
+[debug] 	TicketBooking.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\classes\TicketBooking.class
+[debug] 	TourAndTravelFacade.class
+[debug] 	  D:\userGitRepository\UIC\uic\CS 474 - OO Languages & Environments\jhoang6_cs474_homework2\target\scala-2.13\classes\TourAndTravelFacade.class
+[debug] Done packaging.
