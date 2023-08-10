@@ -1,1 +1,0 @@
-New project as of 9/15/2019 in conjunction with my RayTracer_CUDA project - Shaders. Probably use shaders with CUDA?
